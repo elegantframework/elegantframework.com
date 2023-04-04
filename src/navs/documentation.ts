@@ -16,4 +16,7 @@ export const documentationNav = {
     pages['configuration'],
     pages['new-documents']
   ],
+  'Plugins': [
+    pages['convertkit']
+  ]
 }
