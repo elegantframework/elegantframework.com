@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://elegantframework.com/blog</id>
+    <title>Elegant Framework Blog</title>
+    <updated>2023-04-04T12:27:59.415Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>Brandon Owens</name>
+        <uri>https://twitter.com/@thebrandonowens</uri>
+    </author>
+    <link rel="alternate" href="https://elegantframework.com/blog"/>
+    <link rel="self" href="https://elegantframework.com/feeds/atom.xml"/>
+    <subtitle>All the latest Elegant Framework news, straight from the team.</subtitle>
+    <logo>https://elegantframework.com/favicons/favicon-32x32.png?v=4</logo>
+    <icon>https://elegantframework.com/favicons/favicon.ico?v=4</icon>
+    <rights>All rights reserved 2023, Elegant, Inc.</rights>
+    <entry>
+        <title type="html"><![CDATA[Introducing the new Elegant Framework]]></title>
+        <id>Introducing the new Elegant Framework</id>
+        <link href="https://elegantframework.com/blog/2023-03-01-announcing-elegant-framework"/>
+        <updated>2023-03-01T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Introducing the new Elegant Framework]]></summary>
+        <content type="html"><![CDATA[<p>Today we are super excited to announce the Elegant Framework! Elegant is a utility-first CMS framework for rapidly building expressive and elegant static content web applications.</p><p>Today we are super excited to announce the Elegant Framework! Elegant is a utility-first CMS framework for rapidly building expressive and elegant static content web applications.</p><div class="my-8 shadow-xl"><div class="relative not-prose my-[2em] first:mt-0 last:mb-0 rounded-lg overflow-hidden"><img src="/_next/static/media/v1.elegantframework.com.e1bb7a78.png" alt="Announcing the new Elegant Framework" decoding="async"/><div class="absolute inset-0 rounded-lg ring-1 ring-inset ring-slate-900/10"></div></div></div><hr/><h2 class="group flex whitespace-pre-wrap -ml-4 pl-4" id="why-elegant"><a href="#why-elegant" class="absolute -ml-10 flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">​<div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700 dark:bg-slate-700 dark:text-slate-300 dark:shadow-none dark:ring-0"><svg width="12" height="12" fill="none" aria-hidden="true"><path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></div></a><span>Why Elegant?</span></h2><p>Elegant is a utility-first CMS framework for rapidly building expressive and elegant static content web applications. A CMS framework provides a structure and a starting point for creating a beautiful application, blog, or documentation website.</p><p>We have a number of features in the pipeline, so please stay tuned! </p><p><em>(The post <a href="https://elegantframework.com/blog/2023-03-01-announcing-elegant-framework">Introducing the new Elegant Framework</a> appeared first on <a href="https://elegantframework.com/blog">Elegant Framework Blog</a>.)</em></p>]]></content>
+        <author>
+            <name>Brandon Owens</name>
+            <uri>https://twitter.com/thebrandonowens</uri>
+        </author>
+    </entry>
+</feed>
