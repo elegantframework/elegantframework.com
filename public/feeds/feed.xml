@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Elegant Framework Blog</title>
+        <link>https://elegantframework.com/blog</link>
+        <description>All the latest Elegant Framework news, straight from the team.</description>
+        <lastBuildDate>Tue, 04 Apr 2023 12:27:59 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <image>
+            <title>Elegant Framework Blog</title>
+            <url>https://elegantframework.com/favicons/favicon-32x32.png?v=4</url>
+            <link>https://elegantframework.com/blog</link>
+        </image>
+        <copyright>All rights reserved 2023, Elegant, Inc.</copyright>
+        <atom:link href="https://elegantframework.com/feeds/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Introducing the new Elegant Framework]]></title>
+            <link>https://elegantframework.com/blog/2023-03-01-announcing-elegant-framework</link>
+            <guid>Introducing the new Elegant Framework</guid>
+            <pubDate>Wed, 01 Mar 2023 08:00:00 GMT</pubDate>
+            <description><![CDATA[Introducing the new Elegant Framework]]></description>
+            <content:encoded><![CDATA[<p>Today we are super excited to announce the Elegant Framework! Elegant is a utility-first CMS framework for rapidly building expressive and elegant static content web applications.</p><p>Today we are super excited to announce the Elegant Framework! Elegant is a utility-first CMS framework for rapidly building expressive and elegant static content web applications.</p><div class="my-8 shadow-xl"><div class="relative not-prose my-[2em] first:mt-0 last:mb-0 rounded-lg overflow-hidden"><img src="/_next/static/media/v1.elegantframework.com.e1bb7a78.png" alt="Announcing the new Elegant Framework" decoding="async"/><div class="absolute inset-0 rounded-lg ring-1 ring-inset ring-slate-900/10"></div></div></div><hr/><h2 class="group flex whitespace-pre-wrap -ml-4 pl-4" id="why-elegant"><a href="#why-elegant" class="absolute -ml-10 flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">​<div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700 dark:bg-slate-700 dark:text-slate-300 dark:shadow-none dark:ring-0"><svg width="12" height="12" fill="none" aria-hidden="true"><path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></div></a><span>Why Elegant?</span></h2><p>Elegant is a utility-first CMS framework for rapidly building expressive and elegant static content web applications. A CMS framework provides a structure and a starting point for creating a beautiful application, blog, or documentation website.</p><p>We have a number of features in the pipeline, so please stay tuned! </p><p><em>(The post <a href="https://elegantframework.com/blog/2023-03-01-announcing-elegant-framework">Introducing the new Elegant Framework</a> appeared first on <a href="https://elegantframework.com/blog">Elegant Framework Blog</a>.)</em></p>]]></content:encoded>
+            <enclosure url="https://elegantframework.com/_next/static/media/v1.elegantframework.com.e1bb7a78.png" length="0" type="image/png"/>
+        </item>
+    </channel>
+</rss>

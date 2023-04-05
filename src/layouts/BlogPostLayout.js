@@ -1,5 +1,5 @@
 import { Widont } from '@/components/home/common'
-import { NewsletterForm } from '@/components/NewsletterForm'
+import { NewsletterForm } from '@/components/NewsletterForm/NewsletterForm'
 import { formatDate } from '@/utils/formatDate'
 import { mdxComponents } from '@/utils/mdxComponents'
 import { MDXProvider } from '@mdx-js/react'
@@ -103,16 +103,7 @@ export function BlogPostLayout({ children, meta }) {
                 width="1429"
                 decoding="async"
               /> */}
-              {/* <section className="relative py-16 border-t border-slate-200 dark:border-slate-200/5">
-                <h2 className="text-xl font-semibold text-slate-900 tracking-tight dark:text-white">
-                  Get all of our updates directly to your&nbsp;inbox.
-                  <br />
-                  Sign up for our newsletter.
-                </h2>
-                <div className="mt-5 max-w-md">
-                  <NewsletterForm action="https://app.convertkit.com/forms/3181881/subscriptions" />
-                </div>
-              </section> */}
+              <NewsletterBlock action={process.env.NEXT_PUBLIC_CONVERTKIT_ACTION_URL}/>
             </div>
             <div className="relative">
               <section className="relative py-16 border-t border-slate-200 dark:border-slate-200/5">
@@ -132,3 +123,29 @@ export function BlogPostLayout({ children, meta }) {
     </div>
   )
 }
+
+/**
+ * A newsletter signup form.
+ * @param {string} action an action url to handle the for submission.
+ * @returns An html section containing a newsletter signup form.
+ */
+const NewsletterBlock = (action) => {
+  // if a url to handle the newsletter click has been provided
+  // allow the newsletter sign up section to be displayed.
+  if(action.length !== undefined)
+  {
+    return(
+      <section className="relative py-16 border-t border-slate-200 dark:border-slate-200/5">
+        <h2 className="text-xl font-semibold text-slate-900 tracking-tight dark:text-white">
+          Get all of our updates directly to your inbox.
+          <br />
+          Sign up for our newsletter.
+        </h2>
+        <div className="mt-5 max-w-md">
+          <NewsletterForm action={action} />
+        </div>
+      </section>
+    );
+  }
+  return null;
+};
