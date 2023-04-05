@@ -129,10 +129,10 @@ export function BlogPostLayout({ children, meta }) {
  * @param {string} action an action url to handle the for submission.
  * @returns An html section containing a newsletter signup form.
  */
-const NewsletterBlock = (action) => {
+const NewsletterBlock = ({action}) => {
   // if a url to handle the newsletter click has been provided
   // allow the newsletter sign up section to be displayed.
-  if(action.length !== undefined)
+  if(action !== undefined && action.length > 0)
   {
     return(
       <section className="relative py-16 border-t border-slate-200 dark:border-slate-200/5">

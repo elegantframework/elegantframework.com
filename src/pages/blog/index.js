@@ -102,10 +102,10 @@ export async function getStaticProps() {
  * @param {string} action an action url to handle the for submission.
  * @returns An html section containing a newsletter signup form.
  */
-const NewsletterSignupBlock = (action) => {
+const NewsletterSignupBlock = ({action}) => {
   // if a url to handle the newsletter click has been provided
   // allow the newsletter sign up section to be displayed.
-  if(action.length > 0){
+  if(action !== undefined && action.length > 0){
     return(
       <section className="mt-3 max-w-sm sm:mx-auto sm:px-4">
         <h2 className="sr-only">Sign up for our newsletter</h2>
