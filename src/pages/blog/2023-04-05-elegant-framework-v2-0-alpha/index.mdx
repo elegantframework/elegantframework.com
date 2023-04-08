@@ -1,6 +1,6 @@
 import { brandonOwens } from '@/authors';
 import card from './v2_0_elegantframework_com.png';
-import { SnippetGroup } from '@/components/SnippetGroup';
+import elegant_compared_to_wordpress from './elegant_seo_compared_wordpress_com.png';
 
 export const meta = {
   title: 'Elegant Framework v2.0: Next.js, MDX-Loader, Tailwind CSS, Jest, and more',
@@ -32,6 +32,8 @@ We believed that we could build a beautiful React.js frontend framework, and tha
 
 Our initial release leveraged Docusaurus for it's markdown feature. While Docusaurus was great for building a minimum viable product, it was very limited in features and extendability.
 
+---
+
 Some of our most favorite updates from this release are highlighted below.
 
 - [Next.JS:](#next_js) Server-side rendering, static website generation, and much more.
@@ -39,6 +41,7 @@ Some of our most favorite updates from this release are highlighted below.
 - [Tailwind CSS:](#tailwind_css) Beautifully designed, expertly crafted CSS styling.
 - [Jest Unit Testing:](#jest) Ensure your JavaScript code runs flawless every time. 
 - [GitHub CI integrations:](#github_ci) Automate your deployment from inside your project.
+- [Elegant Starter Theme:](#elegant_seo_compared_wordpress_com)
 
 <a name="next_js"></a>
 
@@ -46,6 +49,8 @@ Some of our most favorite updates from this release are highlighted below.
 
 Next.js is an open-source web development framework providing React-based web applications with server-side rendering and static website generation.
 Next.js is one of the top cutting edge technologies leading the way in a JavaScript revolution, so it only made sense for us to use it for this project.
+
+---
 
 <a name="mdx_loader"></a>
 
@@ -67,13 +72,17 @@ Just nod if you can hear me.
 Is there anyone at home?
 ```
 
+---
+
 <a name="tailwind_css"></a>
 
 ## Tailwind CSS
 
 Tailwind is an open-source CSS framework .. copy that design token thing
 
-Tailwind CSS allows us to easily create perfectly crafted themes that implement standards and best practices from the internet's leading designers.
+Tailwind CSS allows us to easily create perfectly crafted themes that implement standards and best practices from the best frontend designers and developers.
+
+---
 
 <a name="jest"></a>
 
@@ -82,16 +91,72 @@ Tailwind CSS allows us to easily create perfectly crafted themes that implement 
 Jest is a JavaScript testing framework created by Meta (Formerly Facebook). It was designed with a focus on simplicity and support for large web applications. 
 Elegant comes pre configured straight out of the box with a large number of Jest unit tests. Our goal is to provide 100% test coverage across the Elegant Framework.
 
+Make a code change within Elegant and have 100% confidence that everything works as you expect, every time.
+
+```diff-html button.test.tsx
+describe("Button component", () => {
+    it('renders a button', () => {
+        const button = renderer
+        .create(<button className="w-auto h-8">Click Me</button>)
+        .toJSON();
+        expect(button).toMatchSnapshot();
+    });
+});
+```
+
+---
+
 <a name="github_ci"></a>
 
 ## GitHub CI integrations
 
 GitHub Actions is a continuous integration and continuous delivery (CI/CD) platform that allows you to automate your Elegant deployments. You can create workflows that build and test every pull request to your Elegant repository.
 
-@TODO: Write sample action yaml
+```diff-html .github/e2e.yml
+name: Build Status
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+        
+      # Install required packages
+      - name: Install Dependencies
+        run: npm install
 
-The app is completely responsive, and works on any browser.
-The app has full light/dark mode support
-The app has a lighthouse score that is already more superior to wordpress.com
-  - The whole hypothesis behind this idea is that the framework can use itself to build all aspects of itself.
-  - A janky SEO score on elegantframework.com would translate into a poor seo score within the framework.
+      # Finally, run our tests
+      - name: Run the tests
+        run: npm run test:ci
+```
+
+---
+
+<a name="elegant_seo_compared_wordpress_com"></a>
+
+## Elegant Starter Theme
+
+The included Elegant starter theme is 100% completely responsive, and guaranteed to work on any browser.
+The included theme has full light and dark support, and is 100% completely customizable.
+
+Elegant has a near perfect SEO score, and we are just getting started. We will sweat the details, so that you can write the content you love.
+
+The included theme has a lighthouse score that is already more superior to [Wordpress](https://wordpress.com/blog/2023/03/10/whats-new-on-wordpress-com-fresh-buttons-sticky-headers-and-time-saving-shortcuts/).
+
+<div className="my-8 shadow-xl">
+  <img 
+    src={elegant_compared_to_wordpress.src} 
+    alt="Elegant Framework has a more superior SEO score compared to Wordpress"
+    className="rounded-xl"
+  />
+</div>
+
+The whole hypothesis behind this experiment was that the framework could be used to build all products and features of itself.
+A near perfect SEO score at [Elegant Framework](https://elegantframework.com) translate into a near perfect SEO score for Elegant users.
+
+
+Thank you for you support of Elegant! Stay tuned, we have a number of exciting features coming in the next version release. ✌️😎
