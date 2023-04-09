@@ -123,9 +123,9 @@ const Header = () => {
           </h1>
           <p className="mt-6 text-lg text-slate-600 text-center max-w-3xl mx-auto dark:text-slate-400">
             A utility-first CMS framework for rapidly building{' '}
-            <code className="font-mono font-medium text-sky-500 dark:text-sky-400">expressive</code>{' '}
+            <code className="font-mono font-medium text-primary-500 dark:text-primary-400">expressive</code>{' '}
             and{' '}
-            <code className="font-mono font-medium text-sky-500 dark:text-sky-400">elegant</code>{' '}
+            <code className="font-mono font-medium text-primary-500 dark:text-primary-400">elegant</code>{' '}
             web applications.
           </p>
           <div className="mt-6 sm:mt-10 md:flex justify-center md:space-x-6 text-sm max-w-3xl mx-auto">
@@ -145,7 +145,7 @@ const Header = () => {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       aria-hidden="true"
-                      className="w-6 h-full absolute inset-y-0 left-3 text-slate-400 pointer-events-none group-focus-within:text-indigo-500 dark:group-focus-within:text-slate-400"
+                      className="w-6 h-full absolute inset-y-0 left-3 text-slate-400 pointer-events-none group-focus-within:text-primary-500 dark:group-focus-within:text-slate-400"
                     >
                       <path d="M5 7.92C5 6.86 5.865 6 6.931 6h10.138C18.135 6 19 6.86 19 7.92v8.16c0 1.06-.865 1.92-1.931 1.92H6.931A1.926 1.926 0 0 1 5 16.08V7.92Z" />
                       <path d="m6 7 6 5 6-5" />
@@ -156,7 +156,7 @@ const Header = () => {
                       required
                       autoComplete="email"
                       aria-label="Email address"
-                      className="appearance-none shadow rounded-md mb-5 md:mb-0 ring-1 ring-slate-900/5 leading-5 sm:text-sm border border-transparent py-2 h-12 w-full placeholder:text-slate-400 pl-12 pr-3 block w-full text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-white dark:bg-indigo-700/20 dark:ring-indigo-200/20 dark:focus:ring-indigo-500 dark:text-white"
+                      className="appearance-none shadow rounded-md mb-5 md:mb-0 ring-1 ring-slate-900/5 leading-5 sm:text-sm border border-transparent py-2 h-12 w-full placeholder:text-slate-400 pl-12 pr-3 block w-full text-slate-900 focus:outline-none focus:ring-2 focus:ring-primary-500 bg-white dark:bg-primary-700/20 dark:ring-primary-200/20 dark:focus:ring-primary-500 dark:text-white"
                       placeholder="Email address"
                     />
                 </div>
@@ -164,7 +164,7 @@ const Header = () => {
               <div className="md:px-2 grow flex">
                 <button
                   type="submit"
-                  className="bg-indigo-500 flex-auto shadow text-white rounded-md mb-5 md:mb-0 text-sm border-y border-transparent py-2 font-semibold px-12 h-12 hover:bg-indigo-600 dark:hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-indigo-300 dark:focus:ring-offset-indigo-900 dark:focus:ring-indigo-700"
+                  className="bg-primary-500 flex-auto shadow text-white rounded-md mb-5 md:mb-0 text-sm border-y border-transparent py-2 font-semibold px-12 h-12 hover:bg-primary-600 dark:hover:bg-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-primary-300 dark:focus:ring-offset-primary-900 dark:focus:ring-primary-700"
                 >
                     Sign Up
                 </button>
@@ -172,7 +172,7 @@ const Header = () => {
             </form>
             <div className='border-t md:border-t-0 md:border-l border-slate-200 dark:border-slate-600 md:mx-3 mb-5 md:mb-0'></div>
             <NextLink href="/docs/installation">
-              <a className="bg-sky-500 hover:bg-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto min-w-[128px] dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400">
+              <a className="bg-secondary-500 hover:bg-secondary-600 focus:outline-none focus:ring-2 focus:ring-secondary-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto min-w-[128px] dark:bg-secondary-500 dark:highlight-white/20 dark:hover:bg-secondary-400">
                 Get Started
               </a>
             </NextLink>
