@@ -5,6 +5,7 @@ exports[`Newsletter Signup Form handles an action 1`] = `
   action={[Function]}
   className="flex flex-wrap -mx-2"
   method="post"
+  target="_blank"
 >
   <div
     className="px-2 grow-[9999] basis-64 mt-3"

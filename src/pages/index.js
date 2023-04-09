@@ -131,7 +131,8 @@ const Header = () => {
           <div className="mt-6 sm:mt-10 md:flex justify-center md:space-x-6 text-sm max-w-3xl mx-auto">
             <form 
               action={"https://app.convertkit.com/forms/5032790/subscriptions"} 
-              method="post" 
+              method="post"
+              target="_blank"
               className="md:flex flex-wrap md:-mx-2 w-full md:max-w-xl"
             >
               <div className="md:px-2 grow-[9999] basis-64">

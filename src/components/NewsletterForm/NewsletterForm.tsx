@@ -12,7 +12,12 @@ export const NewsletterForm = ({
     action
 }: Props) => {
     return (
-        <form action={action} method="post" className="flex flex-wrap -mx-2">
+        <form 
+            action={action} 
+            method="post" 
+            target="_blank"
+            className="flex flex-wrap -mx-2"
+        >
             <div className="px-2 grow-[9999] basis-64 mt-3">
             <div className="group relative">
                 <svg
