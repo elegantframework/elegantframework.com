@@ -128,9 +128,13 @@ const Header = () => {
             <code className="font-mono font-medium text-sky-500 dark:text-sky-400">elegant</code>{' '}
             web applications.
           </p>
-          <div className="mt-6 sm:mt-10 flex justify-center space-x-6 text-sm max-w-3xl mx-auto">
-            <form action={"https://app.convertkit.com/forms/5032790/subscriptions"} method="post" className="flex flex-wrap -mx-2 w-full max-w-xl">
-              <div className="px-2 grow-[9999] basis-64">
+          <div className="mt-6 sm:mt-10 md:flex justify-center md:space-x-6 text-sm max-w-3xl mx-auto">
+            <form 
+              action={"https://app.convertkit.com/forms/5032790/subscriptions"} 
+              method="post" 
+              className="md:flex flex-wrap md:-mx-2 w-full md:max-w-xl"
+            >
+              <div className="md:px-2 grow-[9999] basis-64">
                 <div className="group relative">
                     <svg
                       viewBox="0 0 24 24"
@@ -151,21 +155,21 @@ const Header = () => {
                       required
                       autoComplete="email"
                       aria-label="Email address"
-                      className="appearance-none shadow rounded-md ring-1 ring-slate-900/5 leading-5 sm:text-sm border border-transparent py-2 h-12 w-full placeholder:text-slate-400 pl-12 pr-3 block w-full text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-white dark:bg-indigo-700/20 dark:ring-indigo-200/20 dark:focus:ring-indigo-500 dark:text-white"
+                      className="appearance-none shadow rounded-md mb-5 md:mb-0 ring-1 ring-slate-900/5 leading-5 sm:text-sm border border-transparent py-2 h-12 w-full placeholder:text-slate-400 pl-12 pr-3 block w-full text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-white dark:bg-indigo-700/20 dark:ring-indigo-200/20 dark:focus:ring-indigo-500 dark:text-white"
                       placeholder="Email address"
                     />
                 </div>
               </div>
-              <div className="px-2 grow flex">
+              <div className="md:px-2 grow flex">
                 <button
                   type="submit"
-                  className="bg-indigo-500 flex-auto shadow text-white rounded-md text-sm border-y border-transparent py-2 font-semibold px-12 h-12 hover:bg-indigo-600 dark:hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-indigo-300 dark:focus:ring-offset-indigo-900 dark:focus:ring-indigo-700"
+                  className="bg-indigo-500 flex-auto shadow text-white rounded-md mb-5 md:mb-0 text-sm border-y border-transparent py-2 font-semibold px-12 h-12 hover:bg-indigo-600 dark:hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-indigo-300 dark:focus:ring-offset-indigo-900 dark:focus:ring-indigo-700"
                 >
                     Sign Up
                 </button>
               </div>
             </form>
-            <div className='border-t border-l md:border-slate-400 md:mx-3 mb-3 md:mb-0'></div>
+            <div className='border-t md:border-t-0 md:border-l border-slate-200 dark:border-slate-600 md:mx-3 mb-5 md:mb-0'></div>
             <NextLink href="/docs/installation">
               <a className="bg-sky-500 hover:bg-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto min-w-[128px] dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400">
                 Get Started
