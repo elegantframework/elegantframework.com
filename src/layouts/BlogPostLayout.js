@@ -72,7 +72,7 @@ export function BlogPostLayout({ children, meta }) {
                         <div className="mt-1">
                           <a
                             href={`https://twitter.com/${author.twitter}`}
-                            className="text-sky-500 hover:text-sky-600 dark:text-sky-400"
+                            className="text-primary-500 hover:text-primary-600 dark:text-primary-400"
                           >
                             @{author.twitter}
                           </a>
@@ -110,7 +110,7 @@ export function BlogPostLayout({ children, meta }) {
                 <div className='pt-8 pb-10 text-center text-slate-500 dark:border-slate-200/5'>
                   Built with <a href='https://elegantframework.com/' 
                       aria-label='Built with the Elegant Framework'
-                      className='font-semibold hover:text-sky-500 dark:hover:text-sky-400'
+                      className='font-semibold hover:text-primary-500 dark:hover:text-primary-400'
                     >
                       Elegant
                     </a>.
