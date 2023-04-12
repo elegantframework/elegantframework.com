@@ -1,8 +1,11 @@
 ~~~~~~> Working 
 
-- cleanup any references to TW in the app
-
 - finish the deployment doc
+
+- update the "creating a page doc".. It is outdated and based on docusaurus
+    - should probably have a creating a new doc, page, and blog post guide.
+
+- do a final sweep, cleanup any references to TW in the app
 
 ~~~~~~> To next release
 
