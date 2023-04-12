@@ -54,7 +54,7 @@ export default function App({ Component, pageProps, router }) {
     : {}
   const showHeader = router.pathname !== '/'
   const meta = Component.layoutProps?.meta || {}
-  const description = meta.metaDescription || meta.description || 'Documentation for the Elegant Framework.';
+  const description = meta.metaDescription || meta.description || 'Documentation for the Elegant framework.';
   let image = meta.ogImage ?? meta.image;
   image = image
     ? `${process.env.NEXT_PUBLIC_APP_URL}${image.default?.src ?? image.src ?? image}`

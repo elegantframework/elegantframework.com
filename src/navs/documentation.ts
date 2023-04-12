@@ -14,7 +14,8 @@ export const documentationNav = {
   'Getting Started': [
     pages['installation'],
     pages['configuration'],
-    pages['new-documents']
+    pages['new-documents'],
+    pages['deployment']
   ],
   'Customization': [
     pages['theme']

@@ -182,7 +182,7 @@ export function ContentsLayout({ children, meta, classes, tableOfContents, secti
         title={meta.title}
         description={meta.description}
         repo={meta.repo}
-        badge={{ key: 'Elegant Framework version', value: meta.featureVersion }}
+        badge={{ key: 'Elegant framework version', value: meta.featureVersion }}
         section={section}
       />
       <ContentsContext.Provider value={{ registerHeading, unregisterHeading }}>

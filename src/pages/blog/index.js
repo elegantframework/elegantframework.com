@@ -16,7 +16,7 @@ export default function Blog() {
           Latest Updates
         </h1>
         <p className="text-lg text-slate-700 dark:text-slate-400">
-          <Widont>All the latest Elegant Framework news, straight from the team.</Widont>
+          <Widont>All the latest Elegant news, straight from the team.</Widont>
         </p>
         <NewsletterSignupBlock action={process.env.NEXT_PUBLIC_CONVERTKIT_ACTION_URL}/>
       </header>
