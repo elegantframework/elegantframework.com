@@ -2,7 +2,7 @@
 
 - cleanup any references to TW in the app
 
-- write the deployment doc
+- finish the deployment doc
 
 ~~~~~~> To next release
 
@@ -68,6 +68,9 @@
 
 - Add a main readme to the Elegant github page
 
+- create a turtle mania website, and create a turtle guide, with each turtle.. We can blog about turtle stuff.. It can use a blank white theme like shopifys turtle mania.. This can probably be the PG PC theme.
+
+
 ~~~~~~~ General
 
 - make docs sidebar links collapsible like laravel.com
@@ -111,6 +114,11 @@ IH Feedback -
     - research https://versoly.com/ more... Maybe we can link up?
     - checkout buffer to schedule social media posts
 
+HN Analytics survey: Mixpanel, Amplitude, PostHog
+
+- Maybe create a singular analytics handler component?
+- Support Vercel Analytics with this module  --> Set an .env var VERCEL_ANALYTICS=true to activate it
+
 Dang feedback - Landing page isn't clear to users what our product is
 
 
@@ -119,18 +127,15 @@ Dang feedback - Landing page isn't clear to users what our product is
 
 - update the seo title of the docs site.. Look at env vars, name and description.. We could do Hello World - Elegant - The CMS framework 
 
-    - Write up a final doc of deploying to Vercel with screenshots
-        - Move the images to a final dir in the project.. Consult the fillify docs for why the folder is named the way it is.. Has to do with the redirects
-
 - Document how a user creates a new doc file
 
-- Create an e2e test that goes to the local host url and verifys the doc exists.. This help validate any future upgrades
+- Create an e2e test that goes to the local host url and verify the doc exists.. This help validate any future upgrades
 
-- List some inital features of under the Why Elegant tab
+- List some initial features of under the Why Elegant tab
 
 - Write a doc on jest testing.. (Since this is a feature of Elegant, and not included in docusaurus)
 
-- Expand on the idea in the docs that Elegant is SEO friendly, lightining fast, and cheap and easy to host.
+- Expand on the idea in the docs that Elegant is SEO friendly, lightening fast, and cheap and easy to host.
 
 - Figure out how to take args.. --docs blog
 - No args is a full basic scaffold
@@ -151,6 +156,7 @@ Dang feedback - Landing page isn't clear to users what our product is
 
 - Set up site translations
     - Document how a user would set up translations
+    - create a crowd sourced translation feature where people can translate your content for you?
 
 - Take a look back at the example docusaurus docs site, and bring over alot of those features.. How to update your site, the category.json file, markdown features.
 
