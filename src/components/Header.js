@@ -88,7 +88,6 @@ export function NavPopover({ display = 'md:hidden', className, ...props }) {
 
 export function NavItems() {
   const router = useRouter();
-  console.log(router.pathname);
   return (
     <>
       <li>
