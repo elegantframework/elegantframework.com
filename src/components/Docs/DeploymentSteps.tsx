@@ -61,7 +61,7 @@ const DeploymentSteps = () => {
               </>
             ),
             image: {
-                title: "Click deploy to launch your Elegant application.s",
+                title: "Click deploy to launch your Elegant application",
                 src: vercel_deployment_success.src
             }
         }

@@ -1,7 +1,5 @@
 ~~~~~~> Working 
 
-- add configuring your domain to the deployment doc
-
 - update the "creating a page doc".. It is outdated and based on docusaurus
     - should probably have a creating a new doc, page, and blog post guide.
 
