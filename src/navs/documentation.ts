@@ -21,6 +21,7 @@ export const documentationNav = {
     pages['theme']
   ],
   'Plugins': [
-    pages['convertkit']
+    pages['convertkit'],
+    pages['google-analytics']
   ]
 }
