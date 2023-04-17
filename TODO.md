@@ -1,5 +1,10 @@
 ~~~~~~> Working 
 
+- finish google analytics... Needs a body component and test
+    - write a blog post about GA
+    - set up google search console
+    - write a doc on google search console
+
 - update the "creating a page doc".. It is outdated and based on docusaurus
     - should probably have a creating a new doc, page, and blog post guide.
 
@@ -13,10 +18,7 @@
     - announce the native convertkit support .. Link to doc
     - announce easy theme color changing ... Link to doc
 
-- add google analytics
-    - write a blog post about GA
-    - set up google search console
-    - write a doc on google search console
+
 
 - be ready for may 1st -- maybe 1 or 2 weeks earlier to boost npm numbers?
 

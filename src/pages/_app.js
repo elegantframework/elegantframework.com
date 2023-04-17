@@ -1,16 +1,18 @@
-import '../css/fonts.css'
-import '../css/main.css'
-import 'focus-visible'
-import { useState, useEffect, Fragment } from 'react'
-import { Header } from '@/components/Header'
-import { Description, OgDescription, OgTitle, Title } from '@/components/Meta'
-import Router from 'next/router'
-import ProgressBar from '@badrap/bar-of-progress'
-import Head from 'next/head'
-import { ResizeObserver } from '@juggle/resize-observer'
-import 'intersection-observer'
-import { SearchProvider } from '@/components/Search'
+import '../css/fonts.css';
+import '../css/main.css';
+import 'focus-visible';
+import { useState, useEffect, Fragment } from 'react';
+import { Header } from '@/components/Header';
+import { Description, OgDescription, OgTitle, Title } from '@/components/Meta';
+import Router from 'next/router';
+import * as gtag from '@/utils/analytics/gtag';
+import ProgressBar from '@badrap/bar-of-progress';
+import Head from 'next/head';
+import { ResizeObserver } from '@juggle/resize-observer';
+import 'intersection-observer';
+import { SearchProvider } from '@/components/Search';
 import TwitterMeta from '@/components/Meta/TwitterMeta';
+import AnalyticsHead from '@/components/Analytics/AnalyticsHead'
 
 if (typeof window !== 'undefined' && !('ResizeObserver' in window)) {
   window.ResizeObserver = ResizeObserver
@@ -18,7 +20,7 @@ if (typeof window !== 'undefined' && !('ResizeObserver' in window)) {
 
 const progress = new ProgressBar({
   size: 2,
-  color: '#38bdf8',
+  color: '#7c3aed',
   className: 'bar-of-progress',
   delay: 100,
 })
@@ -90,6 +92,7 @@ export default function App({ Component, pageProps, router }) {
         <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feeds/feed.xml" />
         <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="/feeds/atom.xml" />
         <link rel="alternate" type="application/json" title="JSON Feed" href="/feeds/feed.json" />
+        <AnalyticsHead googleAnalyticsID={progress.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}/>
       </Head>
       <SearchProvider>
         {showHeader && (
@@ -102,6 +105,7 @@ export default function App({ Component, pageProps, router }) {
           />
         )}
         <Layout {...layoutProps}>
+          // @TODO: Add Analytics body code here
           <Component section={section} {...pageProps} />
         </Layout>
       </SearchProvider>
