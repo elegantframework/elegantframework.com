@@ -1,10 +1,13 @@
 interface Props {
-    googleAnalyticsID: string
+  /**
+   * Google Analytics tracking id
+   */
+  googleAnalyticsID: string
 }
 
 /**
- * Create the required Google Analytics head script
- * @returns A javascript "script" tag for the GA head code
+ * Create the required Google Analytics head script.
+ * @returns A javascript "script" tag for the GA head code.
  */
 const AnalyticsHead = ({googleAnalyticsID = ''}: Props) => {
     if(googleAnalyticsID !== '')

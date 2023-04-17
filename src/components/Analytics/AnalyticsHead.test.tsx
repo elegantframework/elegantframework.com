@@ -10,7 +10,7 @@ describe("Analytics Head component", () => {
         expect(head).toMatchSnapshot();
     });
 
-    it('renders npthing when no env var is passed in ',() => {
+    it('renders nothing when no env var is passed in ',() => {
         const head = renderer
             .create(<AnalyticsHead googleAnalyticsID=""/>)
             .toJSON();

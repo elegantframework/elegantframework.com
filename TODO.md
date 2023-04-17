@@ -1,9 +1,15 @@
 ~~~~~~> Working 
 
-- finish google analytics... Needs a body component and test
+- set env vars for GA in demo and production
+    - Create ga for demo and production.. Document the steps and take screenshots
+        - create a doc on how to turn on GA
+        
     - write a blog post about GA
     - set up google search console
     - write a doc on google search console
+
+- Set up privacy policy and terms now that we have GA? 
+    - Worry about GDPR now?
 
 - update the "creating a page doc".. It is outdated and based on docusaurus
     - should probably have a creating a new doc, page, and blog post guide.
