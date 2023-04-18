@@ -1,8 +1,4 @@
 ~~~~~~> Working 
-
-- set env vars for GA in demo and production
-    - Create ga for demo and production.. Document the steps and take screenshots
-        - create a doc on how to turn on GA
         
     - write a blog post about GA
     - set up google search console
@@ -23,7 +19,7 @@
 - write a blog post announcing the new release of the version.. link to upgrade guide
     - announce the native convertkit support .. Link to doc
     - announce easy theme color changing ... Link to doc
-
+    - native ga support -- link to doc
 
 
 - be ready for may 1st -- maybe 1 or 2 weeks earlier to boost npm numbers?
