@@ -1,7 +1,7 @@
 import { SearchButton } from '@/components/Search';
 import { NewsletterForm } from '@/components/NewsletterForm/NewsletterForm';
-import { Hero } from '@/components/home/Hero';
-import Logo from '@/components/Logo/Logo';
+import Hero from '@/components/home/Hero';
+import Logo from '@/components/Logos/Logo';
 import { Footer } from '@/components/home/Footer';
 import NextLink from 'next/link';
 import Head from 'next/head';
@@ -42,7 +42,7 @@ export default function Home() {
       </Head>
       <div className="mb-20 overflow-hidden sm:mb-32 md:mb-40">
         <Header />
-      </div>
+      </div> 
       <Footer />
     </>
   )
