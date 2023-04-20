@@ -214,7 +214,7 @@ const Header = () => {
           Unified platform
         </h2>
         <h2 className="text-slate-900 text-3xl tracking-tight font-bold sm:text-4xl dark:text-white">
-          A fully integrated suite of the best frontend technologies.
+          A fully integrated suite of frontend technologies.
         </h2>
         <figure>
           <blockquote>
