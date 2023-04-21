@@ -1,8 +1,9 @@
 import React from 'react';
+import Image from 'next/image';
 import { CodeWindow } from '@/components/CodeWindow';
 import { SearchButton } from '@/components/Search';
 import { NewsletterForm } from '@/components/NewsletterForm/NewsletterForm';
-import Hero from '@/components/home/Hero';
+import UnifiedFramework from '@/components/home/UnifiedFramework';
 import Logo from '@/components/Logos/Logo';
 import { Footer } from '@/components/home/Footer';
 import NextLink from 'next/link';
@@ -12,6 +13,7 @@ import styles from './index.module.css';
 import clsx from 'clsx';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import socialCardLarge from '@/img/social-card-large.jpg';
+import elegantRome from '@/img/splash/elegant_rome.jpg';
 import MetaTitle from '@/utils/MetaTitle';
 import { tokens, code } from '@/components/home/hero.html?highlight'
 
@@ -58,7 +60,7 @@ export default function Home() {
 const Header = () => {
   return (
     <React.Fragment>
-      <header className="relative">
+      <header className="relative mb-40">
         <div className="px-4 sm:px-6 md:px-8">
           <div
             className={clsx(
@@ -196,9 +198,57 @@ const Header = () => {
               <div className="h-[24.25rem] max-w-xl mx-auto lg:max-w-none flex items-center justify-center">
                 <div className="w-full flex-none">
                   <div className="lg:-mr-18">
-                    <div className="relative w-[550px] z-10 rounded-lg shadow-xl text-slate-900 mx-auto sm:w-[23.4375rem] dark:text-slate-300">
-                      <div className="bg-white rounded-lg overflow-hidden ring-1 ring-slate-900/5 dark:bg-slate-800 dark:highlight-white/5 dark:ring-0 flex p-8">
-                        Hello from the left side
+                    <div className="relative w-[550px] sm:w-[23.4375rem] md:w-[550px] z-10 rounded-lg shadow-xl text-slate-900 mx-auto dark:text-slate-300">
+                      <div className="bg-white rounded-lg overflow-hidden ring-1 ring-slate-900/5 dark:bg-slate-800 dark:highlight-white/5 dark:ring-0 flex">
+                        <div className="relative z-10 my-auto">
+                          <div className="relative shadow-xl flex leading-none">
+                            <div className="bg-white flex w-full flex-col">
+                              <div className="relative flex-none sm:self-start lg:self-auto xl:self-start"> 
+                                <div className="relative z-20 overflow-hidden flex-none w-[100%] h-[220px]">
+                                  <Image 
+                                    src={elegantRome}
+                                    priority={true}
+                                    className="!-top-[650px]"
+                                  />
+                                </div>
+                              </div>
+                              <div className="self-start flex-auto flex flex-wrap items-baseline p-6">
+                                <div className="w-full relative flex flex-wrap items-baseline -mt-6 pt-6 pb-6">
+                                  <div className="relative flex-auto">
+                                    <h1 className="inline-flex text-gray-900 text-xl font-semibold">
+                                      Welcome to Elegant
+                                    </h1>
+                                  </div>
+                                  <div className="relative whitespace-nowrap flex-none w-full mt-2">
+                                    <div className="inline-flex text-sm font-medium text-gray-700">
+                                      Something something something
+                                    </div>
+                                  </div>
+                                  <div className="relative flex-auto mt-16">
+                                    <h2 className="inline-flex text-gray-900 text-lg font-semibold">
+                                      Meet Elegant
+                                    </h2>
+                                  </div>
+                                  <div className="relative whitespace-nowrap flex-none w-full mt-2">
+                                    <div className="inline-flex text-sm font-medium text-gray-700">
+                                      More of that something something something
+                                    </div>
+                                  </div>
+                                  <div className="relative flex-auto mt-16">
+                                    <h2 className="inline-flex text-gray-900 text-lg font-semibold">
+                                      Why Elegant?
+                                    </h2>
+                                  </div>
+                                  <div className="relative whitespace-nowrap flex-none w-full mt-2">
+                                    <div className="inline-flex text-sm font-medium text-gray-700">
+                                      There are a variety of tools and frameworks available to you
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -208,37 +258,37 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <Hero />
-      <section className="text-center px-8 mt-20 sm:mt-32 md:mt-40">
-        <h2 className="text-primary-500 dark:text-primary-400 text-xl tracking-tight font-bold sm:text-xl mb-10">
-          Unified platform
-        </h2>
-        <h2 className="text-slate-900 text-3xl tracking-tight font-bold sm:text-4xl dark:text-white">
-          A fully integrated suite of frontend technologies.
-        </h2>
-        <figure>
-          <blockquote>
-            <p className="mt-6 max-w-3xl mx-auto text-lg">
-              I’ve written{' '}
-              <a
-                href="https://adamwathan.me/css-utility-classes-and-separation-of-concerns/"
-                className="text-sky-500 font-semibold dark:text-sky-400"
-              >
-                a few thousand words
-              </a>{' '}
-              on why traditional “semantic class names” are the reason CSS is hard to maintain,
-              but the truth is you’re never going to believe me until you actually try it. If you
-              can suppress the urge to retch long enough to give it a chance, I really think
-              you’ll wonder how you ever worked with CSS any other way.
-            </p>
-          </blockquote>
-          <figcaption className="mt-6 flex items-center justify-center space-x-4 text-left">
-            <div>
-              <div className="text-slate-900 font-semibold dark:text-white">Adam Wathan</div>
-              <div className="mt-0.5 text-sm leading-6">Creator of Tailwind CSS</div>
-            </div>
-          </figcaption>
-        </figure>
+      <UnifiedFramework />
+      <section className="bg-slate-900 dark:bg-white py-20 sm:py-32">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
+          <div className="mx-auto max-w-2xl lg:mx-0">
+            <h2 className="text-3xl sm:text-4xl text-white dark:text-slate-900 font-extrabold tracking-tight dark:text-slate-50">
+              Frequently asked questions
+            </h2>
+          </div>
+          <ul className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3">
+            <li>
+              <ul className="flex flex-col gap-y-8">
+              <li>
+                  <h3 className="font-display text-lg leading-7 text-white">
+                    What is Elegant and how does it work?
+                  </h3>
+                  <p className="mt-4 text-sm text-slate-300">
+                    Well no, but if you move your company offshore you can probably ignore it.
+                  </p>
+                </li>
+                <li>
+                  <h3 className="font-display text-lg leading-7 text-white">
+                    How much does Elegant cost?
+                  </h3>
+                  <p className="mt-4 text-sm text-slate-300">
+                    Well no, but if you move your company offshore you can probably ignore it.
+                  </p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </section>
     </React.Fragment>
   )
