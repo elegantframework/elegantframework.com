@@ -128,10 +128,10 @@ const Header = () => {
               {process.env.NEXT_PUBLIC_APP_TAGLINE}
             </h1>
             <p className="mt-6 text-lg text-slate-600 text-center max-w-3xl mx-auto dark:text-slate-400">
-              A utility-first CMS framework for rapidly building{' '}
-              <code className="font-mono font-medium text-primary-500 dark:text-primary-400">expressive</code>{' '}
+              A content creation framework for rapidly building{' '}
+              <code className="font-mono font-medium text-primary-500 dark:text-primary-400">beautiful</code>{' '}
               and{' '}
-              <code className="font-mono font-medium text-primary-500 dark:text-primary-400">elegant</code>{' '}
+              <code className="font-mono font-medium text-primary-500 dark:text-primary-400">expressive</code>{' '}
               web applications.
             </p>
             <div className="mt-6 sm:mt-10 md:flex justify-center md:space-x-6 text-sm max-w-3xl mx-auto">
@@ -194,7 +194,7 @@ const Header = () => {
                 </CodeWindow>
               </div>
             </div>
-            <div className="relative row-start-1 col-start-1 col-span-5 xl:col-span-6 -mt-10">
+            <div className="relative row-start-1 col-start-1 col-span-5 xl:col-span-6">
               <div className="h-[24.25rem] max-w-xl mx-auto lg:max-w-none flex items-center justify-center">
                 <div className="w-full flex-none">
                   <div className="lg:-mr-18">
@@ -224,7 +224,7 @@ const Header = () => {
                                       Something something something
                                     </div>
                                   </div>
-                                  <div className="relative flex-auto mt-16">
+                                  <div className="relative flex-auto mt-10">
                                     <h2 className="inline-flex text-gray-900 text-lg font-semibold">
                                       Meet Elegant
                                     </h2>
@@ -232,16 +232,6 @@ const Header = () => {
                                   <div className="relative whitespace-nowrap flex-none w-full mt-2">
                                     <div className="inline-flex text-sm font-medium text-gray-700">
                                       More of that something something something
-                                    </div>
-                                  </div>
-                                  <div className="relative flex-auto mt-16">
-                                    <h2 className="inline-flex text-gray-900 text-lg font-semibold">
-                                      Why Elegant?
-                                    </h2>
-                                  </div>
-                                  <div className="relative whitespace-nowrap flex-none w-full mt-2">
-                                    <div className="inline-flex text-sm font-medium text-gray-700">
-                                      There are a variety of tools and frameworks available to you
                                     </div>
                                   </div>
                                 </div>

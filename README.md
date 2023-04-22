@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  The Elegant documentation. A utility-first CMS framework for rapidly building expressive and elegant static content web applications.
+  The Elegant documentation. Elegant is a content creation framework for rapidly building beautiful and expressive web applications.
 </p>
 
 <p align="center">
@@ -27,7 +27,7 @@
 
 ## Meet Elegant
 
- Elegant is a utility-first CMS framework for rapidly building expressive and elegant static content web applications. A CMS framework provides a structure and a starting point for creating a beautiful application, blog, or documentation website. 
+ Elegant is a content creation framework for rapidly building beautiful and expressive web applications. A content creation framework provides a structure and a starting point for creating a beautiful application, blog, or documentation website. 
 
 
 <a name="why-elegant"></a>
