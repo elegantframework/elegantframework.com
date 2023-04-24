@@ -60,7 +60,7 @@ export default function Home() {
 const Header = () => {
   return (
     <React.Fragment>
-      <header className="relative mb-40">
+      <header className="relative mb-20 pb-40">
         <div className="px-4 sm:px-6 md:px-8">
           <div
             className={clsx(
@@ -184,7 +184,7 @@ const Header = () => {
               </NextLink>
             </div>
           </div>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 mt-20 sm:mt-24 lg:mt-32 lg:grid lg:gap-8 lg:grid-cols-12 lg:items-center">
+          {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 mt-20 sm:mt-24 lg:mt-32 lg:grid lg:gap-8 lg:grid-cols-12 lg:items-center">
             <div className="relative row-start-1 col-start-6 xl:col-start-7 col-span-7 xl:col-span-6">
               <div className="-mx-4 sm:mx-0">
                 <CodeWindow className="!h-auto max-h-[none]">
@@ -245,7 +245,7 @@ const Header = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </header>
       <UnifiedFramework />
@@ -259,12 +259,12 @@ const Header = () => {
           <ul className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3">
             <li>
               <ul className="flex flex-col gap-y-8">
-              <li>
+                <li>
                   <h3 className="font-display text-lg leading-7 text-white">
                     What is Elegant and how does it work?
                   </h3>
                   <p className="mt-4 text-sm text-slate-300">
-                    Well no, but if you move your company offshore you can probably ignore it.
+                    Elegant is a modern content creation framework that lets you start and grow your next project or idea.
                   </p>
                 </li>
                 <li>
@@ -272,9 +272,41 @@ const Header = () => {
                     How much does Elegant cost?
                   </h3>
                   <p className="mt-4 text-sm text-slate-300">
-                    Well no, but if you move your company offshore you can probably ignore it.
+                    Elegant is completely free, and super affordable to host.
                   </p>
                 </li>
+                <li>
+                  <h3 className="font-display text-lg leading-7 text-white">
+                    Can I customize and extend the Elegant framework?
+                  </h3>
+                  <p className="mt-4 text-sm text-slate-300">
+                    Yes! Elegant is 100% open source and extendable. We actively encourage code <NextLink href="/docs/contribution-guide"><a className="text-primary-500 font-semibold dark:text-primary-400 hover:underline">contributions</a></NextLink> from the development community.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul className="flex flex-col gap-y-8">
+                <li>
+                  <h3 className="font-display text-lg leading-7 text-white">
+                    Does Elegant offer simple Cloud based hosting for my web application?
+                  </h3>
+                  <p className="mt-4 text-sm text-slate-300">
+                    Not currently. We are actively developing Elegant and hope to debut seamless hosting in a future release. Please subscribe to our newsletter to be the first to know when we launch native hosting.
+                  </p>
+                </li>
+                <li>
+                  <h3 className="font-display text-lg leading-7 text-white">
+                    Can I host my Elegant web application myself?
+                  </h3>
+                  <p className="mt-4 text-sm text-slate-300">
+                    Of course, you can host your application on any cloud provider. Elegant has been built for optimal performance on the Vercel hosting platform.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul className="flex flex-col gap-y-8">
               </ul>
             </li>
           </ul>
