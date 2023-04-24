@@ -260,26 +260,26 @@ const Header = () => {
             <li>
               <ul className="flex flex-col gap-y-8">
                 <li>
-                  <h3 className="font-display text-lg leading-7 text-white">
+                  <h3 className="font-semibold text-lg leading-7 text-white dark:text-slate-900 dark:text-slate-900">
                     What is Elegant and how does it work?
                   </h3>
-                  <p className="mt-4 text-sm text-slate-300">
+                  <p className="mt-4 text-sm text-slate-300 dark:text-slate-700">
                     Elegant is a modern content creation framework that lets you start and grow your next project or idea.
                   </p>
                 </li>
                 <li>
-                  <h3 className="font-display text-lg leading-7 text-white">
+                  <h3 className="font-semibold text-lg leading-7 text-white dark:text-slate-900">
                     How much does Elegant cost?
                   </h3>
-                  <p className="mt-4 text-sm text-slate-300">
+                  <p className="mt-4 text-sm text-slate-300 dark:text-slate-700">
                     Elegant is completely free, and super affordable to host.
                   </p>
                 </li>
                 <li>
-                  <h3 className="font-display text-lg leading-7 text-white">
+                  <h3 className="font-semibold text-lg leading-7 text-white dark:text-slate-900">
                     Can I customize and extend the Elegant framework?
                   </h3>
-                  <p className="mt-4 text-sm text-slate-300">
+                  <p className="mt-4 text-sm text-slate-300 dark:text-slate-700">
                     Yes! Elegant is 100% open source and extendable. We actively encourage code <NextLink href="/docs/contribution-guide"><a className="text-primary-500 font-semibold dark:text-primary-400 hover:underline">contributions</a></NextLink> from the development community.
                   </p>
                 </li>
@@ -288,18 +288,18 @@ const Header = () => {
             <li>
               <ul className="flex flex-col gap-y-8">
                 <li>
-                  <h3 className="font-display text-lg leading-7 text-white">
+                  <h3 className="font-semibold text-lg leading-7 text-white dark:text-slate-900">
                     Does Elegant offer simple Cloud based hosting for my web application?
                   </h3>
-                  <p className="mt-4 text-sm text-slate-300">
+                  <p className="mt-4 text-sm text-slate-300 dark:text-slate-700">
                     Not currently. We are actively developing Elegant and hope to debut seamless hosting in a future release. Please subscribe to our newsletter to be the first to know when we launch native hosting.
                   </p>
                 </li>
                 <li>
-                  <h3 className="font-display text-lg leading-7 text-white">
+                  <h3 className="font-semibold text-lg leading-7 text-white dark:text-slate-900">
                     Can I host my Elegant web application myself?
                   </h3>
-                  <p className="mt-4 text-sm text-slate-300">
+                  <p className="mt-4 text-sm text-slate-300 dark:text-slate-700">
                     Of course, you can host your application on any cloud provider. Elegant has been built for optimal performance on the Vercel hosting platform.
                   </p>
                 </li>

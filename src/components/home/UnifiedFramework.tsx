@@ -20,11 +20,11 @@ const UnifiedFramework = () => {
           Elegant brings everything — static content, Next.js, and Tailwind CSS — together in one simple application.
         </p>
         <Link href="/docs/installation">
-          <div className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-indigo-50 text-indigo-600 hover:bg-indigo-200 hover:text-indigo-700 focus:ring-indigo-500 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-8 cursor-pointer">
+          <div className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap pl-4 pr-3 focus:outline-none focus:ring-2 bg-indigo-50 text-indigo-600 hover:bg-indigo-200 hover:text-indigo-700 focus:ring-indigo-500 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-8 cursor-pointer">
             Get started <ChevronRightIcon className="h-5 w-5 ml-3 text-indigo-300 group-hover:text-indigo-400 dark:text-slate-500 dark:group-hover:text-slate-400" aria-hidden="true"/>
           </div>
         </Link>
-        <ul role="list" className="mt-12 ml-6 flex items-center gap-x-8 sm:flex-col sm:gap-x-0 sm:gap-y-10 xl:flex-row xl:gap-x-12 xl:gap-y-0">
+        <ul role="list" className="mt-12 ml-6 flex items-center gap-x-8 justify-center md:justify-between sm:flex-col sm:gap-x-0 sm:gap-y-10 xl:flex-row xl:gap-x-12 xl:gap-y-0">
           <li>
             <ul role="list" className="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0">
               <li className="flex mr-6">
