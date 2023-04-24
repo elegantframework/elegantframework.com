@@ -17,7 +17,7 @@ const UnifiedFramework = () => {
           A fully integrated suite of frontend technologies.
         </p>
         <p className="mt-4 max-w-3xl space-y-6">
-          Elegant brings everything — static content, Next.js, and Tailwind CSS — together in one simple application.
+          Elegant brings everything — static content, Next.js, Tailwind CSS, and much more — together in one simple application.
         </p>
         <Link href="/docs/installation">
           <div className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap pl-4 pr-3 focus:outline-none focus:ring-2 bg-indigo-50 text-indigo-600 hover:bg-indigo-200 hover:text-indigo-700 focus:ring-indigo-500 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-8 cursor-pointer">
@@ -47,7 +47,7 @@ const UnifiedFramework = () => {
               </li>
               <li className="flex">
                 <MDXLogo className="h-7"/>
-                <span className="mt-1 ml-2 font-semibold">
+                <span className="mt-1 ml-2 font-semibold min-w-[70px]">
                   MDX-JS
                 </span>
               </li>
