@@ -9,6 +9,17 @@ const footerNav = [
       { title: 'Twitter', href: 'https://twitter.com/thebrandonowens' },
       { title: 'Reddit', href: 'https://www.reddit.com/r/elegantframework/' },
     ],
+    Features: [
+      { title: 'Theme Customization', href: '/docs/theme/' },
+      { title: 'Easy Configuration', href: '/docs/configuration/' },
+      { title: 'Affordable Hosting', href: '/docs/deployment/' },
+      { title: 'Safe & Fast', href: '/blog/2023-04-20-the-future-is-markdown'}
+    ],
+    Services: [
+      { title: 'Google Analytics', href: '/docs/google-analytics/' },
+      { title: 'ConvertKit', href: '/docs/convertkit/' },
+      { title: 'Vercel', href: '/docs/deployment/' },
+    ],
   },
 ]
 

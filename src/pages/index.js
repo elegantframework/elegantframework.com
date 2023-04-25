@@ -264,7 +264,10 @@ const Header = () => {
                     What is Elegant and how does it work?
                   </h3>
                   <p className="mt-4 text-sm text-slate-300 dark:text-slate-700">
-                    Elegant is a modern content creation framework that lets you start and grow your next project or idea.
+                    Elegant is a modern content creation framework that is the perfect starting point for your next project or idea. 
+                    <br />
+                    <br />
+                    Elegant comes complete with everything you need to launch and grow a beautiful and amazing web application.
                   </p>
                 </li>
                 <li>
@@ -277,16 +280,32 @@ const Header = () => {
                 </li>
                 <li>
                   <h3 className="font-semibold text-lg leading-7 text-white dark:text-slate-900">
-                    Can I customize and extend the Elegant framework?
+                    What kind of web applications can I build with Elegant?
                   </h3>
                   <p className="mt-4 text-sm text-slate-300 dark:text-slate-700">
-                    Yes! Elegant is 100% open source and extendable. We actively encourage code <NextLink href="/docs/contribution-guide"><a className="text-primary-500 font-semibold dark:text-primary-400 hover:underline">contributions</a></NextLink> from the development community.
+                    Elegant is perfect for building rich landing pages, detailed user guides, and amazing blog posts. 100% of this website has been built using the Elegant framework.
                   </p>
                 </li>
               </ul>
             </li>
             <li>
               <ul className="flex flex-col gap-y-8">
+                <li>
+                  <h3 className="font-semibold text-lg leading-7 text-white dark:text-slate-900">
+                    Do I have to write any setup code?
+                  </h3>
+                  <p className="mt-4 text-sm text-slate-300 dark:text-slate-700">
+                    Nope! We have taken care of all the boilerplate code for you. Simply insert your custom idea and spin up a beautiful looking server side rendered web application.
+                  </p>
+                </li>
+                <li>
+                  <h3 className="font-semibold text-lg leading-7 text-white dark:text-slate-900">
+                    Can I customize and extend the Elegant framework?
+                  </h3>
+                  <p className="mt-4 text-sm text-slate-300 dark:text-slate-700">
+                    Yes! Elegant is 100% open source and extendable. We actively encourage code <NextLink href="/docs/contribution-guide"><a className="text-primary-500 font-semibold dark:text-primary-400 hover:underline">contributions</a></NextLink> from the development community.
+                  </p>
+                </li>
                 <li>
                   <h3 className="font-semibold text-lg leading-7 text-white dark:text-slate-900">
                     Does Elegant offer simple Cloud based hosting for my web application?
@@ -295,6 +314,10 @@ const Header = () => {
                     Not currently. We are actively developing Elegant and hope to debut seamless hosting in a future release. Please subscribe to our newsletter to be the first to know when we launch native hosting.
                   </p>
                 </li>
+              </ul>
+            </li>
+            <li>
+              <ul className="flex flex-col gap-y-8">
                 <li>
                   <h3 className="font-semibold text-lg leading-7 text-white dark:text-slate-900">
                     Can I host my Elegant web application myself?
@@ -303,10 +326,25 @@ const Header = () => {
                     Of course, you can host your application on any cloud provider. Elegant has been built for optimal performance on the Vercel hosting platform.
                   </p>
                 </li>
-              </ul>
-            </li>
-            <li>
-              <ul className="flex flex-col gap-y-8">
+                <li>
+                  <h3 className="font-semibold text-lg leading-7 text-white dark:text-slate-900">
+                    What tools and features are included?
+                  </h3>
+                  <p className="mt-4 text-sm text-slate-300 dark:text-slate-700">
+                    Elegant comes completely integrated with <NextLink href="/docs/google-analytics"><a className="text-primary-500 font-semibold dark:text-primary-400 hover:underline">Google Analytics</a></NextLink>, <NextLink href="/docs/google-analytics"><a className="text-primary-500 font-semibold dark:text-primary-400 hover:underline">ConvertKit</a></NextLink>, and more. 
+                    <br />
+                    <br />
+                    We have included an SEO perfect theme that looks great on any device, and is perfect for blogging or writing user docs.
+                  </p>
+                </li>
+                <li>
+                  <h3 className="font-semibold text-lg leading-7 text-white dark:text-slate-900">
+                    But why another framework?
+                  </h3>
+                  <p className="mt-4 text-sm text-slate-300 dark:text-slate-700">
+                    Elegant is a simple <NextLink href="/blog/2023-04-24-but-why-another-framework"><a className="text-primary-500 font-semibold dark:text-primary-400 hover:underline">framework</a></NextLink> made up of the latest cutting edge frontend technologies. Elegant is meant to help you rapidly build your next idea, and not get in your way. 
+                  </p>
+                </li>
               </ul>
             </li>
           </ul>
