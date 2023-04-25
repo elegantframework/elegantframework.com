@@ -1,17 +1,12 @@
 ~~~~~~> Working 
 
-    
+     
     - write a blog post about GA
     - set up google search console
     - write a doc on google search console
 
 - Set up privacy policy and terms now that we have GA? 
     - Worry about GDPR now?
-
-- update the "creating a page doc".. It is outdated and based on docusaurus
-    - should probably have a creating a new doc, page, and blog post guide.
-
-- do a final sweep, cleanup any references to TW in the app
 
 ~~~~~~> To next release
 
@@ -44,6 +39,7 @@
 
 ~~~~~~> Post launch
 
+- write further detailed documentation on how to create new pages, docs, and blog posts.
 
 - fix blog meta social card and meta head tags not showing in production
 
