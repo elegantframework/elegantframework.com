@@ -1,9 +1,16 @@
 ~~~~~~> Working 
 
+    - finish the console log when the elegant init command runs.. Close the github issue and update the  release notes
+
+
+    - create a release of 2.1
+
+    - create a demo video.. 
+
+
      
     - write a blog post about GA
-    - set up google search console
-    - write a doc on google search console
+   
 
 - Set up privacy policy and terms now that we have GA? 
     - Worry about GDPR now?
@@ -36,6 +43,17 @@
     - move authors.js into config dir
     - move hooks into core dir
     - delete hooks dir
+
+
+- Sitemaps
+    - set up google search console
+    - write a doc on google search console
+
+- Create a separate NPM package called Elegant Starter Content
+        - Create v1.0.0
+        - Add starter content for users.. Should be less about Elegant, and more of starter boilerplate content.. Slim down our production content
+        - Include a release notes with sample v0.1.0 release notes.. Say something like project was created using Elegant with a link back to us in the first release note
+        - Include a starter blog post
 
 ~~~~~~> Post launch
 
@@ -169,6 +187,11 @@ Dang feedback - Landing page isn't clear to users what our product is
 - Add built in 508 compliance and testing  - Axe, Jest, Storybook.. Use Aria-labels
 
 
+- How to do a pre release:
+        npm version prerelease --preid=prerelease
+        npm publish --tag prerelease
+
+        Then npm install elegant-cli --tag prerelease
 
 
 
