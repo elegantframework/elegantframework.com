@@ -1,15 +1,10 @@
 ~~~~~~> Working 
 
-    - finish the console log when the elegant init command runs.. Close the github issue and update the  release notes
-
-
     - create a release of 2.1
 
     - create a demo video.. 
 
 
-     
-    - write a blog post about GA
    
 
 - Set up privacy policy and terms now that we have GA? 
