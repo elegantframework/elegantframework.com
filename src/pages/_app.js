@@ -71,7 +71,7 @@ export default function App({ Component, pageProps, router }) {
   const layoutProps = Component.layoutProps?.Layout
     ? { layoutProps: Component.layoutProps, navIsOpen, setNavIsOpen }
     : {}
-  const showHeader = router.pathname !== '/'
+  const showHeader = ( router.pathname !== '/' && router.pathname !== '/experts')
   const meta = Component.layoutProps?.meta || {}
   const description = meta.metaDescription || meta.description || 'Documentation for the Elegant framework.';
   let image = meta.ogImage ?? meta.image;

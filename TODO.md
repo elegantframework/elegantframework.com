@@ -1,20 +1,23 @@
 ~~~~~~> Working 
 
-    - finish the console log when the elegant init command runs.. Close the github issue and update the  release notes
-
+    - finish the "hire me" page
+        - verify on mobile
+        - add tech pic to bottom like shopify's page
+        - add some content under the pic
 
     - create a release of 2.1
 
     - create a demo video.. 
 
+- find that old list of places to submit the project to.. Submit to those
 
-     
-    - write a blog post about GA
+- add next seo, clean up our seo stuff now.. Like broke social cards --- https://github.com/garmeeh/next-seo
    
 
 - Set up privacy policy and terms now that we have GA? 
     - Worry about GDPR now?
 
+- add a brand page.. With logos and resources.. Like Vercel.com and TW
 ~~~~~~> To next release
 
 - write upgrade guide 2.0 to 2.1
