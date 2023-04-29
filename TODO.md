@@ -1,7 +1,9 @@
 ~~~~~~> Working 
 
     - finish the "hire me" page
-        - create new convert kit form
+        - verify on mobile
+        - add tech pic to bottom like shopify's page
+        - add some content under the pic
 
     - create a release of 2.1
 
