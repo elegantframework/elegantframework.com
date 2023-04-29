@@ -84,10 +84,10 @@ export function SplashPageLayout({ children }) {
               {
                 title: "Community",
                 links: [
-                    { title: 'GitHub', href: process.env.NEXT_PUBLIC_APP_REPOSITORY },
-                    { title: 'Indie Hackers', href: 'https://www.indiehackers.com/product/elegant-framework' },
-                    { title: 'Twitter', href: 'https://twitter.com/thebrandonowens' },
-                    { title: 'Reddit', href: 'https://www.reddit.com/r/elegantframework/' }
+                    { title: 'GitHub', href: process.env.NEXT_PUBLIC_APP_REPOSITORY, external: true },
+                    { title: 'Indie Hackers', href: 'https://www.indiehackers.com/product/elegant-framework', external: true },
+                    { title: 'Twitter', href: 'https://twitter.com/thebrandonowens', external: true },
+                    { title: 'Reddit', href: 'https://www.reddit.com/r/elegantframework/', external: true }
                 ]
               },
               {

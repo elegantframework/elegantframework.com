@@ -24,4 +24,8 @@ export interface NavigationLink {
      * The actual url link.
      */
     href: string;
+    /**
+     * Is this url to an external website?
+     */
+    external?: boolean;
 };
