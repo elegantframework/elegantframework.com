@@ -32,17 +32,17 @@ export default function Experts() {
           Hire the Elegant expertise you need.
         </h1>
         <p className="mt-6 text-2xl text-slate-600 text-center max-w-3xl mx-auto dark:text-slate-400">
-          Do you love Elegant, but don't want to build your own website? 
+          Love Elegant but don't want to launch your own website? 
         </p>
-        <div className="mt-16 w-full md:max-w-2xl mx-auto">
-          <p className="text-lg text-slate-800 max-w-3xl mx-auto dark:text-white">
-            Connect with Elegant experts for free today. 
+        <div className="mt-20 pl-2 w-full md:max-w-2xl mx-auto">
+          <p className="text-md md:text-lg text-slate-800 max-w-3xl mx-auto dark:text-white">
+            Let us build your perfect website.
           </p>
-          <p className="text-lg mt-2 text-slate-800 max-w-3xl mx-auto dark:text-white">
-            Build your dream website for tomorrow.
+          <p className="mt-2 text-md md:text-lg text-slate-800 max-w-3xl mx-auto dark:text-white">
+            Connect with an Elegant expert for free today. 
           </p>
         </div>
-        <div className="mt-6 sm:mt-10 md:flex justify-center md:space-x-6 text-sm max-w-3xl mx-auto">
+        <div className="mt-4 sm:mt-4 md:flex justify-center md:space-x-6 text-sm max-w-3xl mx-auto">
           <form 
               action={"https://app.convertkit.com/forms/5102584/subscriptions"} 
               method="post"
