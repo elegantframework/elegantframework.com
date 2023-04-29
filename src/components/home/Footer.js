@@ -20,6 +20,9 @@ const footerNav = [
       { title: 'ConvertKit', href: '/docs/convertkit/' },
       { title: 'Vercel', href: '/docs/deployment/' },
     ],
+    Resources: [
+      { title: 'Website Design Services', href: '/experts' },
+    ]
   },
 ]
 

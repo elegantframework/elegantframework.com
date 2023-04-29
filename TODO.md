@@ -4,6 +4,7 @@
         - verify on mobile
         - add tech pic to bottom like shopify's page
         - add some content under the pic
+        - add a block to the homepage.. Love Elegant? Hire us
 
     - create a release of 2.1
 

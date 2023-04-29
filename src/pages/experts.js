@@ -35,10 +35,10 @@ export default function Experts() {
           Love Elegant but don't want to launch your own website? 
         </p>
         <div className="mt-20 pl-2 w-full md:max-w-2xl mx-auto">
-          <p className="text-md md:text-lg text-slate-800 max-w-3xl mx-auto dark:text-white">
+          <p className="text-sm md:text-md text-slate-800 max-w-3xl mx-auto dark:text-white">
             Let us build your perfect website.
           </p>
-          <p className="mt-2 text-md md:text-lg text-slate-800 max-w-3xl mx-auto dark:text-white">
+          <p className="mt-2 text-sm md:text-md text-slate-800 max-w-3xl mx-auto dark:text-white">
             Connect with an Elegant expert for free today. 
           </p>
         </div>
