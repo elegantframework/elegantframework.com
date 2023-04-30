@@ -1,25 +1,25 @@
 import Head from "next/head";
 import socialCardLarge from '@/img/social-card-large.jpg';
 import { SplashPageLayout } from "@/layouts/SplashPageLayout";
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid';
+import { RocketLaunchIcon, LockClosedIcon, RectangleStackIcon } from '@heroicons/react/20/solid';
 import techSplash from '@/img/splash/hire-us-splash-tech-picture.jpg';
 
 const features = [
   {
-    name: 'Push to deploy.',
+    name: 'Simple and secure.',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: CloudArrowUpIcon,
-  },
-  {
-    name: 'SSL certificates.',
-    description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+      'A simple framework, with an even more simple and efficient content management framework.',
     icon: LockClosedIcon,
   },
   {
-    name: 'Database backups.',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: ServerIcon,
+    name: 'Ultra blazing fast.',
+    description: 'Elegant has been engineered using the best tools, and practices. The end result is an ultra fast website, with a near perfect Google Lighthouse SEO score.',
+    icon: RocketLaunchIcon,
+  },
+  {
+    name: 'Beautifully designed.',
+    description: 'Select from professionally pre crafted themes, or design your own from scratch.',
+    icon: RectangleStackIcon,
   },
 ]
 
@@ -53,7 +53,7 @@ export default function Experts() {
           Hire the Elegant expertise you need.
         </h1>
         <p className="mt-6 text-2xl text-slate-600 text-center max-w-3xl mx-auto dark:text-slate-400">
-          Love Elegant but don't want to launch your own website? 
+          Love Elegant, but don't want to launch your own web application? 
         </p>
         <div className="mt-20 pl-2 w-full md:max-w-2xl mx-auto">
           <p className="text-sm md:text-md text-slate-800 max-w-3xl mx-auto dark:text-white">
@@ -107,16 +107,15 @@ export default function Experts() {
           </form>
         </div>
       </div>
-      <div className="overflow-hidden bg-white mt-[80px] pt-24 sm:pt-32">
+      <div className="overflow-hidden bg-white mt-[80px] pb-16 pt-24 sm:pt-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="lg:pr-8 lg:pt-4">
               <div className="lg:max-w-lg">
                 <h2 className="text-base font-semibold leading-7 text-indigo-600">Built by Elegant</h2>
-                <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A better workflow</p>
+                <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Your web application, built by us</p>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                  iste dolor cupiditate blanditiis ratione.
+                  Our network of Elegant experts can help you build your next big idea. Elegant is perfect for blogging, landing pages, user documentation, and much more.
                 </p>
                 <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                   {features.map((feature) => (
