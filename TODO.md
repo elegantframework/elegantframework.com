@@ -1,9 +1,10 @@
 ~~~~~~> Working 
 
     - finish the "hire me" page
-        - verify on mobile
-        - add tech pic to bottom like shopify's page
-        - add some content under the pic
+        - finish content block.. Add real content.. Maybe better icons?
+        - verify and fix the content block on mobile
+
+
         - add a block to the homepage.. Love Elegant? Hire us
 
     - create a release of 2.1
