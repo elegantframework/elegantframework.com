@@ -14,7 +14,7 @@ export function SplashPageLayout({ children }) {
                 <div className="px-4 sm:px-6 md:px-8">
                     <div
                         className={clsx(
-                        'absolute inset-0 -bottom-[38rem] bg-bottom bg-no-repeat bg-slate-50 dark:bg-[#0B1120]',
+                        'absolute inset-0 -bottom-[38rem] md:-bottom-[32rem] bg-bottom bg-no-repeat bg-slate-50 dark:bg-[#0B1120]',
                         styles.beams
                         )}
                     >
@@ -27,8 +27,10 @@ export function SplashPageLayout({ children }) {
                         />
                     </div>
                     <div className="relative pt-6 lg:pt-8 flex items-center justify-between text-slate-700 font-semibold text-sm leading-6 dark:text-slate-200">
-                        <Link href="/">
-                            <Logo className="w-auto h-7 cursor-pointer" /> 
+                        <Link href="/" passHref>
+                            <a>
+                                <Logo className="w-auto h-7 cursor-pointer" />
+                            </a>
                         </Link>
                         <div className="flex items-center">
                         {/* <SearchButton className="text-slate-500 hover:text-slate-600 w-8 h-8 -my-1 flex items-center justify-center md:hidden dark:hover:text-slate-300">
