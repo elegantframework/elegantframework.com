@@ -14,6 +14,7 @@ import TwitterMeta from '@/components/Meta/TwitterMeta';
 import AnalyticsHead from '@/components/Analytics/AnalyticsHead';
 import AnalyticsBody from '@/components/Analytics/AnalyticsBody';
 import * as gtag from '@/utils/analytics/gtag';
+import socialCardLarge from '@/img/social-card-large.jpg';
 
 if (typeof window !== 'undefined' && !('ResizeObserver' in window)) {
   window.ResizeObserver = ResizeObserver
@@ -77,7 +78,7 @@ export default function App({ Component, pageProps, router }) {
   let image = meta.ogImage ?? meta.image;
   image = image
     ? `${process.env.NEXT_PUBLIC_APP_URL}${image.default?.src ?? image.src ?? image}`
-    : `${process.env.NEXT_PUBLIC_APP_URL}/api/og?path=${router.pathname}`
+    : `${process.env.NEXT_PUBLIC_APP_URL}${socialCardLarge.src}`
 
   let section =
     meta.section ||

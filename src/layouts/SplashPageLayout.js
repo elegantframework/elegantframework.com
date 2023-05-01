@@ -79,7 +79,7 @@ export function SplashPageLayout({ children }) {
                     </div>
                 </div>
             </header>
-            <main className="pt-10 mb-28 mx-auto px-4 pb-28 sm:px-6 md:px-8 xl:px-12">
+            <main className="pt-10 mb-6 mx-auto px-4 pb-28 sm:px-6 md:px-8 xl:px-12">
                 {children}
             </main>
             <SplashFooter navigation={[
