@@ -1,6 +1,6 @@
 ~~~~~~> Working 
 
-    - bring over any final updates from .com to cli .. Do a prerelease, document any updates or fixes
+    - document any 2.1 updates or fixes. Update the release notes
 
     - Do a test build with a fresh app
 
