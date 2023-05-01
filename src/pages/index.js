@@ -21,6 +21,7 @@ Home.layoutProps = {
   meta: {
     ogImage: socialCardLarge.src,
   },
+  stickyHeader: false
 };
 
 export default function Home() {
