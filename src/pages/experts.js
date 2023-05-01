@@ -27,7 +27,8 @@ Experts.layoutProps = {
   meta: {
     ogImage: socialCardLarge.src,
   },
-  Layout: SplashPageLayout
+  Layout: SplashPageLayout,
+  stickyHeader: false
 };
 
 export default function Experts() {

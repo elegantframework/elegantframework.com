@@ -1,22 +1,18 @@
 ~~~~~~> Working 
 
+    - bring over any final updates from .com to cli .. Do a prerelease, document any updates or fixes
 
-    - add a block to the homepage.. Love Elegant? Hire us
+    - Do a test build with a fresh app
+
+    - if everything is cool, skip to next step
 
     - create a release of 2.1
 
     - create a demo video.. 
 
-- find that old list of places to submit the project to.. Submit to those
+    - put the demo video in the hero.. Make some homepage updates or tweaks
 
-- add next seo, clean up our seo stuff now.. Like broke social cards --- https://github.com/garmeeh/next-seo
-   
-
-- Set up privacy policy and terms now that we have GA? 
-    - Worry about GDPR now?
-
-- add a brand page.. With logos and resources.. Like Vercel.com and TW
-~~~~~~> To next release
+~~~~~~> Post release .. v2.1
 
 - write upgrade guide 2.0 to 2.1
 
@@ -28,6 +24,17 @@
 
 - be ready for may 1st -- maybe 1 or 2 weeks earlier to boost npm numbers?
 
+~~~~~~~~~> v2.2
+
+  - add next seo, clean up our seo stuff .. Put them into reusable methods that rely on next seo.. Future proof them in the event that they need to swapped out for something different in Next.js 13 --- https://github.com/garmeeh/next-seo
+
+- find that old list of places to submit the project to.. Submit to those
+   
+
+- Set up privacy policy and terms now that we have GA? 
+    - Worry about GDPR now?
+
+- add a brand page.. With logos and resources.. Like Vercel.com and TW
 
 ~~~~~~> Roadmap
 
@@ -57,6 +64,8 @@
         - Include a starter blog post
 
 ~~~~~~> Post launch
+
+- add a block to the homepage.. Love Elegant? Hire us
 
 - write further detailed documentation on how to create new pages, docs, and blog posts.
 
