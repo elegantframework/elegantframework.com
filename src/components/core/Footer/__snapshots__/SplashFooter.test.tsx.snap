@@ -31,8 +31,8 @@ exports[`Splash page footer component renders a splash page footer properly 1`] 
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
-                rel="noopener noreferrer"
-                target="_blank"
+                rel=""
+                target=""
               >
                 Indie Hackers
               </a>
@@ -44,8 +44,8 @@ exports[`Splash page footer component renders a splash page footer properly 1`] 
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
-                rel="noopener noreferrer"
-                target="_blank"
+                rel=""
+                target=""
               >
                 Twitter
               </a>
@@ -57,8 +57,8 @@ exports[`Splash page footer component renders a splash page footer properly 1`] 
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
-                rel="noopener noreferrer"
-                target="_blank"
+                rel=""
+                target=""
               >
                 Reddit
               </a>
@@ -83,8 +83,8 @@ exports[`Splash page footer component renders a splash page footer properly 1`] 
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
-                rel="noopener noreferrer"
-                target="_blank"
+                rel=""
+                target=""
               >
                 Theme Customization
               </a>
@@ -96,8 +96,8 @@ exports[`Splash page footer component renders a splash page footer properly 1`] 
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
-                rel="noopener noreferrer"
-                target="_blank"
+                rel=""
+                target=""
               >
                 Easy Configuration
               </a>
@@ -109,8 +109,8 @@ exports[`Splash page footer component renders a splash page footer properly 1`] 
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
-                rel="noopener noreferrer"
-                target="_blank"
+                rel=""
+                target=""
               >
                 Affordable Hosting
               </a>
@@ -122,8 +122,8 @@ exports[`Splash page footer component renders a splash page footer properly 1`] 
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
-                rel="noopener noreferrer"
-                target="_blank"
+                rel=""
+                target=""
               >
                 Safe & Fast
               </a>
@@ -148,8 +148,8 @@ exports[`Splash page footer component renders a splash page footer properly 1`] 
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
-                rel="noopener noreferrer"
-                target="_blank"
+                rel=""
+                target=""
               >
                 Google Analytics
               </a>
@@ -161,8 +161,8 @@ exports[`Splash page footer component renders a splash page footer properly 1`] 
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
-                rel="noopener noreferrer"
-                target="_blank"
+                rel=""
+                target=""
               >
                 ConvertKit
               </a>
@@ -174,8 +174,8 @@ exports[`Splash page footer component renders a splash page footer properly 1`] 
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 onTouchStart={[Function]}
-                rel="noopener noreferrer"
-                target="_blank"
+                rel=""
+                target=""
               >
                 Vercel
               </a>

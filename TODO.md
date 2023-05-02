@@ -1,6 +1,7 @@
 ~~~~~~> Working 
 
     - document any 2.1 updates or fixes. Update the release notes
+        - write upgrade guide 2.0 to 2.1
 
     - Do a test build with a fresh app
 
@@ -14,15 +15,12 @@
 
 ~~~~~~> Post release .. v2.1
 
-- write upgrade guide 2.0 to 2.1
 
 - write a blog post announcing the new release of the version.. link to upgrade guide
     - announce the native convertkit support .. Link to doc
     - announce easy theme color changing ... Link to doc
     - native ga support -- link to doc
 
-
-- be ready for may 1st -- maybe 1 or 2 weeks earlier to boost npm numbers?
 
 ~~~~~~~~~> v2.2
 
@@ -35,6 +33,16 @@
     - Worry about GDPR now?
 
 - add a brand page.. With logos and resources.. Like Vercel.com and TW
+
+- add a sitemap feature
+
+- Sitemaps
+    - set up google search console
+    - write a doc on google search console
+
+~~~~~~~~> v2.3 roadmap
+
+- TBD
 
 ~~~~~~> Roadmap
 
@@ -53,9 +61,6 @@
     - delete hooks dir
 
 
-- Sitemaps
-    - set up google search console
-    - write a doc on google search console
 
 - Create a separate NPM package called Elegant Starter Content
         - Create v1.0.0
@@ -69,12 +74,10 @@
 
 - write further detailed documentation on how to create new pages, docs, and blog posts.
 
-- fix blog meta social card and meta head tags not showing in production
+- fix blog meta social card and meta head tags not showing in production -- FIXED, waiting to verify if changes have propagated
 
 - clean up the tailwind config.. Make it use just default like a user would expect
 
-
-- add back the brand policy generator page
 
 - set to require nodejs 16 for now
 
@@ -105,8 +108,6 @@
 
 - make docs sidebar links collapsible like laravel.com
 
-- add links to the footer.. Add env vars for the values
-
 - make the trademark page dynamic with env variables
 
 - add e2e test that verify's the index, docs, and blog pages load
@@ -125,7 +126,6 @@ POST Features to add and blog how to's
 
 - Next PWA
 - Next offline mode
-- Sitemaps . doc on submitting to webmaster tools
 - Plausible
 - Next blogging with comments
 - Terms of service template
@@ -148,8 +148,6 @@ HN Analytics survey: Mixpanel, Amplitude, PostHog
 
 - Maybe create a singular analytics handler component?
 - Support Vercel Analytics with this module  --> Set an .env var VERCEL_ANALYTICS=true to activate it
-
-Dang feedback - Landing page isn't clear to users what our product is
 
 
 
@@ -174,8 +172,6 @@ Dang feedback - Landing page isn't clear to users what our product is
 
 -- DOCUMENT THE DOCS FEATURES!!! How to create pages and stuff. How to set and change config
 
-- Add sitemap 
-- Add google analytics 
 - Add doc versions
 - Add site translations
 - Add algolia config
