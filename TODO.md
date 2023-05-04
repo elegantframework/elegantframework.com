@@ -1,5 +1,7 @@
 ~~~~~~> Working 
 
+    - create a pr into the main branch... Compare the changes, and document them below
+
     - write a blog post announcing the new release of the version.. link to upgrade guide
         - announce the native convertkit support .. Link to doc
         - announce easy theme color changing ... Link to doc
@@ -8,6 +10,8 @@
     - add a link to the 2.1 blog post in the intro block content
 
     - create an npm release of 2.1
+
+    - update the default branches on github
 
 
 ~~~~~~> Post release .. v2.1
@@ -54,6 +58,8 @@
 - Add storybook dark mode
 
 - Add storybook docs.. Make storybook look like https://www.bbc.co.uk/iplayer/storybook/index.html
+
+- Add a scanable qr code to the footer.. add a ?qr=home query to the url for GA tracking
 
 ~~~~~~~~> v2.3 roadmap
 
