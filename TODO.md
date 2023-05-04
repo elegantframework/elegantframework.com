@@ -1,33 +1,40 @@
 ~~~~~~> Working 
 
-    - document any 2.1 updates or fixes. Update the release notes
-        - write upgrade guide 2.0 to 2.1
+    - write a blog post announcing the new release of the version.. link to upgrade guide
+        - announce the native convertkit support .. Link to doc
+        - announce easy theme color changing ... Link to doc
+        - native ga support -- link to doc
 
-    - Do a test build with a fresh app
+    - add a link to the 2.1 blog post in the intro block content
 
-    - if everything is cool, skip to next step
+    - create an npm release of 2.1
 
-    - create a release of 2.1
+
+~~~~~~> Post release .. v2.1
 
     - create a demo video.. 
 
     - put the demo video in the hero.. Make some homepage updates or tweaks
-
-~~~~~~> Post release .. v2.1
-
-
-- write a blog post announcing the new release of the version.. link to upgrade guide
-    - announce the native convertkit support .. Link to doc
-    - announce easy theme color changing ... Link to doc
-    - native ga support -- link to doc
 
 
 ~~~~~~~~~> v2.2
 
   - add next seo, clean up our seo stuff .. Put them into reusable methods that rely on next seo.. Future proof them in the event that they need to swapped out for something different in Next.js 13 --- https://github.com/garmeeh/next-seo
 
+- zoho?
+
+- google workspace?
+    - create a brandon@elegantframework.com email box
+
+- create a workspace intergration?
+    - contact form? Auto sends to workspace?
+
 - find that old list of places to submit the project to.. Submit to those
-   
+
+- create a reddit group spreadsheet
+
+- create a contact spreadsheet, or use convert kit to email blogger people about trying out elegant for feedback
+
 
 - Set up privacy policy and terms now that we have GA? 
     - Worry about GDPR now?
