@@ -47,6 +47,14 @@
     - set up google search console
     - write a doc on google search console
 
+
+- build storybook axe testing into the testing deployment pipeline?
+    - https://storybook.js.org/docs/react/writing-tests/accessibility-testing#a11y-config-with-the-test-runner
+
+- Add storybook dark mode
+
+- Add storybook docs.. Make storybook look like https://www.bbc.co.uk/iplayer/storybook/index.html
+
 ~~~~~~~~> v2.3 roadmap
 
 - TBD
