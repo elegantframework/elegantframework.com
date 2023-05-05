@@ -1,11 +1,5 @@
 ~~~~~~> Working 
 
-    - fix this social image issue before sharing?
-
-    - create a pr into the main branch... Compare the changes, and document them below
-
-    - proof read the blog post... Add any images or code blocks to fluff and spice it up
-
     - create an npm release of 2.1
 
     - update the default branches on github
@@ -93,6 +87,12 @@
         - Add starter content for users.. Should be less about Elegant, and more of starter boilerplate content.. Slim down our production content
         - Include a release notes with sample v0.1.0 release notes.. Say something like project was created using Elegant with a link back to us in the first release note
         - Include a starter blog post
+
+- Themes
+    - Skyline - Base Elegant theme
+    - Hacker - PG PC Blank white theme
+    - Interviewer - Theme for chris
+    - name TBD -- Resume theme
 
 ~~~~~~> Post launch
 
