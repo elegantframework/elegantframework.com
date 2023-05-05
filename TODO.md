@@ -1,13 +1,10 @@
 ~~~~~~> Working 
 
+    - fix this social image issue before sharing?
+
     - create a pr into the main branch... Compare the changes, and document them below
 
-    - write a blog post announcing the new release of the version.. link to upgrade guide
-        - announce the native convertkit support .. Link to doc
-        - announce easy theme color changing ... Link to doc
-        - native ga support -- link to doc
-
-    - add a link to the 2.1 blog post in the intro block content
+    - proof read the blog post... Add any images or code blocks to fluff and spice it up
 
     - create an npm release of 2.1
 
@@ -23,7 +20,15 @@
 
 ~~~~~~~~~> v2.2
 
+- do I NEED AN robots.txt file?
+
+- start on a quest to upgrade paulgraham.com
+
   - add next seo, clean up our seo stuff .. Put them into reusable methods that rely on next seo.. Future proof them in the event that they need to swapped out for something different in Next.js 13 --- https://github.com/garmeeh/next-seo
+
+  - fix blog meta social card and meta head tags not showing in production -- FIXED, waiting to verify if changes have propagated
+
+- add a logo seo tag, so that google picks up our logo in search results
 
 - zoho?
 
@@ -94,8 +99,6 @@
 - add a block to the homepage.. Love Elegant? Hire us
 
 - write further detailed documentation on how to create new pages, docs, and blog posts.
-
-- fix blog meta social card and meta head tags not showing in production -- FIXED, waiting to verify if changes have propagated
 
 - clean up the tailwind config.. Make it use just default like a user would expect
 
