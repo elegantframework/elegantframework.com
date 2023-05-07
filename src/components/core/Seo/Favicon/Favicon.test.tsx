@@ -35,6 +35,8 @@ describe('SEO Favicon Component', () => {
                 })
             ])
         );
+
+        expect(result).toMatchSnapshot();
     });
 
     it('renders properly with the directory', () => { 
@@ -51,12 +53,15 @@ describe('SEO Favicon Component', () => {
                 })
             ])
         );
+
+        expect(result).toMatchSnapshot();
     });
 
     it('properly with options disabled', () => { 
         const result = Favicon({
             appleTouchIcon: false
         }); 
+
         expect(result).toEqual(
             expect.not.arrayContaining([
                 expect.objectContaining({
@@ -66,5 +71,7 @@ describe('SEO Favicon Component', () => {
                 })
             ])
         );
+
+        expect(result).toMatchSnapshot();
     });
 });

@@ -24,5 +24,7 @@ describe('Microsoft Application Tile Component', () => {
                 })
             ])
         );
+
+        expect(result).toMatchSnapshot();
     });
 });

@@ -1,13 +1,22 @@
 import React from "react";
-import renderer from 'react-test-renderer';
 import Seo from "./Seo";
 
-describe('Home', () => {
-  it('renders the seo component properly', () => {
-    const seo = renderer
-    .create(<Seo />)
-    .toJSON();
+describe('Seo component', () => {
+  it('renders the base seo component properly', () => {
+      const seo = Seo({
+        title: "Elegant Test App",
+        base: true
+      });
+  
+      expect(seo).toMatchSnapshot();
+  });
+
+  it('renders the non-base seo component properly', () => {
+    const seo = Seo({
+      title: "Elegant Test App numbero 2",
+      base: false
+    });
 
     expect(seo).toMatchSnapshot();
-  })
+  });
 })
