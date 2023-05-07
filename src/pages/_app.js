@@ -6,6 +6,7 @@ import { Header } from '@/components/Header';
 import { Description, OgDescription, OgTitle, Title } from '@/components/Meta';
 import Router from 'next/router';
 import ProgressBar from '@badrap/bar-of-progress';
+import Seo from "@/components/core/Seo/Seo";
 import Head from 'next/head';
 import { ResizeObserver } from '@juggle/resize-observer';
 import 'intersection-observer';
@@ -69,7 +70,8 @@ export default function App({ Component, pageProps, router }) {
   }, [router.events]);
 
   // The type of layout a page should use.. Ex. BasicLayout, BlogPostLayout, etc..
-  const Layout = Component.layoutProps?.Layout || Fragment
+  const Layout = Component.layoutProps?.Layout || Fragment;
+
   const layoutProps = Component.layoutProps?.Layout
     ? { layoutProps: Component.layoutProps, navIsOpen, setNavIsOpen }
     : {}
@@ -78,9 +80,6 @@ export default function App({ Component, pageProps, router }) {
   let stickyHeader =  (Component.layoutProps?.stickyHeader ?? true);
 
   const meta = Component.layoutProps?.meta || {};
-
-  // The meta description field
-  const description = meta.metaDescription || meta.description || 'Documentation for the Elegant framework.';
 
   // Set the social share image
   let image = meta.ogImage ?? meta.image;
@@ -97,13 +96,7 @@ export default function App({ Component, pageProps, router }) {
 
   return (
     <>
-      <Title>
-        {meta.metaTitle || meta.title}
-      </Title>
       {meta.ogTitle && <OgTitle>{meta.ogTitle}</OgTitle>}
-      <Description>
-        {description}
-      </Description>
       {meta.ogDescription && <OgDescription>{meta.ogDescription}</OgDescription>}
       <Head>
         <meta key="twitter:card" name="twitter:card" content="summary_large_image" />
@@ -121,6 +114,12 @@ export default function App({ Component, pageProps, router }) {
         <link rel="alternate" type="application/json" title="JSON Feed" href="/feeds/feed.json" />
         <AnalyticsHead googleAnalyticsID={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}/>
       </Head>
+      <Seo 
+        title={meta.metaTitle || meta.title}
+        description={meta.metaDescription || meta.description}
+        themeColor={"#f8fafc"}
+        base={true}
+      />
       <SearchProvider>
         {stickyHeader && (
           <Header
