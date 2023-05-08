@@ -72,7 +72,7 @@ exports[`SEO Favicon Component renders properly with the directory 1`] = `
     "sizes": "152x152",
   },
   {
-    "href": "/helloworld/apple-icon-180x1802.png",
+    "href": "/helloworld/apple-icon-180x180.png",
     "rel": "apple-touch-icon",
     "sizes": "180x180",
   },
@@ -146,7 +146,7 @@ exports[`SEO Favicon Component renders with data properly 1`] = `
     "sizes": "152x152",
   },
   {
-    "href": "/apple-icon-180x1802.png",
+    "href": "/apple-icon-180x180.png",
     "rel": "apple-touch-icon",
     "sizes": "180x180",
   },

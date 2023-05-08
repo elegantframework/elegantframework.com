@@ -74,7 +74,7 @@ const Favicon = ({
             },
             {
                 rel: 'apple-touch-icon',
-                href: `${directory}/apple-icon-180x1802.png`,
+                href: `${directory}/apple-icon-180x180.png`,
                 sizes: '180x180'
             } 
         );

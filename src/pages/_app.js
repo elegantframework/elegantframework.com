@@ -2,6 +2,8 @@ import '../css/fonts.css';
 import '../css/main.css';
 import 'focus-visible';
 import { useState, useEffect, Fragment } from 'react';
+import { LogoJsonLd } from 'next-seo';
+import SeoLogo from './../../public/favicons/apple-icon-180x180.png';
 import { Header } from '@/components/Header';
 import { Description, OgDescription, OgTitle, Title } from '@/components/Meta';
 import Router from 'next/router';
@@ -119,6 +121,10 @@ export default function App({ Component, pageProps, router }) {
         description={meta.metaDescription || meta.description}
         themeColor={"#f8fafc"}
         base={true}
+      />
+      <LogoJsonLd 
+        logo={SeoLogo.src}
+        url={process.env.NEXT_PUBLIC_APP_URL}
       />
       <SearchProvider>
         {stickyHeader && (
