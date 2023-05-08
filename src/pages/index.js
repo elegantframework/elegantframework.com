@@ -1,4 +1,5 @@
 import React from 'react';
+import Seo from "@/components/core/Seo/Seo";
 import Image from 'next/image';
 import { CodeWindow } from '@/components/CodeWindow';
 import { SearchButton } from '@/components/Search';
@@ -27,25 +28,11 @@ Home.layoutProps = {
 export default function Home() {
   return (
     <>
-      <Head>
-        <meta
-          key="twitter:title"
-          name="twitter:title"
-          content={
-            MetaTitle(process.env.NEXT_PUBLIC_APP_NAME, process.env.NEXT_PUBLIC_APP_TAGLINE)
-          }
-        />
-        <meta
-          key="og:title"
-          property="og:title"
-          content={
-            MetaTitle(process.env.NEXT_PUBLIC_APP_NAME, process.env.NEXT_PUBLIC_APP_TAGLINE)
-          }
-        />
-        <title>
-          {MetaTitle(process.env.NEXT_PUBLIC_APP_NAME, process.env.NEXT_PUBLIC_APP_TAGLINE)}
-        </title>
-      </Head>
+      <Seo 
+        title={
+          MetaTitle(process.env.NEXT_PUBLIC_APP_NAME, process.env.NEXT_PUBLIC_APP_TAGLINE)
+        }
+      />
       <div className="mb-20 overflow-hidden sm:mb-32 md:mb-40">
         <Header />
       </div> 

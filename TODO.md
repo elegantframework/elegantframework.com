@@ -1,35 +1,29 @@
-~~~~~~> Working 
-
-    - create an npm release of 2.1
-
-    - update the default branches on github
-
-
-~~~~~~> Post release .. v2.1
-
-    - create a demo video.. 
-
-    - put the demo video in the hero.. Make some homepage updates or tweaks
-
 
 ~~~~~~~~~> v2.2
+
+- create .env.starter file in cli project.. Copy that over during init, not the example file
+- Also copy the example file over, but have empty values and every env var possible so users can see all options
+- add .env.test file to cli source
+
+- move it into the cli project, create a pr and document the new features
+- create an "innovators" release
+
+- create a demo video.. 
+
+- put the demo video in the hero.. Make some homepage updates or tweaks
+
 
 - do I NEED AN robots.txt file?
 
 - start on a quest to upgrade paulgraham.com
 
-  - add next seo, clean up our seo stuff .. Put them into reusable methods that rely on next seo.. Future proof them in the event that they need to swapped out for something different in Next.js 13 --- https://github.com/garmeeh/next-seo
-
-  - fix blog meta social card and meta head tags not showing in production -- FIXED, waiting to verify if changes have propagated
-
-- add a logo seo tag, so that google picks up our logo in search results
 
 - zoho?
 
 - google workspace?
     - create a brandon@elegantframework.com email box
 
-- create a workspace intergration?
+- create a workspace integration?
     - contact form? Auto sends to workspace?
 
 - find that old list of places to submit the project to.. Submit to those
@@ -62,9 +56,11 @@
 
 ~~~~~~~~> v2.3 roadmap
 
-- TBD
+- create an faq page.. Add schema metadata to it
 
-~~~~~~> Roadmap
+~~~~~~~~> v3 roadmap
+
+- delete deprecated components
 
 - cleanup dir structure
     - rename utilis to core
@@ -80,6 +76,7 @@
     - move hooks into core dir
     - delete hooks dir
 
+~~~~~~> Roadmap
 
 
 - Create a separate NPM package called Elegant Starter Content

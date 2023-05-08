@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Seo from "@/components/core/Seo/Seo";
 import socialCardLarge from '@/img/social-card-large.jpg';
 import { SplashPageLayout } from "@/layouts/SplashPageLayout";
 import { RocketLaunchIcon, LockClosedIcon, RectangleStackIcon } from '@heroicons/react/20/solid';
@@ -24,9 +24,6 @@ const features = [
 ]
 
 Experts.layoutProps = {
-  meta: {
-    ogImage: socialCardLarge.src,
-  },
   Layout: SplashPageLayout,
   stickyHeader: false
 };
@@ -34,21 +31,10 @@ Experts.layoutProps = {
 export default function Experts() {
   return(
     <>
-      <Head>
-        <meta
-          key="twitter:title"
-          name="twitter:title"
-          content={"Let Us Build Your Dream - Websites built by Elegant Experts"}
-        />
-        <meta
-          key="og:title"
-          property="og:title"
-          content={"Let Us Build Your Dream - Websites built by Elegant Experts"}
-        />
-        <title>
-          Let Us Build Your Dream - Websites built by Elegant Experts
-        </title>
-      </Head>
+      <Seo 
+        title={"Let Us Build Your Dream - Websites built by Elegant Experts"}
+        image={socialCardLarge.src}
+      />
       <div className="relative max-w-5xl mx-auto pt-5">
         <h1 className="text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center dark:text-white">
           Hire the Elegant expertise you need.
