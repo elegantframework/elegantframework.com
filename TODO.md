@@ -1,32 +1,27 @@
-~~~~~~> Working 
-
-    - create an npm release of 2.1
-
-    - update the default branches on github
-
-
-~~~~~~> Post release .. v2.1
-
-    - create a demo video.. 
-
-    - put the demo video in the hero.. Make some homepage updates or tweaks
-
 
 ~~~~~~~~~> v2.2
 
 - next-seo
-    - add article tag to blog pages
-    - add social profiles
     - update layout props.. Move og stuff into our seo component
+    - update the documentation layout file title meta component to new seo stuff
+    - verify the docs page meta looks good
+
+- move it into the cli project, create a pr and document the new features
+- create an "innovators" release
+
+- create a demo video.. 
+
+- put the demo video in the hero.. Make some homepage updates or tweaks
 
 
 - do I NEED AN robots.txt file?
 
 - start on a quest to upgrade paulgraham.com
 
-  - fix blog meta social card and meta head tags not showing in production -- FIXED, waiting to verify if changes have propagated
+- create .env.starter file in cli project.. Copy that over during init, not the example file
+- Also copy the example file over, but have empty values and every env var possible so users can see all options
 
-- add a logo seo tag, so that google picks up our logo in search results
+- update the example file to show every possible 
 
 - zoho?
 
@@ -66,8 +61,7 @@
 
 ~~~~~~~~> v2.3 roadmap
 
-- TBD
-
+- create an faq page.. Add schema metadata to it
 
 ~~~~~~~~> v3 roadmap
 

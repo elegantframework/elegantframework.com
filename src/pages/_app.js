@@ -2,7 +2,7 @@ import '../css/fonts.css';
 import '../css/main.css';
 import 'focus-visible';
 import { useState, useEffect, Fragment } from 'react';
-import { LogoJsonLd } from 'next-seo';
+import { BrandJsonLd, LogoJsonLd, SocialProfileJsonLd, WebPageJsonLd } from 'next-seo';
 import SeoLogo from './../../public/favicons/apple-icon-180x180.png';
 import { Header } from '@/components/Header';
 import { Description, OgDescription, OgTitle, Title } from '@/components/Meta';
@@ -80,20 +80,71 @@ export default function App({ Component, pageProps, router }) {
   // Show the sticky header
   let stickyHeader =  (Component.layoutProps?.stickyHeader ?? true);
 
+  // the page meta data
   const meta = Component.layoutProps?.meta || {};
 
   // Set the social share image
   let image = meta.ogImage ?? meta.image;
-
-  image = image
-    ? `${image.src ?? image}`
-    : `${socialCardLarge.src}`
+  image = image ? `${image.src ?? image}` : `${socialCardLarge.src}`;
 
   let section =
     meta.section ||
     Object.entries(Component.layoutProps?.Layout?.nav ?? {}).find(([, items]) =>
       items.find(({ href }) => href === router.pathname)
     )?.[0]
+
+  // is this app for a business? 
+  let appType = "Organization";
+
+  if(
+    process.env.NEXT_PUBLIC_APP_TYPE_ORGANIZATION !== undefined && 
+    process.env.NEXT_PUBLIC_APP_TYPE_ORGANIZATION === false
+  ){
+    appType = "Person";
+  }
+
+  // if their are social links provided, activate the Social schema data
+  let socialSchema = [];
+  {
+    process.env.NEXT_PUBLIC_APP_TWITTER_URL !== undefined && 
+    process.env.NEXT_PUBLIC_APP_TWITTER_URL !== "" ?
+      socialSchema.push(process.env.NEXT_PUBLIC_APP_TWITTER_URL) : null
+  }
+  {
+    process.env.NEXT_PUBLIC_APP_FACEBOOK_URL !== undefined && 
+    process.env.NEXT_PUBLIC_APP_FACEBOOK_URL !== "" ?
+      socialSchema.push(process.env.NEXT_PUBLIC_APP_FACEBOOK_URL) : null
+  }
+  {
+    process.env.NEXT_PUBLIC_APP_INSTAGRAM_URL !== undefined && 
+    process.env.NEXT_PUBLIC_APP_INSTAGRAM_URL !== "" ?
+      socialSchema.push(process.env.NEXT_PUBLIC_APP_INSTAGRAM_URL) : null
+  }
+  {
+    process.env.NEXT_PUBLIC_APP_YOUTUBE_URL !== undefined && 
+    process.env.NEXT_PUBLIC_APP_YOUTUBE_URL !== "" ?
+      socialSchema.push(process.env.NEXT_PUBLIC_APP_YOUTUBE_URL) : null
+  }
+  {
+    process.env.NEXT_PUBLIC_APP_LINKEDIN_URL !== undefined && 
+    process.env.NEXT_PUBLIC_APP_LINKEDIN_URL !== "" ?
+      socialSchema.push(process.env.NEXT_PUBLIC_APP_LINKEDIN_URL) : null
+  }
+
+  // if we have social data, turn on the schema object
+  let socialProfile;
+
+  if(socialSchema.length > 0)
+  {
+    socialProfile = (
+      <SocialProfileJsonLd 
+        type={appType}
+        name={process.env.NEXT_PUBLIC_APP_NAME}
+        url={process.env.NEXT_PUBLIC_APP_URL}
+        sameAs={socialSchema}
+      />
+    );
+  }
 
   return (
     <>
@@ -116,6 +167,16 @@ export default function App({ Component, pageProps, router }) {
         logo={SeoLogo.src}
         url={process.env.NEXT_PUBLIC_APP_URL}
       />
+      <BrandJsonLd 
+        logo={SeoLogo.src}
+        id={process.env.NEXT_PUBLIC_APP_URL}
+        slogan={process.env.NEXT_PUBLIC_APP_TAGLINE}
+      />
+      <WebPageJsonLd 
+        description={meta.metaDescription || meta.description}
+        id={`${process.env.NEXT_PUBLIC_APP_URL}${router.pathname}`}
+      />
+      {socialProfile}
       <SearchProvider>
         {stickyHeader && (
           <Header
