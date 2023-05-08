@@ -1,4 +1,3 @@
-import React from "react";
 import Seo from "./Seo";
 
 describe('Seo component', () => {

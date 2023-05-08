@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Seo from "@/components/core/Seo/Seo";
 import socialCardLarge from '@/img/social-card-large.jpg';
 import { SplashPageLayout } from "@/layouts/SplashPageLayout";

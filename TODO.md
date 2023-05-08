@@ -1,10 +1,9 @@
 
 ~~~~~~~~~> v2.2
 
-- next-seo
-    - update layout props.. Move og stuff into our seo component
-    - update the documentation layout file title meta component to new seo stuff
-    - verify the docs page meta looks good
+- create .env.starter file in cli project.. Copy that over during init, not the example file
+- Also copy the example file over, but have empty values and every env var possible so users can see all options
+- add .env.test file to cli source
 
 - move it into the cli project, create a pr and document the new features
 - create an "innovators" release
@@ -18,17 +17,13 @@
 
 - start on a quest to upgrade paulgraham.com
 
-- create .env.starter file in cli project.. Copy that over during init, not the example file
-- Also copy the example file over, but have empty values and every env var possible so users can see all options
-
-- update the example file to show every possible 
 
 - zoho?
 
 - google workspace?
     - create a brandon@elegantframework.com email box
 
-- create a workspace intergration?
+- create a workspace integration?
     - contact form? Auto sends to workspace?
 
 - find that old list of places to submit the project to.. Submit to those
