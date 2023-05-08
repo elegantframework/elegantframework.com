@@ -14,11 +14,15 @@
 
 ~~~~~~~~~> v2.2
 
+- next-seo
+    - add article tag to blog pages
+    - add social profiles
+    - update layout props.. Move og stuff into our seo component
+
+
 - do I NEED AN robots.txt file?
 
 - start on a quest to upgrade paulgraham.com
-
-  - add next seo, clean up our seo stuff .. Put them into reusable methods that rely on next seo.. Future proof them in the event that they need to swapped out for something different in Next.js 13 --- https://github.com/garmeeh/next-seo
 
   - fix blog meta social card and meta head tags not showing in production -- FIXED, waiting to verify if changes have propagated
 
@@ -64,7 +68,10 @@
 
 - TBD
 
-~~~~~~> Roadmap
+
+~~~~~~~~> v3 roadmap
+
+- delete deprecated components
 
 - cleanup dir structure
     - rename utilis to core
@@ -80,6 +87,7 @@
     - move hooks into core dir
     - delete hooks dir
 
+~~~~~~> Roadmap
 
 
 - Create a separate NPM package called Elegant Starter Content

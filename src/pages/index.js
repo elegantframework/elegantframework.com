@@ -28,22 +28,6 @@ Home.layoutProps = {
 export default function Home() {
   return (
     <>
-      <Head>
-        <meta
-          key="twitter:title"
-          name="twitter:title"
-          content={
-            MetaTitle(process.env.NEXT_PUBLIC_APP_NAME, process.env.NEXT_PUBLIC_APP_TAGLINE)
-          }
-        />
-        <meta
-          key="og:title"
-          property="og:title"
-          content={
-            MetaTitle(process.env.NEXT_PUBLIC_APP_NAME, process.env.NEXT_PUBLIC_APP_TAGLINE)
-          }
-        />
-      </Head>
       <Seo 
         title={
           MetaTitle(process.env.NEXT_PUBLIC_APP_NAME, process.env.NEXT_PUBLIC_APP_TAGLINE)

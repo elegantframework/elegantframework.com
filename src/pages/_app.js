@@ -13,7 +13,6 @@ import Head from 'next/head';
 import { ResizeObserver } from '@juggle/resize-observer';
 import 'intersection-observer';
 import { SearchProvider } from '@/components/Search';
-import TwitterMeta from '@/components/core/Meta/TwitterMeta';
 import AnalyticsHead from '@/components/core/Analytics/AnalyticsHead';
 import AnalyticsBody from '@/components/core/Analytics/AnalyticsBody';
 import * as gtag from '@/utils/analytics/gtag';
@@ -98,28 +97,19 @@ export default function App({ Component, pageProps, router }) {
 
   return (
     <>
-      {meta.ogTitle && <OgTitle>{meta.ogTitle}</OgTitle>}
-      {meta.ogDescription && <OgDescription>{meta.ogDescription}</OgDescription>}
       <Head>
-        <meta key="twitter:card" name="twitter:card" content="summary_large_image" />
-        <meta key="twitter:image" name="twitter:image" content={image} />
-        <TwitterMeta twitterHandle={process.env.NEXT_PUBLIC_APP_TWITTER_HANDLE}/>
-        <meta
-          key="og:url"
-          property="og:url"
-          content={`${process.env.NEXT_PUBLIC_APP_URL}${router.pathname}`}
-        />
-        <meta key="og:type" property="og:type" content="article" />
-        <meta key="og:image" property="og:image" content={image} />
-        <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feeds/feed.xml" />
-        <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="/feeds/atom.xml" />
-        <link rel="alternate" type="application/json" title="JSON Feed" href="/feeds/feed.json" />
         <AnalyticsHead googleAnalyticsID={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}/>
       </Head>
       <Seo 
         title={meta.metaTitle || meta.title}
         description={meta.metaDescription || meta.description}
         themeColor={"#f8fafc"}
+        twitterHandle={process.env.NEXT_PUBLIC_APP_TWITTER_HANDLE}
+        twitterSite={process.env.NEXT_PUBLIC_APP_TWITTER_HANDLE}
+        siteName={process.env.NEXT_PUBLIC_APP_NAME}
+        url={`${process.env.NEXT_PUBLIC_APP_URL}${router.pathname}`}
+        image={image}
+        facebookAppID={process.env.NEXT_PUBLIC_FACEBOOK_APP_ID}
         base={true}
       />
       <LogoJsonLd 
