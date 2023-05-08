@@ -1,5 +1,7 @@
 
 ~~~~~~~~~> v2.2
+- https://visualdebug.com/show/elegantframework.com
+- check out reddit dudes message and respond to him
 
 - create .env.starter file in cli project.. Copy that over during init, not the example file
 - Also copy the example file over, but have empty values and every env var possible so users can see all options
@@ -17,6 +19,7 @@
 
 - start on a quest to upgrade paulgraham.com
 
+- update beams image to use next image: https://stackoverflow.com/questions/63195562/next-js-set-background-image
 
 - zoho?
 
