@@ -5,7 +5,6 @@ import { useState, useEffect, Fragment } from 'react';
 import { BrandJsonLd, LogoJsonLd, SocialProfileJsonLd, WebPageJsonLd } from 'next-seo';
 import SeoLogo from './../../public/favicons/apple-icon-180x180.png';
 import { Header } from '@/components/Header';
-import { Description, OgDescription, OgTitle, Title } from '@/components/Meta';
 import Router from 'next/router';
 import ProgressBar from '@badrap/bar-of-progress';
 import Seo from "@/components/core/Seo/Seo";
@@ -146,6 +145,14 @@ export default function App({ Component, pageProps, router }) {
     );
   }
 
+  // get our domain for the open graph image
+  let domain = process.env.NEXT_PUBLIC_APP_URL;
+
+  // if this site is being deployed to Vercel, get the full domain name of the preview url
+  if(process.env.NEXT_PUBLIC_VERCEL_URL !== undefined && process.env.NEXT_PUBLIC_VERCEL_URL !== ""){
+    domain = `https://${NEXT_PUBLIC_VERCEL_URL}`;
+  }
+
   return (
     <>
       <Head>
@@ -159,7 +166,7 @@ export default function App({ Component, pageProps, router }) {
         twitterSite={process.env.NEXT_PUBLIC_APP_TWITTER_HANDLE}
         siteName={process.env.NEXT_PUBLIC_APP_NAME}
         url={`${process.env.NEXT_PUBLIC_APP_URL}${router.pathname}`}
-        image={image}
+        image={`${domain}${image}`}
         facebookAppID={process.env.NEXT_PUBLIC_FACEBOOK_APP_ID}
         base={true}
       />
