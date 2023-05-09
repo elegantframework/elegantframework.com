@@ -19,14 +19,17 @@ export function BlogPostLayout({ children, meta }) {
     author = author.name
   ))}
 
+  // get our image url 
+  let image = process.env.NEXT_PUBLIC_APP_URL + meta.image.src; 
+
   return (
     <>
       <ArticleJsonLd 
         useAppDir={false}
-        url={router.pathname}
+        url={process.env.NEXT_PUBLIC_APP_URL + router.pathname}
         title={meta.title}
         images={[
-          meta.image,
+          process.env.NEXT_PUBLIC_APP_URL + meta.image.src
         ]}
         datePublished={meta.date}
         authorName={[{

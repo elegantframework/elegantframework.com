@@ -163,11 +163,11 @@ export default function App({ Component, pageProps, router }) {
         base={true}
       />
       <LogoJsonLd 
-        logo={SeoLogo.src}
+        logo={process.env.NEXT_PUBLIC_APP_URL + SeoLogo.src}
         url={process.env.NEXT_PUBLIC_APP_URL}
       />
       <BrandJsonLd 
-        logo={SeoLogo.src}
+        logo={process.env.NEXT_PUBLIC_APP_URL + SeoLogo.src}
         id={process.env.NEXT_PUBLIC_APP_URL}
         slogan={process.env.NEXT_PUBLIC_APP_TAGLINE}
       />
