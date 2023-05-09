@@ -21,3 +21,11 @@ yarn-error.log*
 
 .env
 .next/
+
+# Built files
+public/feeds/atom.xml
+public/feeds/feed.json
+public/feeds/feed.xml
+public/robots.txt
+public/sitemap.xml
+public/sitemap-0.xml

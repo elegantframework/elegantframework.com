@@ -146,7 +146,7 @@ export default function App({ Component, pageProps, router }) {
     process.env.NEXT_PUBLIC_VERCEL_ENV !== undefined &&
     process.env.NEXT_PUBLIC_VERCEL_ENV !== "production"
   ){
-    url = process.env.NEXT_PUBLIC_VERCEL_URL;
+    url = "https://" + process.env.NEXT_PUBLIC_VERCEL_URL;
   }
 
   // if we have social data, turn on the schema object

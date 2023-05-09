@@ -1,6 +1,9 @@
 
 ~~~~~~~~~> v2.2
 
+- fix sitemap url on preview urls
+
+
 
 - create .env.starter file in cli project.. Copy that over during init, not the example file
 - Also copy the example file over, but have empty values and every env var possible so users can see all options
@@ -10,6 +13,7 @@
 - create an "innovators" release
 
 - listen to this guys feedback: https://visualdebug.com/issue/TRRbJjU2vIu_vO_O90z-GQ
+    - https://www.indiehackers.com/post/would-you-hire-me-6a8ff22811?commentId=-NV-OCbD-VTaw3Ir6f0A
 
 - create a demo video.. 
 
