@@ -1,7 +1,6 @@
 
 ~~~~~~~~~> v2.2
-- https://visualdebug.com/show/elegantframework.com
-- check out reddit dudes message and respond to him
+
 
 - create .env.starter file in cli project.. Copy that over during init, not the example file
 - Also copy the example file over, but have empty values and every env var possible so users can see all options
@@ -10,10 +9,13 @@
 - move it into the cli project, create a pr and document the new features
 - create an "innovators" release
 
+- listen to this guys feedback: https://visualdebug.com/issue/TRRbJjU2vIu_vO_O90z-GQ
+
 - create a demo video.. 
 
 - put the demo video in the hero.. Make some homepage updates or tweaks
 
+- fix open graph image issue
 
 - do I NEED AN robots.txt file?
 

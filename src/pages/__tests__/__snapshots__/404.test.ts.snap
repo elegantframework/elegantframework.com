@@ -2,9 +2,6 @@
 
 exports[`The 404 error page renders properly 1`] = `
 <React.Fragment>
-  <Seo
-    title="Page not found - Elegant - The unit testing application. - The Unit Test First Framework For React Developers"
-  />
   <div
     className="flex flex-auto items-center justify-center text-center px-4 flex-col sm:flex-row"
   >

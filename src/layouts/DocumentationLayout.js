@@ -6,9 +6,6 @@ import Seo from "@/components/core/Seo/Seo";
 export function DocumentationLayout(props) {
   return (
     <>
-      <Seo 
-        title={props.layoutProps.meta.metaTitle || props.layoutProps.meta.title}
-      />
       <SidebarLayout nav={documentationNav} {...props} />
     </>
   )

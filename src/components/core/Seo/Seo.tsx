@@ -1,4 +1,4 @@
-import { DefaultSeo, NextSeo, NextSeoProps } from 'next-seo';
+import { NextSeo } from 'next-seo';
 import Favicon from './Favicon/Favicon';
 import MSApplicationTile from './Meta/MSApplicationTile';
 import TwitterMeta from './Meta/TwitterMeta';
@@ -42,9 +42,9 @@ interface Props {
      */
     facebookAppID?: string;
     /**
-     * Is this the base placeholder seo?
+     * The type of page.. For the open graph. Ex. website, video.move, article, book, profile 
      */
-    base?: boolean;
+    pageType?: string;
 };
 
 /**
@@ -61,43 +61,10 @@ const Seo = ({
     url = "",
     image = "",
     facebookAppID = "",
-    base = false
+    pageType = "website"
 }: Props) => {
-    if(!base){
-        // update our seo props if they are provided
-        const args: NextSeoProps = {};
-
-        // web application title
-        {title != "" ? args.title = title : null}
-        {title != "" && args.openGraph?.title ? args.openGraph.title = title : null} 
-
-        // web application description
-        {description != "" ? args.description = description : null}
-        {description != "" && args.openGraph?.description ? args.openGraph.description = description : null}
-
-        // theme color
-        {themeColor != "#ffffff" ? args.themeColor = themeColor : null}
-
-        // twitter details
-        {twitterHandle != "" && args.twitter ? args.twitter.handle = twitterHandle : null}
-        {twitterSite != "" && args.twitter ? args.twitter.site = twitterSite : null}
-
-        // web application name
-        {siteName != ""  && args.openGraph?.siteName ? args.openGraph.siteName = siteName : null}
-
-        // open graph image
-        {image != "" && args.openGraph?.images ? args.openGraph.images = [{url: image}] : null}
-
-        // website url
-        {url != "" && args.openGraph?.url ? args.openGraph.url = url : null}
-
-        return(
-            <NextSeo {...args}/>
-        );
-    }
-
     return(
-        <DefaultSeo 
+        <NextSeo 
             description={description}
             facebook={{
                 appId: facebookAppID
@@ -105,6 +72,7 @@ const Seo = ({
             openGraph={{
                 url: url,
                 title: title,
+                type: pageType,
                 description: description,
                 siteName: siteName,
                 images: [

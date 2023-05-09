@@ -1,5 +1,4 @@
 import React from 'react';
-import Seo from "@/components/core/Seo/Seo";
 import Image from 'next/image';
 import { CodeWindow } from '@/components/CodeWindow';
 import { SearchButton } from '@/components/Search';
@@ -21,6 +20,7 @@ import { tokens, code } from '@/components/home/hero.html?highlight'
 Home.layoutProps = {
   meta: {
     ogImage: socialCardLarge.src,
+    title: MetaTitle(process.env.NEXT_PUBLIC_APP_NAME, process.env.NEXT_PUBLIC_APP_TAGLINE)
   },
   stickyHeader: false
 };
@@ -28,11 +28,6 @@ Home.layoutProps = {
 export default function Home() {
   return (
     <>
-      <Seo 
-        title={
-          MetaTitle(process.env.NEXT_PUBLIC_APP_NAME, process.env.NEXT_PUBLIC_APP_TAGLINE)
-        }
-      />
       <div className="mb-20 overflow-hidden sm:mb-32 md:mb-40">
         <Header />
       </div> 

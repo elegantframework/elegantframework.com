@@ -83,8 +83,16 @@ export default function App({ Component, pageProps, router }) {
   const meta = Component.layoutProps?.meta || {};
 
   // Set the social share image
-  let image = meta.ogImage ?? meta.image;
-  image = image ? `${image.src ?? image}` : `${socialCardLarge.src}`;
+  let image = socialCardLarge.src;
+  image = meta.ogImage ?? meta.image;
+
+  // set the page type
+  let pageType = Component.layoutProps?.pageType ? Component.layoutProps.pageType : "website";
+
+  // blog posts will have a description
+  if(meta.image && meta.description){
+    pageType = "article";
+  }
 
   let section =
     meta.section ||
@@ -130,6 +138,17 @@ export default function App({ Component, pageProps, router }) {
       socialSchema.push(process.env.NEXT_PUBLIC_APP_LINKEDIN_URL) : null
   }
 
+  // set our url
+  let url = process.env.NEXT_PUBLIC_APP_URL;
+
+  if(
+    process.env.NEXT_PUBLIC_VERCEL_URL !== undefined &&
+    process.env.NEXT_PUBLIC_VERCEL_ENV !== undefined &&
+    process.env.NEXT_PUBLIC_VERCEL_ENV !== "production"
+  ){
+    url = "https://" + process.env.NEXT_PUBLIC_VERCEL_URL;
+  }
+
   // if we have social data, turn on the schema object
   let socialProfile;
 
@@ -139,7 +158,7 @@ export default function App({ Component, pageProps, router }) {
       <SocialProfileJsonLd 
         type={appType}
         name={process.env.NEXT_PUBLIC_APP_NAME}
-        url={process.env.NEXT_PUBLIC_APP_URL}
+        url={url}
         sameAs={socialSchema}
       />
     );
@@ -152,15 +171,15 @@ export default function App({ Component, pageProps, router }) {
       </Head>
       <Seo 
         title={meta.metaTitle || meta.title}
-        description={meta.metaDescription || meta.description}
+        description={meta.metaDescription || meta.description || process.env.NEXT_PUBLIC_APP_DESCRIPTION}
         themeColor={"#f8fafc"}
         twitterHandle={process.env.NEXT_PUBLIC_APP_TWITTER_HANDLE}
         twitterSite={process.env.NEXT_PUBLIC_APP_TWITTER_HANDLE}
         siteName={process.env.NEXT_PUBLIC_APP_NAME}
-        url={`${process.env.NEXT_PUBLIC_APP_URL}${router.pathname}`}
-        image={`${process.env.NEXT_PUBLIC_APP_URL}${image}`}
+        url={`${url}${router.pathname}`}
+        image={`${url}${image}`}
         facebookAppID={process.env.NEXT_PUBLIC_FACEBOOK_APP_ID}
-        base={true}
+        pageType={pageType}
       />
       <LogoJsonLd 
         logo={process.env.NEXT_PUBLIC_APP_URL + SeoLogo.src}

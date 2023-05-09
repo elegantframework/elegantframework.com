@@ -1,4 +1,3 @@
-import Seo from "@/components/core/Seo/Seo";
 import MetaTitle from '@/utils/MetaTitle';
 
 const css = `
@@ -11,6 +10,12 @@ const css = `
     flex-direction: column;
   }
 `
+Error.layoutProps = {
+  meta: {
+    title: "Page not found - " + MetaTitle(process.env.NEXT_PUBLIC_APP_NAME, process.env.NEXT_PUBLIC_APP_TAGLINE)
+  },
+};
+
 
 /**
  * Thee 404 error page
@@ -19,9 +24,6 @@ const css = `
 export default function Error() {
   return (
     <>
-      <Seo 
-        title={"Page not found - " + MetaTitle(process.env.NEXT_PUBLIC_APP_NAME, process.env.NEXT_PUBLIC_APP_TAGLINE)}
-      />
      <div className="flex flex-auto items-center justify-center text-center px-4 flex-col sm:flex-row">
         <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight sm:pr-6 sm:mr-6 sm:border-r sm:border-slate-900/10 sm:dark:border-slate-300/10 dark:text-slate-200">
           404

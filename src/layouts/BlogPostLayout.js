@@ -19,9 +19,6 @@ export function BlogPostLayout({ children, meta }) {
     author = author.name
   ))}
 
-  // get our image url 
-  let image = process.env.NEXT_PUBLIC_APP_URL + meta.image.src; 
-
   return (
     <>
       <ArticleJsonLd 
