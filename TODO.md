@@ -20,6 +20,7 @@
 - put the demo video in the hero.. Make some homepage updates or tweaks
 
 - fix open graph image issue
+- fix open graph image issue
 
 - do I NEED AN robots.txt file?
 
