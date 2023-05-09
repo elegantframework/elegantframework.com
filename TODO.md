@@ -1,13 +1,12 @@
 
 ~~~~~~~~~> v2.2
 
-
 - create .env.starter file in cli project.. Copy that over during init, not the example file
 - Also copy the example file over, but have empty values and every env var possible so users can see all options
 - add .env.test file to cli source
 
-- move it into the cli project, create a pr and document the new features
-- create an "innovators" release
+- Push to "innovators" release, and test
+
 
 - listen to this guys feedback: https://visualdebug.com/issue/TRRbJjU2vIu_vO_O90z-GQ
 
@@ -225,12 +224,19 @@ HN Analytics survey: Mixpanel, Amplitude, PostHog
 
         Then npm install elegant-cli --tag prerelease
 
+- How to do an innovators release:
+        npm version prerelease --preid=innovators
+        npm publish --tag innovators
+
+        Then npm install elegant-cli --tag innovators
+
 
 
 
 - Document full features included out of the box in the future
 
     - Perfect SEO score 100
+    - Rich Snippets
     - Instant Loading
     - Low hosting costs
     - 100% uptime and availability
