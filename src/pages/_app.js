@@ -145,14 +145,6 @@ export default function App({ Component, pageProps, router }) {
     );
   }
 
-  // get our domain for the open graph image
-  let domain = process.env.NEXT_PUBLIC_APP_URL;
-
-  // if this site is being deployed to Vercel, get the full domain name of the preview url
-  if(process.env.NEXT_PUBLIC_VERCEL_URL !== undefined){
-    domain = `https://${NEXT_PUBLIC_VERCEL_URL}`;
-  }
-
   return (
     <>
       <Head>
@@ -166,7 +158,7 @@ export default function App({ Component, pageProps, router }) {
         twitterSite={process.env.NEXT_PUBLIC_APP_TWITTER_HANDLE}
         siteName={process.env.NEXT_PUBLIC_APP_NAME}
         url={`${process.env.NEXT_PUBLIC_APP_URL}${router.pathname}`}
-        image={`${domain}${image}`}
+        image={`${process.env.NEXT_PUBLIC_APP_URL}${image}`}
         facebookAppID={process.env.NEXT_PUBLIC_FACEBOOK_APP_ID}
         base={true}
       />
