@@ -94,6 +94,11 @@ export default function App({ Component, pageProps, router }) {
     pageType = "article";
   }
 
+  // blog posts will have a description
+  if(meta.image && meta.description){
+    pageType = "article";
+  }
+
   let section =
     meta.section ||
     Object.entries(Component.layoutProps?.Layout?.nav ?? {}).find(([, items]) =>
