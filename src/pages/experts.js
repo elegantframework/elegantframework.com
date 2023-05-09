@@ -1,5 +1,3 @@
-import Seo from "@/components/core/Seo/Seo";
-import socialCardLarge from '@/img/social-card-large.jpg';
 import { SplashPageLayout } from "@/layouts/SplashPageLayout";
 import { RocketLaunchIcon, LockClosedIcon, RectangleStackIcon } from '@heroicons/react/20/solid';
 import techSplash from '@/img/splash/hire-us-splash-tech-picture.jpg';
@@ -25,16 +23,15 @@ const features = [
 
 Experts.layoutProps = {
   Layout: SplashPageLayout,
-  stickyHeader: false
+  stickyHeader: false,
+  meta: {
+    title: "Let Us Build Your Dream - Websites built by Elegant Experts"
+  }
 };
 
 export default function Experts() {
   return(
     <>
-      <Seo 
-        title={"Let Us Build Your Dream - Websites built by Elegant Experts"}
-        image={socialCardLarge.src}
-      />
       <div className="relative max-w-5xl mx-auto pt-5">
         <h1 className="text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center dark:text-white">
           Hire the Elegant expertise you need.
