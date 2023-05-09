@@ -1,10 +1,6 @@
 
 ~~~~~~~~~> v2.2
 
-- fix sitemap url on preview urls
-
-
-
 - create .env.starter file in cli project.. Copy that over during init, not the example file
 - Also copy the example file over, but have empty values and every env var possible so users can see all options
 - add .env.test file to cli source
@@ -20,9 +16,7 @@
 - put the demo video in the hero.. Make some homepage updates or tweaks
 
 - fix open graph image issue
-- fix open graph image issue
 
-- do I NEED AN robots.txt file?
 
 - start on a quest to upgrade paulgraham.com
 
@@ -38,7 +32,6 @@
 
 - find that old list of places to submit the project to.. Submit to those
 
-- create a reddit group spreadsheet
 
 - create a contact spreadsheet, or use convert kit to email blogger people about trying out elegant for feedback
 
@@ -62,13 +55,13 @@
 
 - Add storybook docs.. Make storybook look like https://www.bbc.co.uk/iplayer/storybook/index.html
 
-- Add a scanable qr code to the footer.. add a ?qr=home query to the url for GA tracking
+- Add a scannable qr code to the footer.. add a ?qr=home query to the url for GA tracking
 
-~~~~~~~~> v2.3 roadmap
+~~~~~~~~> v2.3 road map
 
 - create an faq page.. Add schema metadata to it
 
-~~~~~~~~> v3 roadmap
+~~~~~~~~> v3 road map
 
 - delete deprecated components
 
@@ -86,7 +79,7 @@
     - move hooks into core dir
     - delete hooks dir
 
-~~~~~~> Roadmap
+~~~~~~> Road map
 
 
 - Create a separate NPM package called Elegant Starter Content
@@ -143,8 +136,6 @@
 
 - add e2e test that verify's the index, docs, and blog pages load
 
-- create a proper meta head component and insert it into the index page
-
 - Upgrade eslint and all other packages to their latest
 
 - move components to a proper nextjs format. Do need a layout and header folder?
@@ -183,8 +174,6 @@ HN Analytics survey: Mixpanel, Amplitude, PostHog
 
 
 - document using the pwa icons generator
-
-- update the seo title of the docs site.. Look at env vars, name and description.. We could do Hello World - Elegant - The CMS framework 
 
 - Document how a user creates a new doc file
 

@@ -93,11 +93,6 @@ export default function App({ Component, pageProps, router }) {
   if(meta.image && meta.description){
     pageType = "article";
   }
-  let image = socialCardLarge.src;
-  image = meta.ogImage ?? meta.image;
-
-  // set the page type
-  let pageType = Component.layoutProps?.pageType ? Component.layoutProps.pageType : "website";
 
   // blog posts will have a description
   if(meta.image && meta.description){
@@ -159,17 +154,6 @@ export default function App({ Component, pageProps, router }) {
     url = "https://" + process.env.NEXT_PUBLIC_VERCEL_URL;
   }
 
-  // set our url
-  let url = process.env.NEXT_PUBLIC_APP_URL;
-
-  if(
-    process.env.NEXT_PUBLIC_VERCEL_URL !== undefined &&
-    process.env.NEXT_PUBLIC_VERCEL_ENV !== undefined &&
-    process.env.NEXT_PUBLIC_VERCEL_ENV !== "production"
-  ){
-    url = "https://" + process.env.NEXT_PUBLIC_VERCEL_URL;
-  }
-
   // if we have social data, turn on the schema object
   let socialProfile;
 
@@ -179,7 +163,6 @@ export default function App({ Component, pageProps, router }) {
       <SocialProfileJsonLd 
         type={appType}
         name={process.env.NEXT_PUBLIC_APP_NAME}
-        url={url}
         url={url}
         sameAs={socialSchema}
       />
@@ -193,7 +176,6 @@ export default function App({ Component, pageProps, router }) {
       </Head>
       <Seo 
         title={meta.metaTitle || meta.title}
-        description={meta.metaDescription || meta.description || process.env.NEXT_PUBLIC_APP_DESCRIPTION}
         description={meta.metaDescription || meta.description || process.env.NEXT_PUBLIC_APP_DESCRIPTION}
         themeColor={"#f8fafc"}
         twitterHandle={process.env.NEXT_PUBLIC_APP_TWITTER_HANDLE}
