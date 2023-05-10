@@ -41,12 +41,6 @@
 
 - add a brand page.. With logos and resources.. Like Vercel.com and TW
 
-- add a sitemap feature
-
-- Sitemaps
-    - set up google search console
-    - write a doc on google search console
-
 
 - build storybook axe testing into the testing deployment pipeline?
     - https://storybook.js.org/docs/react/writing-tests/accessibility-testing#a11y-config-with-the-test-runner
@@ -240,3 +234,8 @@ HN Analytics survey: Mixpanel, Amplitude, PostHog
     - Works on any device, any browser
     - Built in sitemaps
     - Built in Google Analytics support
+    - Jest unit testing
+    - Light mode/ dark mode
+    - Tailwind CSS
+    - Storybook js components
+    - GitHub actions 
