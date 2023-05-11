@@ -7,7 +7,7 @@ import Logo from '@/components/core/Logos/Logo/Logo';
 import { Dialog } from '@headlessui/react';
 import { useEffect, useState } from 'react';
 import clsx from 'clsx'
-import { ThemeSelect, ThemeToggle } from './ThemeToggle'
+import ThemeToggle, {ThemeSelect} from '@/components/core/Toggles/ThemeToggle/ThemeToggle'
 
 export function NavPopover({ display = 'md:hidden', className, ...props }) {
   let [isOpen, setIsOpen] = useState(false)

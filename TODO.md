@@ -1,7 +1,8 @@
 
 ~~~~~~~~~> v2.2
 
-- remove the deprecated icons
+- Create Theme Switcher component
+- remove the deprecated icons in theme toggle
 - continue on prototype header
 
 - create .env.starter file in cli project.. Copy that over during init, not the example file
@@ -26,7 +27,7 @@
 
 - fix open graph image issue
 
-
+- start on quest to create turtle mania.. Will be the same them as PG
 - start on a quest to upgrade paulgraham.com
 
 - update beams image to use next image: https://stackoverflow.com/questions/63195562/next-js-set-background-image

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Logo from "../Logos/Logo/Logo";
 import clsx from "clsx";
-import { ThemeToggle } from '@/components/ThemeToggle';
+import ThemeToggle from '@/components/core/Toggles/ThemeToggle/ThemeToggle';
 import { NavItems, NavPopover } from '@/components/Header';
 import styles from '@/pages/index.module.css';
 import GitHubIcon from "../Icons/GitHubIcon/GitHubIcon";
@@ -62,7 +62,7 @@ const SplashHeader = ({
                                 </ul>
                             </nav> */}
                             <div className="flex items-center border-l border-slate-200 ml-6 pl-6 dark:border-slate-800">
-                                {/* <ThemeToggle /> */}
+                                <ThemeToggle />
                                 {gitHubUrl !== "" &&
                                     <a
                                         href={gitHubUrl}
