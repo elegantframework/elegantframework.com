@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import VersionSwitcher from '@/components/core/Header/VersionSwitcher';
+import VersionSwitcher from '@/components/core/Headers/VersionSwitcher';
 import { SearchButton } from '@/components/Search';
 import Router from 'next/router';
 import Logo from '@/components/core/Logos/Logo/Logo';

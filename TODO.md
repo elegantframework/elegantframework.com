@@ -1,11 +1,20 @@
 
 ~~~~~~~~~> v2.2
 
+- remove the deprecated icons
+- continue on prototype header
+
 - create .env.starter file in cli project.. Copy that over during init, not the example file
 - Also copy the example file over, but have empty values and every env var possible so users can see all options
 - add .env.test file to cli source
 
 - Push to "innovators" release, and test
+
+- storybook was broke when i ran it after running the cli init command
+
+- run npm install in the init script
+    - update the install doc to remove that step
+    - update the console message to say the user can run the dev or run build
 
 
 - listen to this guys feedback: https://visualdebug.com/issue/TRRbJjU2vIu_vO_O90z-GQ

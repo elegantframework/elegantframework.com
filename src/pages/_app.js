@@ -14,7 +14,7 @@ import 'intersection-observer';
 import { SearchProvider } from '@/components/Search';
 import AnalyticsHead from '@/components/core/Analytics/AnalyticsHead';
 import AnalyticsBody from '@/components/core/Analytics/AnalyticsBody';
-import * as gtag from '@/utils/analytics/gtag';
+import * as gtag from '@/utils/core/Analytics/gtag';
 import socialCardLarge from '@/img/social-card-large.jpg';
 
 if (typeof window !== 'undefined' && !('ResizeObserver' in window)) {
