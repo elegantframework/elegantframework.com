@@ -2,9 +2,11 @@ import Link from "next/link";
 import Logo from "../Logos/Logo/Logo";
 import clsx from "clsx";
 import ThemeToggle from '@/components/core/Toggles/ThemeToggle/ThemeToggle';
-import { NavItems, NavPopover } from '@/components/Header';
 import styles from '@/pages/index.module.css';
 import GitHubIcon from "../Icons/GitHubIcon/GitHubIcon";
+import NavItems from "../Navigation/NavItems/NavItems";
+import { NavigationItem } from "@/types/NavigationItem";
+import NavPopover from "../Navigation/NavPopover/NavPopover";
 
 interface Props {
     /**
@@ -20,13 +22,18 @@ interface Props {
      * The application name.
      */
     appName: string;
+    /**
+     * A list of navigation items for the header.
+     */
+    navigationItems?: NavigationItem[];
     
 };
 
 const SplashHeader = ({
     beams = false,
     gitHubUrl = "",
-    appName
+    appName,
+    navigationItems = []
 }: Props) => {
     return(
         <header className="relative mb-10">
@@ -54,14 +61,23 @@ const SplashHeader = ({
                         </a>
                     </Link>
                     <div className="flex items-center">
-                        {/* <NavPopover className="-my-1 ml-2 -mr-1" display="md:hidden" /> */}
+                        <NavPopover 
+                            className="-my-1 ml-2 -mr-1" 
+                            display="md:hidden" 
+                            navigationItems={navigationItems}
+                        />
                         <div className="hidden md:flex items-center">
-                            {/* <nav>
+                            <nav>
                                 <ul className="flex items-center gap-x-8">
-                                    <NavItems />
+                                    <NavItems navItems={navigationItems}/>
                                 </ul>
-                            </nav> */}
-                            <div className="flex items-center border-l border-slate-200 ml-6 pl-6 dark:border-slate-800">
+                            </nav>
+                            <div className={
+                                clsx(
+                                    "flex items-center ml-6 pl-6",
+                                    (navigationItems.length > 0 ? "border-l" : "")
+                                )
+                            }>
                                 <ThemeToggle />
                                 {gitHubUrl !== "" &&
                                     <a

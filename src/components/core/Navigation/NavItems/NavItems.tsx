@@ -22,7 +22,7 @@ const NavItems = ({navItems}: Props) => {
     // loop through our items, and add them to our list
     navItems.forEach(item => {
         list.push(
-            <li>
+            <li key={item.label}>
                 <Link href={item.href}>
                     <a className={
                         clsx(

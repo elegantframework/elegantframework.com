@@ -1,22 +1,21 @@
 
 ~~~~~~~~~> v2.2
 
-- Create Theme Switcher component
-- remove the deprecated icons in theme toggle
-- continue on prototype header
 
-- create .env.starter file in cli project.. Copy that over during init, not the example file
-- Also copy the example file over, but have empty values and every env var possible so users can see all options
-- add .env.test file to cli source
+- As a developer, I want to create a slim `.env.starter` file in the Elegant-cli project. During the init step, the script should copy that file over, replacing the current method of copying the example file. During the init step, we want to copy the example file over, but have empty values and every env var possible so users can see all options.
+
+- As a developer, I want to include a `.env.test` file during the project creation. This test environment file will be used by Jest during component unit testing.
+
+- Storybook is doing something incorrect
+    - storybook was broke when i ran it after running the cli init command
 
 - Push to "innovators" release, and test
-
-- storybook was broke when i ran it after running the cli init command
 
 - run npm install in the init script
     - update the install doc to remove that step
     - update the console message to say the user can run the dev or run build
 
+- create simple turtle mania launch page.. Push to the demo site and get the environment to turn green and passing on Github.
 
 - listen to this guys feedback: https://visualdebug.com/issue/TRRbJjU2vIu_vO_O90z-GQ
     - https://www.indiehackers.com/post/would-you-hire-me-6a8ff22811?commentId=-NV-OCbD-VTaw3Ir6f0A

@@ -41,4 +41,15 @@ describe("Nav Item component", () => {
         .toJSON();
         expect(navItem).toMatchSnapshot();
     });
+
+    it('renders the nav items component properly with no nav items', () => {
+        const navItem = renderer
+        .create(
+            <NavItems 
+                navItems={[]}
+            />
+        )
+        .toJSON();
+        expect(navItem).toMatchSnapshot();
+    });
 });

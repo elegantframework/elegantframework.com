@@ -100,6 +100,9 @@ function MoonIconOld({ selected, ...props }) {
   )
 }
 
+/**
+ * @deprecated - To be removed by 2.3
+ */
 function useTheme() {
   let { setting, setSetting } = useSetting()
   let initial = useRef(true)
@@ -160,6 +163,9 @@ function useTheme() {
   return [setting, setSetting]
 }
 
+/**
+ * @deprecated - To be removed by 2.3
+ */
 export function ThemeToggle({ panelClassName = 'mt-4' }) {
   let [setting, setSetting] = useTheme()
 
@@ -201,6 +207,9 @@ export function ThemeToggle({ panelClassName = 'mt-4' }) {
   )
 }
 
+/**
+ * @deprecated - To be removed by 2.3
+ */
 export function ThemeSelect() {
   let [setting, setSetting] = useTheme()
 

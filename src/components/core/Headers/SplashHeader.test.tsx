@@ -1,6 +1,7 @@
 import React from "react";
 import renderer from 'react-test-renderer';
 import SplashHeader from "./SplashHeader";
+import ReactDOM from "react-dom";
 
 Object.defineProperty(window, 'matchMedia', {
     writable: true,
@@ -15,6 +16,10 @@ Object.defineProperty(window, 'matchMedia', {
       dispatchEvent: jest.fn(),
     })),
 });
+
+// react portal fix
+// @ts-ignore
+ReactDOM.createPortal = node => node;
 
 describe("Splash Header component", () => {
     it('renders a splash header component properly', () => {

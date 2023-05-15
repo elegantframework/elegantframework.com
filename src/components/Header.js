@@ -9,6 +9,9 @@ import { useEffect, useState } from 'react';
 import clsx from 'clsx'
 import ThemeToggle, {ThemeSelect} from '@/components/core/Toggles/ThemeToggle/ThemeToggle'
 
+/**
+ * @deprecated - To be removed by 2.3
+ */
 export function NavPopover({ display = 'md:hidden', className, ...props }) {
   let [isOpen, setIsOpen] = useState(false)
 
@@ -86,6 +89,9 @@ export function NavPopover({ display = 'md:hidden', className, ...props }) {
   )
 }
 
+/**
+ * @deprecated - To be removed by 2.3
+ */
 export function NavItems() {
   const router = useRouter();
   return (

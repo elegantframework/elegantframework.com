@@ -14,6 +14,18 @@ export const Default: Story = {
   args: {
     beams: false,
     gitHubUrl: "",
-    appName: "Storybook"
+    appName: "Storybook",
+    navigationItems: [
+      {
+          href: "/docs/installation",
+          path: "/docs/",
+          label: "Docs",        
+      },
+      {
+          href: "/blog",
+          path: "/blog",
+          label: "Blog",        
+      }
+    ]
   },
 };
