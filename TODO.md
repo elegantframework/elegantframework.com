@@ -4,16 +4,22 @@
 
 - As a developer, I want to create a slim `.env.starter` file in the Elegant-cli project. During the init step, the script should copy that file over, replacing the current method of copying the example file. During the init step, we want to copy the example file over, but have empty values and every env var possible so users can see all options.
 
-- As a developer, I want to include a `.env.test` file during the project creation. This test environment file will be used by Jest during component unit testing.
-
-- Storybook is doing something incorrect
-    - storybook was broke when i ran it after running the cli init command
-
-- Push to "innovators" release, and test
 
 - run npm install in the init script
     - update the install doc to remove that step
     - update the console message to say the user can run the dev or run build
+
+- Push to "innovators" release, and test
+
+
+- update the init script
+    - add packages folder like nextjs
+    - add options like nextjs init script
+    - start with base skyline template
+    - create a base launch template with email signup.. Start with v1 as blank white.
+
+
+
 
 - create simple turtle mania launch page.. Push to the demo site and get the environment to turn green and passing on Github.
 
@@ -54,15 +60,15 @@
 - build storybook axe testing into the testing deployment pipeline?
     - https://storybook.js.org/docs/react/writing-tests/accessibility-testing#a11y-config-with-the-test-runner
 
-- Add storybook dark mode
 
-- Add storybook docs.. Make storybook look like https://www.bbc.co.uk/iplayer/storybook/index.html
 
 - Add a scannable qr code to the footer.. add a ?qr=home query to the url for GA tracking
 
 ~~~~~~~~> v2.3 road map
 
 - create an faq page.. Add schema metadata to it
+
+- Add storybook docs.. Make storybook look like https://www.bbc.co.uk/iplayer/storybook/index.html
 
 ~~~~~~~~> v3 road map
 
@@ -93,6 +99,7 @@
 
 - Themes
     - Skyline - Base Elegant theme
+    - Launch - Basic single announcement page of an upcoming service.. With email sign up
     - Hacker - PG PC Blank white theme
     - Interviewer - Theme for chris
     - name TBD -- Resume theme
