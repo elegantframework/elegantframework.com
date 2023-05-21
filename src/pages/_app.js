@@ -177,6 +177,7 @@ export default function App({ Component, pageProps, router }) {
       <Seo 
         title={meta.metaTitle || meta.title}
         description={meta.metaDescription || meta.description || process.env.NEXT_PUBLIC_APP_DESCRIPTION}
+        canonical={process.env.NEXT_PUBLIC_APP_URL || ""}
         themeColor={"#f8fafc"}
         twitterHandle={process.env.NEXT_PUBLIC_APP_TWITTER_HANDLE}
         twitterSite={process.env.NEXT_PUBLIC_APP_TWITTER_HANDLE}

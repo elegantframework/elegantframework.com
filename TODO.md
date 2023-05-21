@@ -2,40 +2,49 @@
 ~~~~~~~~~> v2.2
 
 
-- As a developer, I want to create a slim `.env.starter` file in the Elegant-cli project. During the init step, the script should copy that file over, replacing the current method of copying the example file. During the init step, we want to copy the example file over, but have empty values and every env var possible so users can see all options.
-
-
-- run npm install in the init script
-    - update the install doc to remove that step
-    - update the console message to say the user can run the dev or run build
-
-- Push to "innovators" release, and test
-
-
-- update the init script
-    - add packages folder like nextjs
-    - add options like nextjs init script
-    - start with base skyline template
-    - create a base launch template with email signup.. Start with v1 as blank white.
 
 
 
+- update the install doc here to remove that step.. Update the page on v2.3 branch to not include `npm install`
 
-- create simple turtle mania launch page.. Push to the demo site and get the environment to turn green and passing on Github.
+- how to accomplish below
+    - download the innovators branch
+    - go through the setting up a new app
+    - write down some of the cooler things
+    - find the top 5 items
+    - cover them in a video, starting from creating an app from scratch.
+        - "... some of my favorite features are ...."
+
+- get manic
+    - find 5 of the best features
+    - document them
+    - create a demo video based on the features.. 
+    - put the demo video in the hero.. Make some homepage updates or tweaks
+    - post in a subreddit to test a SHOW HN
+    - post a SHOW HN
+
+- get and add a facebook pixel  -- In progress.. Waiting on fb to rereview account ---> https://www.facebook.com/accountquality
+
+
 
 - listen to this guys feedback: https://visualdebug.com/issue/TRRbJjU2vIu_vO_O90z-GQ
     - https://www.indiehackers.com/post/would-you-hire-me-6a8ff22811?commentId=-NV-OCbD-VTaw3Ir6f0A
 
-- create a demo video.. 
 
-- put the demo video in the hero.. Make some homepage updates or tweaks
 
 - fix open graph image issue
+    - delete or update the /api directory?
+
+- update beams image to use next image: https://stackoverflow.com/questions/63195562/next-js-set-background-image
+
+
+
 
 - start on quest to create turtle mania.. Will be the same them as PG
 - start on a quest to upgrade paulgraham.com
 
-- update beams image to use next image: https://stackoverflow.com/questions/63195562/next-js-set-background-image
+
+
 
 - zoho?
 
@@ -51,6 +60,30 @@
 - create a contact spreadsheet, or use convert kit to email blogger people about trying out elegant for feedback
 
 
+
+
+~~~~~~~~> v2.3 road map
+
+- #1 priority item: Setup github repos to be more proper and complete. Use Next.js and Vercel as the guide.
+    - probably need to create templates for issues and pr's
+        - Issues should have screenshots for other people to understand
+
+    
+
+- commit the launch theme, then run the latest innovators release on top of it
+    - set the goal of 2.3 to be able to create a single launch page theme using core components
+        - People would be able to modify the theme by copying core components
+        - Use pocket as the guide to build launch ---> https://tailwindui.com/templates/pocket
+
+- update the init script
+    - add packages folder like nextjs
+    - add options like nextjs init script
+    - start with base skyline template
+    - create a base launch template with email signup.. Start with v1 as blank white.
+
+
+- create simple turtle mania launch page.. Push to the demo site and get the environment to turn green and passing on Github.
+
 - Set up privacy policy and terms now that we have GA? 
     - Worry about GDPR now?
 
@@ -64,11 +97,14 @@
 
 - Add a scannable qr code to the footer.. add a ?qr=home query to the url for GA tracking
 
-~~~~~~~~> v2.3 road map
 
 - create an faq page.. Add schema metadata to it
 
+- create a docs page explaining the function of a fb pixel, and how to enable it in elegant.
+
 - Add storybook docs.. Make storybook look like https://www.bbc.co.uk/iplayer/storybook/index.html
+
+- Improve install script -- Follow vercels lead  https://github.com/vercel/next.js/blob/canary/packages/create-next-app/index.ts
 
 ~~~~~~~~> v3 road map
 
@@ -88,6 +124,12 @@
     - move hooks into core dir
     - delete hooks dir
 
+- figure out how to create a npx command.. ex: `npx create-next-app`
+    - follow next.js lead
+    - ask what the project name is
+    - ask other questions
+    - take the responses and put them into variables, set up the .env file and package.json file for people automatically.
+
 ~~~~~~> Road map
 
 
@@ -100,6 +142,8 @@
 - Themes
     - Skyline - Base Elegant theme
     - Launch - Basic single announcement page of an upcoming service.. With email sign up
+        - The perfect website template for launching your next exciting product or idea.
+
     - Hacker - PG PC Blank white theme
     - Interviewer - Theme for chris
     - name TBD -- Resume theme
@@ -254,4 +298,17 @@ HN Analytics survey: Mixpanel, Amplitude, PostHog
     - Light mode/ dark mode
     - Tailwind CSS
     - Storybook js components
-    - GitHub actions 
+    - GitHub actions
+
+
+    I like this style of How to article - https://www.facebook.com/business/help/952192354843755?id=1205376682832142
+
+
+    Blog Post Headlines
+
+        - How I switched from using a todo file, to GitHub issues.
+        - How I successfully switched from a todo file, to building in public with GIthub issues.
+        - How to drive more organic traffic with Google Webmaster Tools, and these other SEO hacks.
+
+
+https://www.lennysnewsletter.com/p/how-the-biggest-consumer-apps-got
