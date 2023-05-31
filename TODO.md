@@ -1,24 +1,41 @@
 
 ~~~~~~~~~> v2.2
 
-- update release notes
-- update upgrade guide
-- write 2.2 announcment post
+
+    - Commit
+    - Push innovators release.
+
+
+- add some new issues to the board for v2.3 help
+    - Ask for the complete fb pixel event tracking
+
+
+- do a test where we delete the .env file and npm run dev.. App should build
+
+- pull in the latest innovators on .com branch
+- start 2.2 announcement post
+- pull in updates
+- 2.2 release needs to update the app type var
+
+
 - check out announcing on hashnode as well
 
-- merge dudes pr
-- create an config dir
+
+
 - triage why his pr doesn't have a test status on it
 
 
 ~~~~~~~~> v2.3 road map
 
+- add our facebook info the site and meta data ---> https://www.facebook.com/profile.php?id=100093261967093
+- Create the full fb pixel integration
+
 - #1 priority item: Setup github repos to be more proper and complete. Use Next.js and Vercel as the guide.
     - probably need to create templates for issues and pr's
         - Issues should have screenshots for other people to understand
 
-- Finish install video
 - Finish video.js component
+    - Add install video to install docs page.
 
 - how to accomplish below
     - download the innovators branch
@@ -36,7 +53,6 @@
     - post in a subreddit to test a SHOW HN
     - post a SHOW HN
 
-- get and add a facebook pixel  -- In progress.. Waiting on fb to rereview account ---> https://www.facebook.com/accountquality
 
 - listen to this guys feedback: https://visualdebug.com/issue/TRRbJjU2vIu_vO_O90z-GQ
     - https://www.indiehackers.com/post/would-you-hire-me-6a8ff22811?commentId=-NV-OCbD-VTaw3Ir6f0A
@@ -83,6 +99,7 @@
 
 
 - Add a scannable qr code to the footer.. add a ?qr=home query to the url for GA tracking
+    - Maybe check this out: https://news.ycombinator.com/item?id=36128082
 
 
 - create an faq page.. Add schema metadata to it
