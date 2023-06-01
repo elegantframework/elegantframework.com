@@ -7,6 +7,7 @@ import clsx from 'clsx';
 import Link from 'next/link';
 import { ArticleJsonLd } from 'next-seo';
 import { useRouter } from 'next/router';
+import Config from "Config";
 
 export function BlogPostLayout({ children, meta }) {
   // use our router to get the url
@@ -23,10 +24,10 @@ export function BlogPostLayout({ children, meta }) {
     <>
       <ArticleJsonLd 
         useAppDir={false}
-        url={process.env.NEXT_PUBLIC_APP_URL + router.pathname}
+        url={Config('app.url') + router.pathname}
         title={meta.title}
         images={[
-          process.env.NEXT_PUBLIC_APP_URL + meta.image.src
+          Config('app.url') + meta.image.src
         ]}
         datePublished={meta.date}
         authorName={[{
@@ -116,23 +117,11 @@ export function BlogPostLayout({ children, meta }) {
               </article>
             </main>
             <footer className="mt-16">
-            <div className="relative">
-                {/* <img
-                  src={require('@/img/beams/blog-post-form-light.jpg').default.src}
-                  alt=""
-                  className="absolute top-px sm:left-auto sm:right-0 left-1/4 dark:hidden max-w-none"
-                  width="476"
-                  decoding="async"
-                />
-                <img
-                  src={require('@/img/beams/blog-post-form-dark@90.jpg').default.src}
-                  alt=""
-                  className="absolute top-px -left-1/4 sm:left-0 hidden dark:block max-w-none"
-                  width="1429"
-                  decoding="async"
-                /> */}
-                <NewsletterBlock action={process.env.NEXT_PUBLIC_CONVERTKIT_ACTION_URL}/>
-              </div>
+              {Config('app.convert_action_url') ??
+                <div className="relative">
+                  <NewsletterBlock action={Config('app.convert_action_url')}/>
+                </div>
+              }
               <div className="relative">
                 <section className="relative py-16 border-t border-slate-200 dark:border-slate-200/5">
                   <div className='pt-8 pb-10 text-center text-slate-500 dark:border-slate-200/5'>
