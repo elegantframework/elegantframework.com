@@ -14,6 +14,8 @@
 - start 2.2 announcement post
 - validate release notes
 - validate upgrade guide
+    - document how I had to update the app type env var
+    - document how i had to add NEXT_PUBLIC_CONTACT_EMAIL
 - pull in updates
 - 2.2 release needs to update the app type var
 
