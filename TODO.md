@@ -6,14 +6,14 @@
     - Push innovators release.
 
 
-- add some new issues to the board for v2.3 help
-    - Ask for the complete fb pixel event tracking
 
 
 - do a test where we delete the .env file and npm run dev.. App should build
 
 - pull in the latest innovators on .com branch
 - start 2.2 announcement post
+- validate release notes
+- validate upgrade guide
 - pull in updates
 - 2.2 release needs to update the app type var
 
