@@ -35,6 +35,9 @@
 - #1 priority item: Setup github repos to be more proper and complete. Use Next.js and Vercel as the guide.
     - probably need to create templates for issues and pr's
         - Issues should have screenshots for other people to understand
+    - merge PR's for this
+    - Finish going down the community standards list
+    - Add a more complete main readme, with screenshots and gifs?
 
 - Finish video.js component
     - Add install video to install docs page.
