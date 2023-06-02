@@ -2,22 +2,18 @@
 ~~~~~~~~~> v2.2
 
 
-    - Commit
-    - Push innovators release.
 
+- continue 2.2 announcement post
 
+- pull in updated release notes
 
-
-- do a test where we delete the .env file and npm run dev.. App should build
-
-- pull in the latest innovators on .com branch
-- start 2.2 announcement post
-- validate release notes
-- validate upgrade guide
+- create 2.2 upgrade guide
     - document how I had to update the app type env var
     - document how i had to add NEXT_PUBLIC_CONTACT_EMAIL
-- pull in updates
+
 - 2.2 release needs to update the app type var
+
+- create a script to do a full release
 
 
 - check out announcing on hashnode as well
@@ -26,11 +22,11 @@
 
 - triage why his pr doesn't have a test status on it
 
+- create a discord server
+    - add it to the footer
+    - announce on all channels that we have a discord chat.
 
 ~~~~~~~~> v2.3 road map
-
-- add our facebook info the site and meta data ---> https://www.facebook.com/profile.php?id=100093261967093
-- Create the full fb pixel integration
 
 - #1 priority item: Setup github repos to be more proper and complete. Use Next.js and Vercel as the guide.
     - probably need to create templates for issues and pr's
@@ -38,6 +34,11 @@
     - merge PR's for this
     - Finish going down the community standards list
     - Add a more complete main readme, with screenshots and gifs?
+    - Add the proper tags to the repo so elegant comes up in the GH search.. Elegant, Elegant-CLI, Elegant Framework, Next.js etc..
+
+
+- add our facebook info the site and meta data ---> https://www.facebook.com/profile.php?id=100093261967093
+- Create the full fb pixel integration
 
 - Finish video.js component
     - Add install video to install docs page.
@@ -194,8 +195,6 @@
 ~~~~~~~ General
 
 - make docs sidebar links collapsible like laravel.com
-
-- make the trademark page dynamic with env variables
 
 - add e2e test that verify's the index, docs, and blog pages load
 
