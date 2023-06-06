@@ -1,8 +1,10 @@
 import { brandonOwens } from '@/authors';
-import card from './elegant-version-2.1.jpg';
+import card from './elegant-version-2.2.jpg';
+import storybook_image from './storybook_and_elegant.gif';
+import enchanced_seo_rich_snippets from './enchanced_seo_rich_snippets.png';
 
 export const meta = {
-  title: 'Elegant version 2.2 stable release - SEO updates, and Storybook.js',
+  title: 'Elegant version 2.2 stable release - Major SEO enhancements, Storybook.js, and more.',
   description: `Elegant version 2.2 is now available for stable release.`,
   date: '2023-06-09T08:00:00.000Z',
   authors: [brandonOwens],
@@ -11,7 +13,9 @@ export const meta = {
 
 <!--excerpt-->
 
-Something something something
+Elegant version 2.2 introduces a number of application enhancements, features, and fixes.
+
+@TODO: give shoutout to community prs
 
 <!--/excerpt-->
 
@@ -20,7 +24,144 @@ This month's Elegant v2.1 release introduces a number of core website features t
 <div className="my-8 shadow-xl">
   <img 
     src={card.src} 
-    alt="Elegant version 2.1.. Google Analytics, ConvertKit newsletter subscriptions, Tailwind CSS theming, and more."
+    alt="Elegant version 2.2 stable release - Major SEO updates, Storybook.js, and more."
     className="rounded-xl"
   />
 </div>
+
+Some of our most favorite updates from this months Elegant version 2.2 stable release are below:
+  - [Storybook.js:](#storybook_js) Rapidly prototype and build React components isolated away from your Elegant application.
+  - [Sitemaps:](#sitemaps) Sitemaps are the easiest way to communicate with Google, and other search crawlers and bots.
+  - [Robots.txt:](#robots_txt) Tell Google and other good bots how to find your sitemap with a Robots.txt file.
+  - [Enhanced SEO:](#enhanced_seo) All of the core SEO components that you would expect, that other platforms call "Plugins".
+  - [Schema.org Rich Snippets:](#schema_org_rich_snippets) Tell Google exactly what your pages are about, how to contact you, and even your social handles.
+  - [Improved Environment Files:](#improved_environment_files)
+  - [Trademark Policy Page:](#trademark_policy_page)
+  - [Improved Favicons:](#improved_favicons)
+  - [App type:](#app_type)
+
+<a name="storybook_js"></a>
+
+## Storybook.js
+
+Storybook is a frontend JavaScript tool for building UI components and pages in isolation. 
+
+We have introduced Storybook.js to Elegant to help developers rapidly prototype and build React components isolated and independent from their core Elegant application code.
+
+Storybook helps you to develop hard-to-reach states and edge cases without needing to run the whole entire Elegant app. Once you are finished developing your React UI components in isolation, you simply drop them into your application code.
+
+<div className="my-8 shadow-xl">
+  <img 
+    src={storybook_image.src} 
+    alt="Elegant version 2.2 now comes complete with Storybook.js for isolated development."
+    className="rounded-xl"
+  />
+</div>
+
+The core components within Elegant each contain a corresponding story and Jest unit test.
+
+A story captures the rendered state of a UI component, and developers write multiple stories per component that describe all the “interesting” states a component can support.
+
+```diff-html NextJsLogo.stories.tsx
+import type { Meta, StoryObj } from '@storybook/react';
+import NextJsLogo from './NextJsLogo';
+
+const meta: Meta<typeof NextJsLogo> = {
+    title: 'Core/Logos/Next.js Logo',
+    component: NextJsLogo,
+};
+
+export default meta;
+
+type Story = StoryObj<typeof NextJsLogo>;
+
+export const Logo: Story = {
+    args: {},
+};
+```
+
+<a name="sitemaps"></a>
+
+## Sitemaps
+
+All new versions of Elegant will automatically generate a sitemap for you and include it in all builds.
+
+A sitemap tells Google or other crawlers which pages and files are important in your site, and the last time the page content has been changed.
+
+While sitemaps are not mandatory for great search engine performance, they can facilitate crawling and indexing to bots and hence your content will be picked up faster and rank accordingly.
+
+<a name="robots_txt"></a>
+
+## Robots.txt
+
+A robots.txt file tells search engine crawlers which pages or files the crawler can or can't request from your Elegant application. The `robots.txt` file is a web standard file that most [good bots](https://www.cloudflare.com/learning/bots/how-to-manage-good-bots/) consume before requesting anything from a specific domain.
+
+A `robots.tsx` file will automatically be created in your project during a build.
+
+<a name="enhanced_seo"></a>
+
+## Enhanced SEO
+
+We have dramatically improved the core SEO functionality straight out of the box. In Elegant version 2.2, we have introduced canonical urls to signal to the head of all pages.
+
+A canonical url tag is a way of telling search engines that a specific URL represents the master copy of a page.
+
+This meta data, combined with a sitemap as mentioned above, and rich snippets as mentioned below, send a number of strong SEO signals to search engines.
+
+<a name="schema_org_rich_snippets"></a>
+
+## Schema.org Rich Snippets
+
+Schema.org result snippets in Google search results are described as rich snippets. They include additional information that is not stored in the meta description of the affected target site, but is stored as structured data in its source code with the help of markups.
+
+In the screenshot below, you can see that Google has found our "Logo", and "Social Graph Image" in our schema data, and now displays it to users in search results.
+
+<div className="my-8 shadow-xl">
+  <img 
+    src={enchanced_seo_rich_snippets.src} 
+    alt="Elegant version 2.2 "
+    className="rounded-xl object-scale-down"
+  />
+</div>
+
+- Added Seo Rich snippets
+  - logo
+  - article json
+  - social media json
+  - more?
+
+
+
+
+<a name="improved_environment_files"></a>
+
+## Improved Environment Files
+
+We have included a minimal environment file that contains only basic variables that a user would need to get started with a new application.
+We have also included an example environment file that contains all possible configuration variables that a user could use to unlock the most of their Elegant application.
+
+@TODO: Write up .env.test file
+- Added a .env.test file for complete Jest unit testings with variables.
+
+<a name="trademark_policy_page"></a>
+
+## Trademark Policy Page
+
+Elegant now includes a starter trademark policy page, further eliminating the need for you to be consumed with boilerplate code and content.
+
+The included trademark policy page contains a contact email address for any issues or comments regarding trademarks.
+
+To include your contact email address for any trademark comments, simply include it in the new `NEXT_PUBLIC_CONTACT_EMAIL` environment variable.
+
+
+<a name="improved_favicons"></a>
+
+## Improved Favicons
+
+- Updated the favicons to be proper across all browsers.
+
+<a name="app_type"></a>
+
+## App type
+
+- The app type is now set using the `NEXT_PUBLIC_APP_TYPE` variable. Setting this to personal will turn the rich snippets schema data into a personal website.

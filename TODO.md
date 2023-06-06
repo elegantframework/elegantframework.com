@@ -1,28 +1,22 @@
 
 ~~~~~~~~~> v2.2
 
+- finish 2.2 announcement post
+    - 2.2 release needs to update the app type var
+    - give a shoutout to the dev who helped with the trademark page
+
+- proof read 2.2 upgrade guide and merge PR
 
 
-- continue 2.2 announcement post
 
-- pull in updated release notes
-
-- create 2.2 upgrade guide
-    - document how I had to update the app type env var
-    - document how i had to add NEXT_PUBLIC_CONTACT_EMAIL
-
-- 2.2 release needs to update the app type var
-
-- create a script to do a full release
-
+- Test publish release npm command
 
 - check out announcing on hashnode as well
 
 
-
 - triage why his pr doesn't have a test status on it
 
-- create a discord server
+- create a discord server --> https://discord.gg/PwY38x4uvV
     - add it to the footer
     - announce on all channels that we have a discord chat.
 
@@ -31,10 +25,21 @@
 - #1 priority item: Setup github repos to be more proper and complete. Use Next.js and Vercel as the guide.
     - probably need to create templates for issues and pr's
         - Issues should have screenshots for other people to understand
-    - merge PR's for this
     - Finish going down the community standards list
     - Add a more complete main readme, with screenshots and gifs?
-    - Add the proper tags to the repo so elegant comes up in the GH search.. Elegant, Elegant-CLI, Elegant Framework, Next.js etc..
+
+- R&D Tina... Can we slip this into our project locally hosted easily?
+    - We could really use the ability to create new page content faster and revamp our entire page with updated and complete content.
+
+- need a storybook feature doc page
+- need a jest feature doc page
+
+- Start writing internal docs like Github.. About us, our story, roadmap
+    - Write a "How to start a new version" guide. 
+        - Create new branch, ex. v3.1
+        - Start the blog post
+        - update the release notes
+        - As we create and merge features, update the release notes and blog post with each PR to get ahead of writing content ahead of a release.
 
 
 - add our facebook info the site and meta data ---> https://www.facebook.com/profile.php?id=100093261967093
@@ -42,6 +47,7 @@
 
 - Finish video.js component
     - Add install video to install docs page.
+    - Tina.io has a nice demo of a video component within a doc on their guides
 
 - how to accomplish below
     - download the innovators branch
@@ -119,6 +125,11 @@
 ~~~~~~~~> v3 road map
 
 - delete deprecated components
+
+- update homepage to look and feel like Gitlabs
+- create internal docs like Gitlab.. Since we are open and transparent
+
+- need to write docs and guides that shows a clueless non tech user how to set up a site from end to end.. Including Search Console, GA, Facebook Pixel, and more.
 
 - cleanup dir structure
     - rename utilis to core
@@ -275,11 +286,6 @@ HN Analytics survey: Mixpanel, Amplitude, PostHog
 - Add built in 508 compliance and testing  - Axe, Jest, Storybook.. Use Aria-labels
 
 
-- How to do a pre release:
-        npm version prerelease --preid=prerelease
-        npm publish --tag prerelease
-
-        Then npm install elegant-cli --tag prerelease
 
 - How to do an innovators release:
         npm version prerelease --preid=innovators
