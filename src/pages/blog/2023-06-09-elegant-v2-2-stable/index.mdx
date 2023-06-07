@@ -21,6 +21,8 @@ Elegant version 2.2 introduces a number of application enhancements, features, a
 
 This month's Elegant v2.1 release introduces a number of core website features that we feel most content creators will require for their basic website needs.
 
+We would like to take the opportunity to send a shout-out and thank you to <a href="https://github.com/rabisnaqvi" target="_blank">rabisnaqvi</a> for their coding efforts and contribution to Elegant. <a href="https://github.com/elegantframework/elegant-cli/pull/44" target="_blank">#44</a>
+
 <div className="my-8 shadow-xl">
   <img 
     src={card.src} 
@@ -35,10 +37,10 @@ Some of our most favorite updates from this months Elegant version 2.2 stable re
   - [Robots.txt:](#robots_txt) Tell Google and other good bots how to find your sitemap with a Robots.txt file.
   - [Enhanced SEO:](#enhanced_seo) All of the core SEO components that you would expect, that other platforms call "Plugins".
   - [Schema.org Rich Snippets:](#schema_org_rich_snippets) Tell Google exactly what your pages are about, how to contact you, and even your social handles.
-  - [Improved Environment Files:](#improved_environment_files)
-  - [Trademark Policy Page:](#trademark_policy_page)
-  - [Improved Favicons:](#improved_favicons)
-  - [App type:](#app_type)
+  - [Improved Environment Files:](#improved_environment_files) Simplified stater `.env` files, and a complete `.env.example` file to help guide users.
+  - [Trademark Policy Page:](#trademark_policy_page) <a href="https://github.com/elegantframework/elegant-cli/pull/44" target="_blank">#44</a> introduced a simple starter Trademark policy page for all new Elegant applications.
+  - [Improved Favicons:](#improved_favicons) Updated and improved Favicon sets, with ensured compatibility across all browser types.
+  - [App type:](#app_type) Elegant applications can now have their SEO schema data set to either `Organization` or `Personal`.
 
 <a name="storybook_js"></a>
 
@@ -96,7 +98,7 @@ While sitemaps are not mandatory for great search engine performance, they can f
 
 A robots.txt file tells search engine crawlers which pages or files the crawler can or can't request from your Elegant application. The `robots.txt` file is a web standard file that most [good bots](https://www.cloudflare.com/learning/bots/how-to-manage-good-bots/) consume before requesting anything from a specific domain.
 
-A `robots.tsx` file will automatically be created in your project during a build.
+A `robots.txt` file will automatically be created in your project during a build.
 
 <a name="enhanced_seo"></a>
 
@@ -128,6 +130,16 @@ In the screenshot below, you can see that Google has found our "Logo", and "Soci
   - logo
   - article json
   - social media json
+  NEXT_PUBLIC_APP_TWITTER_HANDLE=""
+  NEXT_PUBLIC_APP_TWITTER_SITE_HANDLE=""
+  NEXT_PUBLIC_GOOGLE_ANALYTICS_ID=""
+  NEXT_PUBLIC_FACEBOOK_APP_ID=""
+  NEXT_PUBLIC_APP_TWITTER_URL=""
+  NEXT_PUBLIC_APP_FACEBOOK_URL=""
+  NEXT_PUBLIC_APP_INSTAGRAM_URL=""
+  NEXT_PUBLIC_APP_YOUTUBE_URL=""
+  NEXT_PUBLIC_APP_LINKEDIN_URL=""
+
   - more?
 
 
@@ -158,10 +170,22 @@ To include your contact email address for any trademark comments, simply include
 
 ## Improved Favicons
 
-- Updated the favicons to be proper across all browsers.
+We have upgraded the existing favicon set to have all the proper sizes and formats across all browsers and devices. 
+
+This includes properly sized favicons and a supporting manifest for Microsoft based devices and browsers.
 
 <a name="app_type"></a>
 
 ## App type
 
-- The app type is now set using the `NEXT_PUBLIC_APP_TYPE` variable. Setting this to personal will turn the rich snippets schema data into a personal website.
+The `NEXT_PUBLIC_APP_TYPE` variable determines whether web applications schema.org metadata is set to a "Corporate" type, or a "Personal" type.
+
+By default, all new Elegant applications have their .env configuration files set to the `Organization` type.
+```
+NEXT_PUBLIC_APP_TYPE="Organization"
+```
+
+Setting the `NEXT_PUBLIC_APP_TYPE` environment variable to `Personal` will turn your Elegant applications schema data into a personal web application.
+```
+NEXT_PUBLIC_APP_TYPE="Personal"
+```

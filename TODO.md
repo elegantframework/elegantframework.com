@@ -11,16 +11,23 @@
 
 - Test publish release npm command
 
+- publish the offical release.
+
+- pull in latest cli package into .com project and pull in any updates.
+
+
+
 - check out announcing on hashnode as well
 
 
 - triage why his pr doesn't have a test status on it
 
-- create a discord server --> https://discord.gg/PwY38x4uvV
-    - add it to the footer
-    - announce on all channels that we have a discord chat.
+
 
 ~~~~~~~~> v2.3 road map
+- I need to get better about documenting features as we create them.
+    - We have a bunch of tech debt currently in the form of undocumented features.
+    - A blog post is a good general start to announcing features, but supporting docs should be written as well.
 
 - #1 priority item: Setup github repos to be more proper and complete. Use Next.js and Vercel as the guide.
     - probably need to create templates for issues and pr's
@@ -28,11 +35,20 @@
     - Finish going down the community standards list
     - Add a more complete main readme, with screenshots and gifs?
 
-- R&D Tina... Can we slip this into our project locally hosted easily?
-    - We could really use the ability to create new page content faster and revamp our entire page with updated and complete content.
+- R&D exploration for a CMS panel:
+    - Checked out Tina.. Has everything, but looks bloated, flighty, and disorganized.. They are shifting from Forest.io to TinaCms and getting distracted.. Our oppurtunity to create someting more simple.
+    - Decap-CMS (Netlify CMS) - This is possible
+    - Netlify CMS integration with Next and Vercel:
+        - https://github.com/robinpokorny/netlify-cms-now/tree/master
+        - https://github.com/officialrajdeepsingh/contentLayerNetlifycms 
+    - Ask Guermo and vercel to build one and help us?
 
 - need a storybook feature doc page
 - need a jest feature doc page
+
+- create a discord server --> https://discord.gg/PwY38x4uvV
+    - add it to the footer
+    - announce on all channels that we have a discord chat.
 
 - Start writing internal docs like Github.. About us, our story, roadmap
     - Write a "How to start a new version" guide. 
