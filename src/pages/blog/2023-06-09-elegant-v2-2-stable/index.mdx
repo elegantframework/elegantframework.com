@@ -5,7 +5,7 @@ import enchanced_seo_rich_snippets from './enchanced_seo_rich_snippets.png';
 
 export const meta = {
   title: 'Elegant version 2.2 stable release - Major SEO enhancements, Storybook.js, and more.',
-  description: `Elegant version 2.2 is now available for stable release.`,
+  description: `Elegant version 2.2 is stable, and ready for production. Storybook.js, Enhanced SEO, and more.`,
   date: '2023-06-09T08:00:00.000Z',
   authors: [brandonOwens],
   image: card.src,
@@ -13,13 +13,11 @@ export const meta = {
 
 <!--excerpt-->
 
-Elegant version 2.2 introduces a number of application enhancements, features, and fixes.
-
-@TODO: give shoutout to community prs
+Elegant version 2.2 is stable, and ready for production. Storybook.js, Enhanced SEO, and more.
 
 <!--/excerpt-->
 
-This month's Elegant v2.1 release introduces a number of core website features that we feel most content creators will require for their basic website needs.
+Elegant version 2.2 is stable, and ready for production. All new applications will include Storybook.js, enhanced SEO, and much more.
 
 We would like to take the opportunity to send a shout-out and thank you to <a href="https://github.com/rabisnaqvi" target="_blank">rabisnaqvi</a> for their coding efforts and contribution to Elegant. <a href="https://github.com/elegantframework/elegant-cli/pull/44" target="_blank">#44</a>
 
@@ -114,7 +112,7 @@ This meta data, combined with a sitemap as mentioned above, and rich snippets as
 
 ## Schema.org Rich Snippets
 
-Schema.org result snippets in Google search results are described as rich snippets. They include additional information that is not stored in the meta description of the affected target site, but is stored as structured data in its source code with the help of markups.
+Google uses schema.org structured data to show information about a website on their search results pages. They include additional information that is not stored in the meta description of the affected target site, but is stored as structured data in its source code with the help of markups.
 
 In the screenshot below, you can see that Google has found our "Logo", and "Social Graph Image" in our schema data, and now displays it to users in search results.
 
@@ -126,34 +124,33 @@ In the screenshot below, you can see that Google has found our "Logo", and "Soci
   />
 </div>
 
-- Added Seo Rich snippets
-  - logo
-  - article json
-  - social media json
-  NEXT_PUBLIC_APP_TWITTER_HANDLE=""
-  NEXT_PUBLIC_APP_TWITTER_SITE_HANDLE=""
-  NEXT_PUBLIC_GOOGLE_ANALYTICS_ID=""
-  NEXT_PUBLIC_FACEBOOK_APP_ID=""
-  NEXT_PUBLIC_APP_TWITTER_URL=""
-  NEXT_PUBLIC_APP_FACEBOOK_URL=""
-  NEXT_PUBLIC_APP_INSTAGRAM_URL=""
-  NEXT_PUBLIC_APP_YOUTUBE_URL=""
-  NEXT_PUBLIC_APP_LINKEDIN_URL=""
-
-  - more?
-
-
-
+You can now provide your all of your social media sites directly to Google and other crawlers, simply by setting any of the variables below in your `.env` configuration file.
+  
+```diff-html .env
+NEXT_PUBLIC_APP_TWITTER_HANDLE="@thebrandonowens"
+NEXT_PUBLIC_APP_TWITTER_SITE_HANDLE="@nextjs"
+NEXT_PUBLIC_APP_TWITTER_URL="https://twitter.com/thebrandonowens"
+NEXT_PUBLIC_APP_FACEBOOK_URL="https://www.facebook.com/people/Elegant-Framework/100093261967093/"
+NEXT_PUBLIC_APP_INSTAGRAM_URL="..."
+NEXT_PUBLIC_APP_YOUTUBE_URL="..."
+NEXT_PUBLIC_APP_LINKEDIN_URL="..."
+```
 
 <a name="improved_environment_files"></a>
 
 ## Improved Environment Files
 
-We have included a minimal environment file that contains only basic variables that a user would need to get started with a new application.
-We have also included an example environment file that contains all possible configuration variables that a user could use to unlock the most of their Elegant application.
+We have made the environment configuration process a bit easier for users by providing the most basic `.env` file, with starter variables already set.
 
-@TODO: Write up .env.test file
-- Added a .env.test file for complete Jest unit testings with variables.
+We have also updated the included `.env.example` file to provide a complete overlook af all the currently possible environment variables that a user could use to unlock the most of their Elegant application.
+
+An additional `.env.test` file has been included in the newest release of Elegant. The `.env.test` is loaded by Jest during unit testing, and helps ensure the accuracy of your components that use environment specific variables.
+
+```diff-html .env.test
+NEXT_PUBLIC_APP_NAME="Elegant - The unit testing application."
+NEXT_PUBLIC_APP_DESCRIPTION="This is a test! Only a test!"
+NEXT_PUBLIC_APP_TAGLINE="The Unit Test First Framework for React Developers"
+```
 
 <a name="trademark_policy_page"></a>
 
@@ -165,6 +162,7 @@ The included trademark policy page contains a contact email address for any issu
 
 To include your contact email address for any trademark comments, simply include it in the new `NEXT_PUBLIC_CONTACT_EMAIL` environment variable.
 
+You can view our live Trademark policy page here: [Elegant Trademark Policy](https://www.elegantframework.com/legal/trademark-policy)
 
 <a name="improved_favicons"></a>
 
