@@ -1,26 +1,25 @@
 
 ~~~~~~~~~> v2.2
 
-- finish 2.2 announcement post
-    - 2.2 release needs to update the app type var
-    - give a shoutout to the dev who helped with the trademark page
 
-- proof read 2.2 upgrade guide and merge PR
-
-
-
+ 
 - Test publish release npm command
 
 - publish the offical release.
 
 - pull in latest cli package into .com project and pull in any updates.
 
+- proof read blog post
+
+- post blog post
+
+- update all the defaults to 2.2
 
 
 - check out announcing on hashnode as well
 
 
-- triage why his pr doesn't have a test status on it
+- triage why Ramsi' pr doesn't have a test status on it
 
 
 
