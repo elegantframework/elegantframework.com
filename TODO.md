@@ -3,7 +3,7 @@
 
 
  
-- Test publish release npm command
+- Test publish release npm command -- Didn't work 
 
 - publish the offical release.
 
