@@ -2,19 +2,12 @@
 ~~~~~~~~~> v2.2
 
 
- 
-- Test publish release npm command -- Didn't work 
 
-- publish the offical release.
 
-- pull in latest cli package into .com project and pull in any updates.
+- update all the branch defaults to 2.2
+    - update cli branch to default to our current version dev branch?
 
-- proof read blog post
-
-- post blog post
-
-- update all the defaults to 2.2
-
+- fix the newsletter bug
 
 - check out announcing on hashnode as well
 
