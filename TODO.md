@@ -1,23 +1,12 @@
 
 ~~~~~~~~~> v2.2
 
-
- 
-- Test publish release npm command -- Didn't work 
-
-- publish the offical release.
-
-- pull in latest cli package into .com project and pull in any updates.
-
-- proof read blog post
-
-- post blog post
-
-- update all the defaults to 2.2
-
+- pull in latest cli version into .com
 
 - check out announcing on hashnode as well
 
+- submit updated sitemap to google
+    - fix any validation errors
 
 - triage why Ramsi' pr doesn't have a test status on it
 
