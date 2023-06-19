@@ -4,28 +4,54 @@
 
 
 
-- update all the branch defaults to 2.2
-    - update cli branch to default to our current version dev branch?
-
-- fix the newsletter bug
-
-- check out announcing on hashnode as well
-
-
 - triage why Ramsi' pr doesn't have a test status on it
 
+- merge video player PR.
+- create innovators release
+- pull into .com
+- start v2.3 blog post
+    - put a video in the blog post
 
+- put the install video on the install page
+- validate video rich snippets
+
+- write a doc on how to use the video component
+
+
+- announce on all channels that we have a discord chat. ---> https://discord.gg/PwY38x4uvV
+
+R&D this admin panel ---> https://github.com/StaticJsCMS/static-cms
+                or this one ---> npm install outstatic
+
+    - work through spacetime packages dir.. Make it work with our code
+
+    - Admin panel mile stone
+    - Save files as mdx, and not md
+            
+            - inside of Spacetime, you can code it here ---> C:\Users\Brandon\Documents\GitHub\Spacetime\apps\web\src\lib\api.ts
+
+            - You could set this as a config value
+
+
+            - should try and copy in Spacetime packages/outstatic/
+
+    - look at Vercels blogging structure.. Update anything we need to now
+        - figure out why tw used this method
+    - create a new folder like we already have
+    - save .mdx file as index.mdx
+    - store assets better? What is the most seo efficient?
+    - save files locally using GIT, don't actually hit GIT and save them
+    - Write better auth using Next-Auth
+    - admin pages should be under robots txt and not in the sitemap?
 
 ~~~~~~~~> v2.3 road map
+- Clean up unused dependencies in package.json file.. So we don't look as bloated
+
 - I need to get better about documenting features as we create them.
     - We have a bunch of tech debt currently in the form of undocumented features.
     - A blog post is a good general start to announcing features, but supporting docs should be written as well.
 
-- #1 priority item: Setup github repos to be more proper and complete. Use Next.js and Vercel as the guide.
-    - probably need to create templates for issues and pr's
-        - Issues should have screenshots for other people to understand
-    - Finish going down the community standards list
-    - Add a more complete main readme, with screenshots and gifs?
+- Add a more complete main readme for the cli project?, with screenshots and gifs?
 
 - R&D exploration for a CMS panel:
     - Checked out Tina.. Has everything, but looks bloated, flighty, and disorganized.. They are shifting from Forest.io to TinaCms and getting distracted.. Our oppurtunity to create someting more simple.
@@ -53,9 +79,6 @@
 - add our facebook info the site and meta data ---> https://www.facebook.com/profile.php?id=100093261967093
 - Create the full fb pixel integration
 
-- Finish video.js component
-    - Add install video to install docs page.
-    - Tina.io has a nice demo of a video component within a doc on their guides
 
 - how to accomplish below
     - download the innovators branch
@@ -294,14 +317,7 @@ HN Analytics survey: Mixpanel, Amplitude, PostHog
 - Add built in 508 compliance and testing  - Axe, Jest, Storybook.. Use Aria-labels
 
 
-
-- How to do an innovators release:
-        npm version prerelease --preid=innovators
-        npm publish --tag innovators
-
-        Then npm install elegant-cli --tag innovators
-
-
+- Explore sending transactional emails... Check out this service! https://resend.com/pricing
 
 
 - Document full features included out of the box in the future
@@ -331,6 +347,30 @@ HN Analytics survey: Mixpanel, Amplitude, PostHog
         - How I switched from using a todo file, to GitHub issues.
         - How I successfully switched from a todo file, to building in public with GIthub issues.
         - How to drive more organic traffic with Google Webmaster Tools, and these other SEO hacks.
+        - How I added a security.txt file to my website.
+        - How I got 50 stars on my open-source project!
+        - How I used multiple properties under Google Search console to improve my rankings and seo traffic
+
+        - How I used Zoho to get a free domain email
+        - How I used Convert Kit to get started with a free newsletter service
+        - How I used Docusaurus to launch my prototype and MVP
+        - How I got my first code contribution to the Next.js project.
 
 
 https://www.lennysnewsletter.com/p/how-the-biggest-consumer-apps-got
+
+
+
+
+
+
+Copyright -- 8 The Green, ste 300, 
+
+
+
+
+Principals
+    - Dont be greedy
+    - Create 10x more value than we take.
+    - Use our own code to build our products.
+    - The users owns the content, not the product or the pal
