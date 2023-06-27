@@ -1,7 +1,15 @@
 
 ~~~~~~~~~> v2.2
 
+- announce v2.2 still
+    - hashnode
+    - linkedin
+    - facebook?
+    - Detailed post on twitter?
 
+- set up our linked in page
+    - add more elegant stuff to my personal linkend page
+- add our linked in url to our seo meta data --> https://www.linkedin.com/company/98128031/admin/?feedType=following
 
 
 - triage why Ramsi' pr doesn't have a test status on it
@@ -43,6 +51,8 @@ R&D this admin panel ---> https://github.com/StaticJsCMS/static-cms
     - save files locally using GIT, don't actually hit GIT and save them
     - Write better auth using Next-Auth
     - admin pages should be under robots txt and not in the sitemap?
+
+- write a better contribution guide... Write a detailed guide on how people can contribute, how to download the project from GH and getting started.
 
 ~~~~~~~~> v2.3 road map
 - Clean up unused dependencies in package.json file.. So we don't look as bloated
@@ -266,7 +276,6 @@ IH Feedback -
     - checkout ghost blogging - Open source, has a bunch of neat features
     - tina could provide a cms ui admin panel for us
     - research hugo and astro for docs
-    - research hashnode
     - research https://versoly.com/ more... Maybe we can link up?
     - checkout buffer to schedule social media posts
 
