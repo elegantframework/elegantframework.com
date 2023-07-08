@@ -12,8 +12,7 @@ exports[`Theme toggle component renders a theme toggle component properly 1`] = 
   </label>,
   <button
     aria-expanded={false}
-    aria-haspopup="listbox"
-    aria-labelledby="headlessui-listbox-label-:r0: headlessui-listbox-button-:r1:"
+    aria-haspopup={true}
     data-headlessui-state=""
     disabled={false}
     id="headlessui-listbox-button-:r1:"

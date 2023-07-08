@@ -79,10 +79,7 @@ exports[`Nav popover component renders a nav popover component with no navigatio
       />
     </svg>
   </button>
-  <div
-    onBlur={[Function]}
-    onKeyDown={[Function]}
-  />
+  <div />
   <div
     style={
       {

@@ -1,24 +1,7 @@
-// authors.ts
+import brandonOwensAvatar from '@/img/authors/brandonowens.jpg';
 
-interface Author {
-    name: string;
-    twitter: string;
-  }
-  
-  // Optional interface for authors
-  interface AuthorsConfig {
-    [key: string]: Author;
-  }
-  
-  // Example configuration
-  const authors: AuthorsConfig = {
-
-    brandon: {
-      name: 'Brandon',
-      twitter: 'thebrandonowens',
-    },
-
-  };
-  
-  export default authors;
-  
+export const brandonOwens = {
+  name: 'Brandon Owens',
+  twitter: 'thebrandonowens',
+  avatar: brandonOwensAvatar.src,
+};

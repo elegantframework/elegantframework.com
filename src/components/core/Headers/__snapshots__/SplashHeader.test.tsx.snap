@@ -145,10 +145,7 @@ exports[`Splash Header component renders a splash header component properly 1`] 
               />
             </svg>
           </button>
-          <div
-            onBlur={[Function]}
-            onKeyDown={[Function]}
-          />
+          <div />
           <div
             style={
               {
@@ -189,8 +186,7 @@ exports[`Splash Header component renders a splash header component properly 1`] 
             </label>
             <button
               aria-expanded={false}
-              aria-haspopup="listbox"
-              aria-labelledby="headlessui-listbox-label-:r1: headlessui-listbox-button-:r2:"
+              aria-haspopup={true}
               data-headlessui-state=""
               disabled={false}
               id="headlessui-listbox-button-:r2:"
