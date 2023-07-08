@@ -12,15 +12,10 @@
 - add our linked in url to our seo meta data --> https://www.linkedin.com/company/98128031/admin/?feedType=following
 
 
-- triage why Ramsi' pr doesn't have a test status on it
 
-- merge video player PR.
-- create innovators release
-- pull into .com
 - start v2.3 blog post
     - put a video in the blog post
 
-- put the install video on the install page
 - validate video rich snippets
 
 - write a doc on how to use the video component
@@ -31,30 +26,16 @@
 R&D this admin panel ---> https://github.com/StaticJsCMS/static-cms
                 or this one ---> npm install outstatic
 
-    - work through spacetime packages dir.. Make it work with our code
 
-    - Admin panel mile stone
-    - Save files as mdx, and not md
-            
-            - inside of Spacetime, you can code it here ---> C:\Users\Brandon\Documents\GitHub\Spacetime\apps\web\src\lib\api.ts
+    - look at Vercels blogging structure.. Update anything we need to know
+        - figure out why tw used the method they used
 
-            - You could set this as a config value
-
-
-            - should try and copy in Spacetime packages/outstatic/
-
-    - look at Vercels blogging structure.. Update anything we need to now
-        - figure out why tw used this method
-    - create a new folder like we already have
-    - save .mdx file as index.mdx
-    - store assets better? What is the most seo efficient?
-    - save files locally using GIT, don't actually hit GIT and save them
     - Write better auth using Next-Auth
     - admin pages should be under robots txt and not in the sitemap?
 
-- write a better contribution guide... Write a detailed guide on how people can contribute, how to download the project from GH and getting started.
 
-~~~~~~~~> v2.3 road map
+~~~~~~~~> v2.4 road map
+
 - Clean up unused dependencies in package.json file.. So we don't look as bloated
 
 - I need to get better about documenting features as we create them.
@@ -69,16 +50,11 @@ R&D this admin panel ---> https://github.com/StaticJsCMS/static-cms
     - Netlify CMS integration with Next and Vercel:
         - https://github.com/robinpokorny/netlify-cms-now/tree/master
         - https://github.com/officialrajdeepsingh/contentLayerNetlifycms 
-    - Ask Guermo and vercel to build one and help us?
 
 - need a storybook feature doc page
 - need a jest feature doc page
 
-- create a discord server --> https://discord.gg/PwY38x4uvV
-    - add it to the footer
-    - announce on all channels that we have a discord chat.
-
-- Start writing internal docs like Github.. About us, our story, roadmap
+- Start writing internal docs like Gitlab.. About us, our story, roadmap
     - Write a "How to start a new version" guide. 
         - Create new branch, ex. v3.1
         - Start the blog post
@@ -88,6 +64,8 @@ R&D this admin panel ---> https://github.com/StaticJsCMS/static-cms
 
 - add our facebook info the site and meta data ---> https://www.facebook.com/profile.php?id=100093261967093
 - Create the full fb pixel integration
+
+- Reenable algolia search.. Write a doc on how to use algolia with elegant
 
 
 - how to accomplish below
@@ -107,9 +85,6 @@ R&D this admin panel ---> https://github.com/StaticJsCMS/static-cms
     - post a SHOW HN
 
 
-- listen to this guys feedback: https://visualdebug.com/issue/TRRbJjU2vIu_vO_O90z-GQ
-    - https://www.indiehackers.com/post/would-you-hire-me-6a8ff22811?commentId=-NV-OCbD-VTaw3Ir6f0A
-
 - fix open graph image issue
     - delete or update the /api directory?
 
@@ -127,7 +102,7 @@ R&D this admin panel ---> https://github.com/StaticJsCMS/static-cms
 - create a contact spreadsheet, or use convert kit to email blogger people about trying out elegant for feedback
 
 - commit the launch theme, then run the latest innovators release on top of it
-    - set the goal of 2.3 to be able to create a single launch page theme using core components
+    - set the goal of 2.5 to be able to create a single launch page theme using core components
         - People would be able to modify the theme by copying core components
         - Use pocket as the guide to build launch ---> https://tailwindui.com/templates/pocket
 
@@ -137,18 +112,16 @@ R&D this admin panel ---> https://github.com/StaticJsCMS/static-cms
     - start with base skyline template
     - create a base launch template with email signup.. Start with v1 as blank white.
 
+- Move docs to separate folder in the cli project, that builds into its own elegant-docs npm package.
+
 
 - create simple turtle mania launch page.. Push to the demo site and get the environment to turn green and passing on Github.
 
 - Set up privacy policy and terms now that we have GA? 
     - Worry about GDPR now?
 
-- add a brand page.. With logos and resources.. Like Vercel.com and TW
-
-
 - build storybook axe testing into the testing deployment pipeline?
     - https://storybook.js.org/docs/react/writing-tests/accessibility-testing#a11y-config-with-the-test-runner
-
 
 
 - Add a scannable qr code to the footer.. add a ?qr=home query to the url for GA tracking
@@ -219,9 +192,6 @@ R&D this admin panel ---> https://github.com/StaticJsCMS/static-cms
 - clean up the tailwind config.. Make it use just default like a user would expect
 
 
-- set to require nodejs 16 for now
-
-- Reenable algolia search.. Write a doc on how to use algolia with elegant
 
 - Re enable versioning.. Write a doc on how to use versioning
 
@@ -364,6 +334,7 @@ HN Analytics survey: Mixpanel, Amplitude, PostHog
         - How I used Convert Kit to get started with a free newsletter service
         - How I used Docusaurus to launch my prototype and MVP
         - How I got my first code contribution to the Next.js project.
+        - How I use Figma to create our SVG logos.
 
 
 https://www.lennysnewsletter.com/p/how-the-biggest-consumer-apps-got
@@ -371,15 +342,11 @@ https://www.lennysnewsletter.com/p/how-the-biggest-consumer-apps-got
 
 
 
-
-
 Copyright -- 8 The Green, ste 300, 
-
-
 
 
 Principals
     - Dont be greedy
     - Create 10x more value than we take.
     - Use our own code to build our products.
-    - The users owns the content, not the product or the pal
+    - The users owns the content, not the product or the platform
