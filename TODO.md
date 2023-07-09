@@ -1,15 +1,16 @@
 
-~~~~~~~~~> v2.2
+~~~~~~~~~> v2.3
 
-- announce v2.2 still
+- announce v2.3 everything
     - hashnode
     - linkedin
-    - facebook?
-    - Detailed post on twitter?
+    - facebook
+    - Detailed post on twitter
+    - IH, Reddit, Medium
 
-- set up our linked in page
     - add more elegant stuff to my personal linkend page
-- add our linked in url to our seo meta data --> https://www.linkedin.com/company/98128031/admin/?feedType=following
+    
+- add our linkedin url to our seo meta data --> https://www.linkedin.com/company/98128031/admin/?feedType=following
 
 
 

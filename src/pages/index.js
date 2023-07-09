@@ -110,11 +110,11 @@ const Header = () => {
               {Config('app.tagline')}
             </h1>
             <p className="mt-6 text-lg text-slate-600 text-center max-w-3xl mx-auto dark:text-slate-400">
-              A content creation framework for rapidly building{' '}
-              <code className="font-mono font-medium text-primary-500 dark:text-primary-400">beautiful</code>{' '}
-              and{' '}
-              <code className="font-mono font-medium text-primary-500 dark:text-primary-400">expressive</code>{' '}
-              web applications.
+              Elegant is the easiest way to create a new static{' '}
+              <code className="font-mono font-medium text-primary-500 dark:text-primary-400">website</code>{' '} 
+              or{' '}
+              <code className="font-mono font-medium text-primary-500 dark:text-primary-400">blog</code>,{' '}
+              and publish it online. No need for databases, external services, or complicated server setups.
             </p>
             <div className="mt-6 sm:mt-10 md:flex justify-center md:space-x-6 text-sm max-w-3xl mx-auto">
               <form 
