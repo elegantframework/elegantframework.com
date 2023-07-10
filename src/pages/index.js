@@ -1,7 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import { CodeWindow } from '@/components/CodeWindow';
-import { SearchButton } from '@/components/Search';
 import UnifiedFramework from '@/components/home/UnifiedFramework';
 import Logo from '@/components/core/Logos/Logo/Logo';
 import { Footer } from '@/components/home/Footer';
@@ -11,9 +9,7 @@ import styles from './index.module.css';
 import clsx from 'clsx';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import socialCardLarge from '@/img/social-card-large.jpg';
-import elegantRome from '@/img/splash/elegant_rome.jpg';
 import MetaTitle from '@/utils/core/Meta/MetaTitle';
-import { tokens, code } from '@/components/home/hero.html?highlight';
 import Config from "Config";
 
 Home.layoutProps = {
@@ -166,68 +162,6 @@ const Header = () => {
               </NextLink>
             </div>
           </div>
-          {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 mt-20 sm:mt-24 lg:mt-32 lg:grid lg:gap-8 lg:grid-cols-12 lg:items-center">
-            <div className="relative row-start-1 col-start-6 xl:col-start-7 col-span-7 xl:col-span-6">
-              <div className="-mx-4 sm:mx-0">
-                <CodeWindow className="!h-auto max-h-[none]">
-                  <CodeWindow.Code
-                    tokens={tokens}
-                  />
-                </CodeWindow>
-              </div>
-            </div>
-            <div className="relative row-start-1 col-start-1 col-span-5 xl:col-span-6">
-              <div className="h-[24.25rem] max-w-xl mx-auto lg:max-w-none flex items-center justify-center">
-                <div className="w-full flex-none">
-                  <div className="lg:-mr-18">
-                    <div className="relative w-[550px] sm:w-[23.4375rem] md:w-[550px] z-10 rounded-lg shadow-xl text-slate-900 mx-auto dark:text-slate-300">
-                      <div className="bg-white rounded-lg overflow-hidden ring-1 ring-slate-900/5 dark:bg-slate-800 dark:highlight-white/5 dark:ring-0 flex">
-                        <div className="relative z-10 my-auto">
-                          <div className="relative shadow-xl flex leading-none">
-                            <div className="bg-white flex w-full flex-col">
-                              <div className="relative flex-none sm:self-start lg:self-auto xl:self-start"> 
-                                <div className="relative z-20 overflow-hidden flex-none w-[100%] h-[220px]">
-                                  <Image 
-                                    src={elegantRome}
-                                    priority={true}
-                                    className="!-top-[650px]"
-                                  />
-                                </div>
-                              </div>
-                              <div className="self-start flex-auto flex flex-wrap items-baseline p-6">
-                                <div className="w-full relative flex flex-wrap items-baseline -mt-6 pt-6 pb-6">
-                                  <div className="relative flex-auto">
-                                    <h1 className="inline-flex text-gray-900 text-xl font-semibold">
-                                      Welcome to Elegant
-                                    </h1>
-                                  </div>
-                                  <div className="relative whitespace-nowrap flex-none w-full mt-2">
-                                    <div className="inline-flex text-sm font-medium text-gray-700">
-                                      Something something something
-                                    </div>
-                                  </div>
-                                  <div className="relative flex-auto mt-10">
-                                    <h2 className="inline-flex text-gray-900 text-lg font-semibold">
-                                      Meet Elegant
-                                    </h2>
-                                  </div>
-                                  <div className="relative whitespace-nowrap flex-none w-full mt-2">
-                                    <div className="inline-flex text-sm font-medium text-gray-700">
-                                      More of that something something something
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
         </div>
       </header>
       <UnifiedFramework />
