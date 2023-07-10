@@ -1,6 +1,11 @@
 
 ~~~~~~~~~> v2.3
 
+- start v2.3 blog post
+    - put a video in the blog post
+
+
+
 - announce v2.3 everything
     - hashnode
     - linkedin
@@ -9,17 +14,12 @@
     - IH, Reddit, Medium
 
     - add more elegant stuff to my personal linkend page
-    
+
 - add our linkedin url to our seo meta data --> https://www.linkedin.com/company/98128031/admin/?feedType=following
 
 
 
-- start v2.3 blog post
-    - put a video in the blog post
-
 - validate video rich snippets
-
-- write a doc on how to use the video component
 
 
 - announce on all channels that we have a discord chat. ---> https://discord.gg/PwY38x4uvV
@@ -43,14 +43,6 @@ R&D this admin panel ---> https://github.com/StaticJsCMS/static-cms
     - We have a bunch of tech debt currently in the form of undocumented features.
     - A blog post is a good general start to announcing features, but supporting docs should be written as well.
 
-- Add a more complete main readme for the cli project?, with screenshots and gifs?
-
-- R&D exploration for a CMS panel:
-    - Checked out Tina.. Has everything, but looks bloated, flighty, and disorganized.. They are shifting from Forest.io to TinaCms and getting distracted.. Our oppurtunity to create someting more simple.
-    - Decap-CMS (Netlify CMS) - This is possible
-    - Netlify CMS integration with Next and Vercel:
-        - https://github.com/robinpokorny/netlify-cms-now/tree/master
-        - https://github.com/officialrajdeepsingh/contentLayerNetlifycms 
 
 - need a storybook feature doc page
 - need a jest feature doc page
