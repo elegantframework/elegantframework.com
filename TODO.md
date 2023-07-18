@@ -4,9 +4,12 @@
 - start v2.3 blog post
     - put a video in the blog post
 
+- update upgrade guide
+
+- release
 
 
-- announce v2.3 everything
+- announce v2.3 on everything
     - hashnode
     - linkedin
     - facebook
@@ -17,7 +20,8 @@
 
 - add our linkedin url to our seo meta data --> https://www.linkedin.com/company/98128031/admin/?feedType=following
 
-
+- https://novel.sh/
+- https://novel.sh/
 
 - validate video rich snippets
 
@@ -328,6 +332,8 @@ HN Analytics survey: Mixpanel, Amplitude, PostHog
         - How I used Docusaurus to launch my prototype and MVP
         - How I got my first code contribution to the Next.js project.
         - How I use Figma to create our SVG logos.
+        - How to create watermarks using Figma.
+        - Someone stole my images, what should I do? Use Figma to include your domain in the images.
 
 
 https://www.lennysnewsletter.com/p/how-the-biggest-consumer-apps-got
