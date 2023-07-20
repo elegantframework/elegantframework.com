@@ -15,53 +15,73 @@ Elegant version 2.3 contains a number of package updates and minor breaking chan
 
 Read the complete announcement here: [Elegant v2.3 production release](https://www.elegantframework.com/blog/2023-07-14-elegant-v2-3-production).
 
-## Blog Excerpt Tags
+## Updating Dependencies
 
 ##### ***Likelihood Of Impact: High***
 
-something something something ...
+**React 18 Required**
 
-## Node.js 18
+Elegant now requires React 18.2.0 or greater.
 
-##### ***Likelihood Of Impact: Medium***
+**Node.js 18 Required**
 
-Something something something..
+Elegant now requires Node.js version 18 or greater.
 
-## **MDX-Loader version 2**
+**MDX-Loader 2 Required**
 
-***Likelihood Of Impact: Medium***
+Elegant now requires MDX-Loader or greater.
 
-MDX-Loader has been upgraded to version 2, and with that
+**Node.js 16** Supported
 
-## Next.config.js
+Elegant also supports Node.js version 16 in addition to the version mentioned above.
 
-##### ***Likelihood Of Impact: Medium***
-
-Something something something..
-
-## React 18
-
-##### ***Likelihood Of Impact: Medium***
-
-We have
-
-## Config Namespace
+## .npmrc File
 
 ##### ***Likelihood Of Impact: Low***
 
-something something something ….
+We have included a .npmrc file in the latest version of Elegant to force developers to install Elegant using the proper version of Node.js.
 
-## .npmrc
+## Blogging
+
+**Blog Excerpt Tags**
+
+##### ***Likelihood Of Impact: High***
+
+We have updated the Excerpt tags used in the blog portion of Elegant.
+
+The upgrade to React 18 and MDX-Loader 2 forced us to convert from the previous excerpt tag format to the new format listed below.<br>
+
+\`\`\`
+
+```mdx
+{/*excerpt*/}
+
+This is the new excerpt tag format.
+
+{/*/excerpt*/}
+```
+
+\`\`\`
+
+## Configuration
+
+**Next.config.js**
+
+##### ***Likelihood Of Impact: High***
+
+The \`next.config.js\` configuration file has been converted to ECMAScript, and is now named \`next.config.mjs\`.
+
+**Authors Configuration**
 
 ##### ***Likelihood Of Impact: Low***
 
-something something something ….
+The blog authors' configuration has been moved to the \`/config\` namespace.
 
-## Node.js version 16 support
+**Navigation Configuration**
 
 ##### ***Likelihood Of Impact: Low***
 
-something something something ….
+The sidebar navigation has also been moved to the \`/config\` namespace.
 
 ## Miscellaneous
 

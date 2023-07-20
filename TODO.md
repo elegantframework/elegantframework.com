@@ -19,9 +19,12 @@
     - add more elegant stuff to my personal linkend page
 
 - add our linkedin url to our seo meta data --> https://www.linkedin.com/company/98128031/admin/?feedType=following
+    - https://news.ycombinator.com/item?id=36791434
 
 - https://novel.sh/
 - https://novel.sh/
+
+- Follow their lead for building a yc open source product: https://github.com/twentyhq/twenty
 
 - validate video rich snippets
 
