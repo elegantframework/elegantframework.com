@@ -1,12 +1,11 @@
 
 ~~~~~~~~~> v2.3
 
-- start v2.3 blog post
+- finish v2.3 blog post
     - put a video in the blog post
 
-- update upgrade guide
-
-- release
+- Set up v2.4
+- update all default branches to 2.4
 
 
 - announce v2.3 on everything

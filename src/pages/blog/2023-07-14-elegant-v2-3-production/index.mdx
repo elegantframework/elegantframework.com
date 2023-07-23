@@ -1,0 +1,76 @@
+import { brandonOwens } from '@/config/Authors';
+import card from './elegant-version-2.3.jpg';
+
+export const meta = {
+  title: 'Elegant version 2.3 production release - ...',
+  description: `Elegant version 2.3 is ready for general production use.`,
+  date: '2023-07-14T08:00:00.000Z',
+  authors: [brandonOwens],
+  image: card.src,
+}
+
+{/*excerpt*/}
+
+Elegant version 2.3 
+
+{/*/excerpt*/}
+y
+Elegant version 2.3
+
+
+<div className="my-8 shadow-xl">
+  <img 
+    src={card.src} 
+    alt="Elegant version 2.3 production release - "
+    className="rounded-xl"
+  />
+</div>
+
+## React 18
+
+We have upgraded React.js to version 18 in the latest release of Elegant. We wanted to upgrade MDX-Loader to it's latest package version, thus forcing us to upgrade to React 18.
+
+## Node.js 18
+
+Elegant has been upgraded to Node version 18, to support the upgrade to React 18. We have also added additional support for Node.js versions 14 and 16.
+
+## MDX-Loader 2
+
+MDX-Loader has been upgraded to version 2, along with it's dependencies. The latest version allows for even faster Markdown loading and complimation times.
+
+## Discord community
+
+We have launched a new [Discord](https://discord.gg/PwY38x4uvV) community dedicated to the Elegant project. A number of developers have already joined and we would love to see you there as well! 
+
+[https://discord.gg/PwY38x4uvV](https://discord.gg/PwY38x4uvV)
+
+## Video Player
+- [Added a Video Player React.js component]() with rich Snippets
+
+```jsx
+<VideoPlayer 
+    title="How to get started with Elegant."
+    description="A detailed guide on how to get started with Elegant."
+    embed_url="https://www.youtube.com/embed/bS66QUBKljM"
+    content_url="https://youtu.be/bS66QUBKljM"
+/>
+```
+## Updated Documentation
+
+
+## Brand Policy Page
+- [Included a brand policy page]
+
+
+## Updated Configurations
+- [Moved authors and nav to config namespace.. thanks @shiv]
+
+
+## Contribution Guide
+- [Updated the developers contribution guide to make onboarding much more clear and simple.]
+
+
+---
+
+
+**Full Changelog**: https://github.com/elegantframework/elegant-cli/compare/v2.2-stable-release...v2.3-production-release
