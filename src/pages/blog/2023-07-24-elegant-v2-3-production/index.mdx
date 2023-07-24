@@ -1,0 +1,83 @@
+import { brandonOwens } from '@/config/Authors';
+import card from './elegant-version-2.3.jpg';
+
+export const meta = {
+  title: 'Elegant version 2.3 - Production Ready - Now with embedded YouTube videos.',
+  description: `Elegant version 2.3 is now available and ready for general production use.`,
+  date: '2023-07-24T08:00:00.000Z',
+  authors: [brandonOwens],
+  image: card.src,
+}
+
+{/*excerpt*/}
+
+Elegant version 2.3 - Production Ready - Now with embedded YouTube videos.
+
+{/*/excerpt*/}
+
+Elegant version 2.3 is now available and ready for general production use. We have made a number of upgrades and enhancements to the core code, some of our favorites are documented below.
+
+We'd also like to take the time to thank the development community for their continued support and effort. 
+
+Shoutout to [@Shiv-2712](https://github.com/Shiv-2712) and [@Armaan-Singh-Dhillon](https://github.com/Armaan-Singh-Dhillon) for their code contributions to the Elegant project.
+
+<div className="my-8 shadow-xl">
+  <img 
+    src={card.src} 
+    alt="Elegant version 2.3 is now available and ready for general production use."
+    className="rounded-xl"
+  />
+</div>
+
+## React 18
+
+We have upgraded React.js to version 18 in the latest release of Elegant. We wanted to upgrade MDX-Loader to it's latest package version, thus forcing us to upgrade to React 18.
+
+## Node.js 18
+
+Elegant has been upgraded to Node version 18, to support the upgrade to React 18. We have also added additional support for Node.js versions 14 and 16.
+
+## MDX-Loader 2
+
+MDX-Loader has been upgraded to version 2, along with it's dependencies. The latest version allows for even faster Markdown loading and complimation times.
+
+## Discord community
+
+We have launched a new [Discord](https://discord.gg/PwY38x4uvV) community dedicated to the Elegant project. A number of developers have already joined and we would love to see you there as well! 
+
+[https://discord.gg/PwY38x4uvV](https://discord.gg/PwY38x4uvV)
+
+## Video Player
+
+You can now simply embed a YouTube video into any page or component within Elegant. We have created a simple React component that can be imported into any page. The new Video Player component also included detailed rich snippet metadata for the most optimal SEO experience.
+
+```jsx
+<VideoPlayer 
+    title="How to get started with Elegant."
+    description="A detailed guide on how to get started with Elegant."
+    embed_url="https://www.youtube.com/embed/bS66QUBKljM"
+    content_url="https://youtu.be/bS66QUBKljM"
+/>
+```
+## Updated Documentation
+
+Documentation is a never ending project, and is the motivating factor behind us starting this project. We have continued to make improvements to the Elegant documenation based on user feedback and friction.
+
+We have also taken this oppurtunity to pilot our early version prototype of our new CMS panel for writing content. Our CMS development efforts have been progressing along smoothely, and we can't wait to debut it to the world in an upcoming release.
+
+## Brand Policy Page
+
+We have included a simple auto generated [brand policy](https://www.elegantframework.com/legal/brand) page in the latest version of Elegant. 
+
+## Updated Configurations
+
+The sidebar navigation and authors configurations have been migrated to the 'Config' namespace. 
+
+## Contribution Guide
+We have updated the developers contribution guide to make onboarding much more clear and simple for new developers to the the Elegant project.
+
+[https://www.elegantframework.com/docs/contribution-guide](https://www.elegantframework.com/docs/contribution-guide)
+
+---
+
+**Full Changelog**: https://github.com/elegantframework/elegant-cli/compare/v2.2-stable-release...v2.3-production-release

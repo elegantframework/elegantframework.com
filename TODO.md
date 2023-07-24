@@ -17,9 +17,8 @@
 
     - add more elegant stuff to my personal linkend page
 
-- add our linkedin url to our seo meta data --> https://www.linkedin.com/company/98128031/admin/?feedType=following
-    - https://news.ycombinator.com/item?id=36791434
 
+- https://news.ycombinator.com/item?id=36791434
 - https://novel.sh/
 - https://novel.sh/
 
@@ -30,8 +29,6 @@
 
 - announce on all channels that we have a discord chat. ---> https://discord.gg/PwY38x4uvV
 
-R&D this admin panel ---> https://github.com/StaticJsCMS/static-cms
-                or this one ---> npm install outstatic
 
 
     - look at Vercels blogging structure.. Update anything we need to know
@@ -84,8 +81,6 @@ R&D this admin panel ---> https://github.com/StaticJsCMS/static-cms
     - post a SHOW HN
 
 
-- fix open graph image issue
-    - delete or update the /api directory?
 
 - update beams image to use next image: https://stackoverflow.com/questions/63195562/next-js-set-background-image
 
@@ -148,9 +143,6 @@ R&D this admin panel ---> https://github.com/StaticJsCMS/static-cms
     - rename utilis to core
     - move build-rss into core
     - delete scripts folder
-    - create config dir
-    - move nav config code into config dir
-    - delete navs dir
     - move layout code under components
     - delete layout dir
     - move theme code into config dir
@@ -194,9 +186,6 @@ R&D this admin panel ---> https://github.com/StaticJsCMS/static-cms
 
 - Re enable versioning.. Write a doc on how to use versioning
 
-- create a config directory under source..
-    - delete nav, move to under config..
-    = move theme.ts under config
 
 - Re add cypress and e2e testing back
 
@@ -206,9 +195,6 @@ R&D this admin panel ---> https://github.com/StaticJsCMS/static-cms
 
 - set up proper linting and auto fixing
 
- - update the main readme file with some better looking content.. A screenshot... Currently dull and boring
-
-- Add a main readme to the Elegant github page
 
 - create a turtle mania website, and create a turtle guide, with each turtle.. We can blog about turtle stuff.. It can use a blank white theme like shopifys turtle mania.. This can probably be the PG PC theme.
 
@@ -336,7 +322,7 @@ HN Analytics survey: Mixpanel, Amplitude, PostHog
         - How I use Figma to create our SVG logos.
         - How to create watermarks using Figma.
         - Someone stole my images, what should I do? Use Figma to include your domain in the images.
-
+        - How to write clean code.. Sample of bad triple ternary, vs cleanly written function.
 
 https://www.lennysnewsletter.com/p/how-the-biggest-consumer-apps-got
 
