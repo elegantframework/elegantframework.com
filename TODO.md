@@ -1,21 +1,47 @@
+Todo
 
-~~~~~~~~~> v2.3
-
-- finish v2.3 blog post
-    - put a video in the blog post
-
-- Set up v2.4
-- update all default branches to 2.4
+- Start migration of .com to v3-alpha.
+    - Start migrating docs to _content/
+    - Start setting up the admin cms panel
+    - Document setting up the cms panel from scratch
+    - Start making notes and docs of below.
 
 
-- announce v2.3 on everything
-    - hashnode
-    - linkedin
-    - facebook
-    - Detailed post on twitter
-    - IH, Reddit, Medium
+- create issues for below items
 
-    - add more elegant stuff to my personal linkend page
+
+- add any other cool remark features?
+
+- figure out how to add youtube video via remark-rehype
+
+- add the page heading and seo data.
+
+- bring over sidebar code.. Can be reused in the admin in the future for mobile nav
+
+- add mobile nav back
+
+- existing docs images don't work now.. Update the images
+
+- create collection bug
+    - create new collection.. Refresh page.. Will be broke.. Doesn't fetch from the github api
+        - Also when you do fetch, it requires a whole rebuild to see the updated collection on the sidebar
+
+
+- verify the images api works
+
+- Write a getting started guide for the CMS panel. Document the env vars covered on the Welcome page.
+    - Update the welcome page. Add a link to the doc mentioned above.
+
+- add datepicker styles
+
+- make editor mobile friendly
+- add dark mode support to editor
+
+- add non-index stuff to admin pages
+
+
+~~~~~~~~~> v2.4
+
 
 
 - https://news.ycombinator.com/item?id=36791434
@@ -37,10 +63,11 @@
     - Write better auth using Next-Auth
     - admin pages should be under robots txt and not in the sitemap?
 
+    - Add common components like the elegant logo and theme toggle to the elegant ui package.
+        - delete the common components from the admin in favor of elegant ui.
+
 
 ~~~~~~~~> v2.4 road map
-
-- Clean up unused dependencies in package.json file.. So we don't look as bloated
 
 - I need to get better about documenting features as we create them.
     - We have a bunch of tech debt currently in the form of undocumented features.
@@ -80,7 +107,7 @@
     - post in a subreddit to test a SHOW HN
     - post a SHOW HN
 
-
+- document how to create a favicon; using https://www.favicon-generator.org/
 
 - update beams image to use next image: https://stackoverflow.com/questions/63195562/next-js-set-background-image
 
@@ -129,6 +156,14 @@
 - Add storybook docs.. Make storybook look like https://www.bbc.co.uk/iplayer/storybook/index.html
 
 - Improve install script -- Follow vercels lead  https://github.com/vercel/next.js/blob/canary/packages/create-next-app/index.ts
+
+~~~~~~~~~> v3 file structure
+The repository will be just called "Elegant", instead of elegant-cli... elegant-cli will live under Elegant in sub folder now
+
+- elegant-ui  --> The core Elegant UI component library.
+- elegant-cli --> The cli package for creating new Elegant apps
+- elegantframework_com --> The location of the elegantframework.com code.
+- elegant-themes --> The location of the planned free elegant themes.
 
 ~~~~~~~~> v3 road map
 
@@ -229,7 +264,6 @@ IH Feedback -
 
     - add mailchimp connection
     - checkout ghost blogging - Open source, has a bunch of neat features
-    - tina could provide a cms ui admin panel for us
     - research hugo and astro for docs
     - research https://versoly.com/ more... Maybe we can link up?
     - checkout buffer to schedule social media posts
