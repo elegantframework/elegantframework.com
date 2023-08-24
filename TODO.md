@@ -1,9 +1,6 @@
 Todo
 
 - Start migration of .com to v3-alpha.
-    - Finish reviewing .com v3 pr.
-    - Make any updates to cli code and push it
-    - continue below.
 
     - Start migrating docs to _content/
     - Start setting up the admin cms panel
