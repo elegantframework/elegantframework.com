@@ -2,7 +2,6 @@ Todo
 
 - Start migration of .com to v3-alpha.
 
-    - Start migrating docs to _content/
     - Start setting up the admin cms panel
     - Document setting up the cms panel from scratch
     - Start making notes and docs of below.
@@ -10,6 +9,18 @@ Todo
 
 - create issues for below items
 
+- delete basic layout component
+- delete DocsFooter.js
+- delete contents layout component
+- migrate sidebar layout.js into code .ts file.
+- delete sidebarlayout.js file.
+
+- Delete mdx-loader code.
+- Delete any Remark/Rehype legacy code that isn't needed.
+
+- migrate .com docs to live under the cli package, create an elegant-docs npm package.
+- create simple starter docs and starter blog post that come included in a cli install.
+    - similar to downloading a new next app.. They should provide a simple getting started guide.
 
 - add any other cool remark features?
 
