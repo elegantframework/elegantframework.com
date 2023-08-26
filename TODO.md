@@ -2,8 +2,6 @@ Todo
 
 - Start migration of .com to v3-alpha.
 
-    - to launch the current progress live for testing, the youtube and react rehype stuff needs to be resolved
-    
     - Start setting up the admin cms panel
     - Document setting up the cms panel from scratch
     - Start making notes and docs of below.
