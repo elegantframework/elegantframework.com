@@ -32,8 +32,6 @@ Todo
 
 - add mobile nav back
 
-- existing docs images don't work now.. Update the images
-
 - create collection bug
     - create new collection.. Refresh page.. Will be broke.. Doesn't fetch from the github api
         - Also when you do fetch, it requires a whole rebuild to see the updated collection on the sidebar
@@ -42,7 +40,7 @@ Todo
 - verify the images api works
 
 - Write a getting started guide for the CMS panel. Document the env vars covered on the Welcome page.
-    - Update the welcome page. Add a link to the doc mentioned above.
+    - Add a link to the doc mentioned above to the welcome page.
 
 - add datepicker styles
 
@@ -50,6 +48,7 @@ Todo
 - add dark mode support to editor
 
 - add non-index stuff to admin pages
+- add new docs and blog content to the sitemap
 
 
 ~~~~~~~~~> v2.4
