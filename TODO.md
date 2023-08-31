@@ -1,10 +1,6 @@
 Todo
 
-- Start migration of .com to v3-alpha.
 
-    - Start setting up the admin cms panel
-    - Document setting up the cms panel from scratch
-    - Start making notes and docs of below.
 
 
 - create issues for below items
@@ -14,13 +10,25 @@ Todo
 - delete contents layout component
 - migrate sidebar layout.js into code .ts file.
 - delete sidebarlayout.js file.
+- delete the blog layout
 
 - Delete mdx-loader code.
 - Delete any Remark/Rehype legacy code that isn't needed.
 
+- Start migration of .com to v3-alpha.
+
+    - Start setting up the admin cms panel
+    - Document setting up the cms panel from scratch
+    - Start making notes and docs of below.
+
+- Code examples in docs and posts needs to be setup. Migration blogs to new route, and the second post does not have the code editor looking block
+
+
 - migrate .com docs to live under the cli package, create an elegant-docs npm package.
 - create simple starter docs and starter blog post that come included in a cli install.
     - similar to downloading a new next app.. They should provide a simple getting started guide.
+
+- rss feed 100% needs updating
 
 - add any other cool remark features?
 
