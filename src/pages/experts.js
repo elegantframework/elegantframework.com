@@ -1,4 +1,4 @@
-import { SplashPageLayout } from "@/layouts/SplashPageLayout";
+import { SplashPageLayout } from "@/components/code/Layouts/SplashPageLayout";
 import { RocketLaunchIcon, LockClosedIcon, RectangleStackIcon } from '@heroicons/react/20/solid';
 import techSplash from '@/img/splash/hire-us-splash-tech-picture.jpg';
 
