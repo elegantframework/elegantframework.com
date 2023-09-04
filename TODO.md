@@ -1,10 +1,11 @@
 Todo
 
 
-- merge rss feed
-- delete build-rss.js
-- delete @/utils/mdxComponents after fixing rss feed
 
+- switch to staticProps instead of serverside props on docs and blog slug?
+    - I notice the initial load of .com v3 will be slow the first time you load the blog
+
+- update any .js pages to .tsx
 
 - migrate sidebar layout.js into code .ts file.
 - delete sidebarlayout.js file.
@@ -12,6 +13,10 @@ Todo
 - Delete mdx-loader code.
 - Delete any Remark/Rehype legacy code that isn't needed.
 
+- Rename any .js pages to .tsx
+- delete the .js loading from next config
+
+- Next 13?
 
 - Start migration of .com to v3-alpha.
 
