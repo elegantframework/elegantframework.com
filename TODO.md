@@ -11,7 +11,6 @@ Todo
 - delete sidebarlayout.js file.
 
 - Delete mdx-loader code.
-- Delete any Remark/Rehype legacy code that isn't needed.
 
 - Rename any .js pages to .tsx
 - delete the .js loading from next config
