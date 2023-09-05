@@ -1,21 +1,34 @@
-Todo
+v3 go live ---
 
+- update title and seo stuff on blog page.. Nothing set currently
 
+- update navigation code to use simple interface object with title and slug
+    - update sidebar to use new nav
+    - update prevNext
 
-- switch to staticProps instead of serverside props on docs and blog slug?
-    - I notice the initial load of .com v3 will be slow the first time you load the blog
+- update navigation url loading code
+    - delete the dependence on mdx-loader
 
-- update any .js pages to .tsx
+- Delete mdx-loader code.
+
+- update next config to delete the mdx loader code
 
 - migrate sidebar layout.js into code .ts file.
 - delete sidebarlayout.js file.
 
-- Delete mdx-loader code.
+- switch to staticProps instead of serverside props on docs and blog slug?
+    - I notice the initial load of .com v3 will be slow the first time you load the blog
 
-- Rename any .js pages to .tsx
-- delete the .js loading from next config
+- add non-index stuff to admin pages
+- add new docs and blog content to the sitemap
 
-- Next 13?
+- add datepicker styles
+
+- add mobile nav back
+
+- add youtube video to markdown or tiptap or remark
+
+
 
 - Start migration of .com to v3-alpha.
 
@@ -32,14 +45,6 @@ Todo
 
 - add any other cool remark features?
 
-- figure out how to add youtube video via remark-rehype
-
-- add the page heading and seo data.
-
-- bring over sidebar code.. Can be reused in the admin in the future for mobile nav
-
-- add mobile nav back
-
 - create collection bug
     - create new collection.. Refresh page.. Will be broke.. Doesn't fetch from the github api
         - Also when you do fetch, it requires a whole rebuild to see the updated collection on the sidebar
@@ -50,13 +55,9 @@ Todo
 - Write a getting started guide for the CMS panel. Document the env vars covered on the Welcome page.
     - Add a link to the doc mentioned above to the welcome page.
 
-- add datepicker styles
 
 - make editor mobile friendly
 - add dark mode support to editor
-
-- add non-index stuff to admin pages
-- add new docs and blog content to the sitemap
 
 
 ~~~~~~~~~> v2.4
