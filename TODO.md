@@ -1,33 +1,20 @@
 v3 go live ---
 
-- update title and seo stuff on blog page.. Nothing set currently
 
-- update navigation code to use simple interface object with title and slug
-    - update sidebar to use new nav
-    - update prevNext
+-- not required to go live --
 
-- update navigation url loading code
-    - delete the dependence on mdx-loader
-
-- Delete mdx-loader code.
-
-- update next config to delete the mdx loader code
+- use zustand in the header to fix title hiccup?
 
 - migrate sidebar layout.js into code .ts file.
 - delete sidebarlayout.js file.
 
-- switch to staticProps instead of serverside props on docs and blog slug?
-    - I notice the initial load of .com v3 will be slow the first time you load the blog
 
-- add non-index stuff to admin pages
-- add new docs and blog content to the sitemap
+- add youtube video to markdown or tiptap or remark ---> https://github.com/remarkjs/remark-directive
 
-- add datepicker styles
+- figure out a solution of the list component.
 
-- add mobile nav back
-
-- add youtube video to markdown or tiptap or remark
-
+- add components to elegant ui
+- release v1 of elegant-ui
 
 
 - Start migration of .com to v3-alpha.
