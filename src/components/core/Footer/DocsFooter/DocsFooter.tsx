@@ -1,18 +1,18 @@
-import { Url } from "@/types/Url";
 import clsx from "clsx";
 import Link from "next/link";
 import { BuiltWithElegant } from "@brandonowens/elegant-ui";
 import Config from "@/utils/core/Config/Config";
+import { NavigationLink } from "@/types/Navigation";
 
 interface Props {
     /**
      * A url link to the previous page.
      */
-    previous?: Url;
+    previous?: NavigationLink;
     /**
      * A url link to the next page.
      */
-    next?: Url;
+    next?: NavigationLink;
     /**
      * Child html to be displayed inside the footer.
      */
@@ -35,45 +35,47 @@ const DocsFooter = ({
                     {previous && (
                         (<Link
                             href={previous.href}
-                            className="group flex items-center hover:text-slate-900 dark:hover:text-white">
-
-                            <svg
-                            viewBox="0 0 3 6"
-                            className="mr-3 w-auto h-1.5 text-slate-400 overflow-visible group-hover:text-slate-600 dark:group-hover:text-slate-300"
-                            >
-                            <path
-                                d="M3 0L0 3L3 6"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            />
-                            </svg>
-                            {previous.shortTitle || previous.title}
-
+                            className="group flex items-center hover:text-slate-900 dark:hover:text-white"
+                        >
+                            <>
+                                <svg
+                                    viewBox="0 0 3 6"
+                                    className="mr-3 w-auto h-1.5 text-slate-400 overflow-visible group-hover:text-slate-600 dark:group-hover:text-slate-300"
+                                >
+                                    <path
+                                        d="M3 0L0 3L3 6"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        strokeWidth="2"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                    />
+                                </svg>
+                                {previous.title}
+                            </>
                         </Link>)
                     )}
                     {next && (
                         (<Link
                             href={next.href}
-                            className="group ml-auto flex items-center hover:text-slate-900 dark:hover:text-white">
-
-                            {next.shortTitle || next.title}
-                            <svg
-                            viewBox="0 0 3 6"
-                            className="ml-3 w-auto h-1.5 text-slate-400 overflow-visible group-hover:text-slate-600 dark:group-hover:text-slate-300"
-                            >
-                            <path
-                                d="M0 0L3 3L0 6"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            />
-                            </svg>
-
+                            className="group ml-auto flex items-center hover:text-slate-900 dark:hover:text-white"
+                        >
+                            <>
+                                {next.title}
+                                <svg
+                                    viewBox="0 0 3 6"
+                                    className="ml-3 w-auto h-1.5 text-slate-400 overflow-visible group-hover:text-slate-600 dark:group-hover:text-slate-300"
+                                >
+                                    <path
+                                        d="M0 0L3 3L0 6"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        strokeWidth="2"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                    />
+                                </svg>
+                            </>
                         </Link>)
                     )}
                 </div>

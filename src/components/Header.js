@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import VersionSwitcher from '@/components/core/Headers/VersionSwitcher';
-import { SearchButton } from '@/components/Search';
 import Router from 'next/router';
 import Logo from '@/components/core/Logos/Logo/Logo';
 import { Dialog } from '@headlessui/react';
@@ -102,12 +101,10 @@ export function NavItems() {
         className={
             clsx(
               'hover:text-primary-500 dark:hover:text-primary-400', 
-              (router.pathname.indexOf('/docs/') > -1 ? 'text-primary-500 dark:text-primary-400' : '')
+              (router.asPath.indexOf('/docs/') > -1 ? 'text-primary-500 dark:text-primary-400' : '')
             )
-          }>
-        
-          Docs
-        
+      }>
+        Docs
       </Link>
     </li>
     <li>
@@ -116,12 +113,10 @@ export function NavItems() {
         className={
             clsx(
               'hover:text-primary-500 dark:hover:text-primary-400', 
-              (router.pathname.indexOf('/blog') > -1 ? 'text-primary-500 dark:text-primary-400' : '')
+              (router.asPath.indexOf('/blog') > -1 ? 'text-primary-500 dark:text-primary-400' : '')
             )
           }>
-        
           Blog
-        
       </Link>
     </li>
   </>;
@@ -194,11 +189,8 @@ export function Header({ hasNav = false, navIsOpen, onNavToggle, title, section 
               onContextMenu={(e) => {
                 e.preventDefault()
                 // Router.push('/brand')
-              }}>
-
-              <span className="sr-only">{Config('app.name')} home page</span>
+            }}>
               <Logo className="w-auto h-7" />
-
             </Link>
             {/* <VersionSwitcher /> */}
             <div className="relative hidden lg:flex items-center ml-auto">
@@ -226,22 +218,6 @@ export function Header({ hasNav = false, navIsOpen, onNavToggle, title, section 
                 </a>
               </div>
             </div>
-            {/* <SearchButton className="ml-auto text-slate-500 w-8 h-8 -my-1 flex items-center justify-center hover:text-slate-600 lg:hidden dark:text-slate-400 dark:hover:text-slate-300">
-              <span className="sr-only">Search</span>
-              <svg
-                width="24"
-                height="24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                aria-hidden="true"
-              >
-                <path d="m19 19-3.5-3.5" />
-                <circle cx="11" cy="11" r="6" />
-              </svg>
-            </SearchButton> */}
             <NavPopover className="ml-auto -my-1" display="lg:hidden" />
           </div>
         </div>

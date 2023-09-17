@@ -1,6 +1,3 @@
-import '../css/fonts.css';
-import '../css/main.css';
-import 'focus-visible';
 import { useState, useEffect, Fragment } from 'react';
 import { BrandJsonLd, LogoJsonLd, SocialProfileJsonLd, WebPageJsonLd } from 'next-seo';
 import SeoLogo from './../../public/favicons/apple-icon-180x180.png';
@@ -9,12 +6,16 @@ import Router from 'next/router';
 import ProgressBar from '@badrap/bar-of-progress';
 import Seo from "@/components/core/Seo/Seo";
 import Head from 'next/head';
-import { SearchProvider } from '@/components/Search';
 import AnalyticsHead from '@/components/core/Analytics/AnalyticsHead';
 import AnalyticsBody from '@/components/core/Analytics/AnalyticsBody';
 import * as gtag from '@/utils/core/Analytics/gtag';
 import socialCardLarge from '@/img/social-card-large.jpg';
 import Config from 'Config';
+import SocialSchema from '@/utils/core/Meta/SocialSchema';
+import '../css/fonts.css';
+import '../css/main.css';
+import 'focus-visible';
+import '@/components/core/Admin/Pages/styles.css';
 
 const progress = new ProgressBar({
   size: 2,
@@ -91,35 +92,18 @@ export default function App({ Component, pageProps, router }) {
   // set the page type
   let pageType = Component.layoutProps?.pageType ? Component.layoutProps.pageType : "website";
 
+  // set the noindex meta flag on the page.
+  let noIndex = (meta.noIndex ? meta.noIndex : false);
+
   // set the rich snippet page type to 'article' for blog posts
   if(router.pathname.includes("/blog/"))
   {
     pageType = "article";
   }
 
-  let section =
-    meta.section ||
-    Object.entries(Component.layoutProps?.Layout?.nav ?? {}).find(([, items]) =>
-      items.find(({ href }) => href === router.pathname)
-    )?.[0];
-
-  // if there are social links provided, activate the Social schema data
-  let socialSchema = [];
-  {
-    Config('app.twitter_url') > 0 ? socialSchema.push(Config('app.twitter_url')) : null;
-  }
-  {
-    Config('app.facebook_url') > 0 ? socialSchema.push(Config('app.facebook_url')) : null;
-  }
-  {
-    Config('app.instagram_url') > 0 ? socialSchema.push(Config('app.instagram_url')) : null;
-  }
-  {
-    Config('app.youtube_url') > 0 ? socialSchema.push(Config('app.youtube_url')) : null;
-  }
-  {
-    Config('app.linkedin_url') > 0 ? socialSchema.push(Config('app.linkedin_url')) : null;
-  }
+  let section = Object.entries(Component.layoutProps?.Layout?.nav ?? {}).find(([, items]) =>
+    items.links.find(({ href }) => href === router.pathname)
+  )?.[0];
 
   // set our url
   let url = Config('app.url');
@@ -132,20 +116,8 @@ export default function App({ Component, pageProps, router }) {
     url = "https://" + process.env.NEXT_PUBLIC_VERCEL_URL;
   }
 
-  // if we have social data, turn on the schema object
-  let socialProfile;
-
-  if(socialSchema.length > 0)
-  {
-    socialProfile = (
-      <SocialProfileJsonLd 
-        type={Config('app.type')}
-        name={Config('app.name')}
-        url={url}
-        sameAs={socialSchema}
-      />
-    );
-  }
+  // if there are social links provided, activate the Social schema data
+  let socialSchema = SocialSchema();
 
   return (
     <>
@@ -163,6 +135,7 @@ export default function App({ Component, pageProps, router }) {
         image={`${url}${image}`}
         facebookAppID={Config('app.facebook_app_id')}
         pageType={pageType}
+        noIndex={noIndex}
       />
       <LogoJsonLd 
         logo={Config('app.url') + SeoLogo.src}
@@ -177,9 +150,15 @@ export default function App({ Component, pageProps, router }) {
         description={meta.metaDescription || meta.description}
         id={`${Config('app.url')}${router.pathname}`}
       />
-      {socialProfile}
-      <SearchProvider>
-        {stickyHeader && (
+      {socialSchema.length > 0 && (
+        <SocialProfileJsonLd 
+          type={Config('app.type')}
+          name={Config('app.name')}
+          url={url}
+          sameAs={socialSchema}
+        />
+      )}
+      {stickyHeader && (
           <Header
             hasNav={Boolean(Component.layoutProps?.Layout?.nav)}
             navIsOpen={navIsOpen}
@@ -192,7 +171,6 @@ export default function App({ Component, pageProps, router }) {
           <AnalyticsBody googleAnalyticsID={Config('app.google_analytics_id')}/>
           <Component section={section} {...Component.layoutProps} {...pageProps} />
         </Layout>
-      </SearchProvider>
     </>
   )
 }
