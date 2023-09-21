@@ -1,5 +1,16 @@
 v3 go live ---
 
+- finish youtube integration
+    - finish Youtube menu under editor.
+        - connect buttons
+        - write error handling
+
+    - finish the seo data... Prompt for description, set the time vars and stuff
+        - create a data dialog to capture the url, name, and description
+        - write method to get the video id from the existing methods
+
+    - write tests and cleanup new code that was added today
+
 
 -- not required to go live --
 
@@ -9,12 +20,15 @@ v3 go live ---
 - delete sidebarlayout.js file.
 
 
-- add youtube video to markdown or tiptap or remark ---> https://github.com/remarkjs/remark-directive
 
 - figure out a solution of the list component.
 
 - add components to elegant ui
 - release v1 of elegant-ui
+
+- configure dependabot to open automatic pr's
+- set up actions to auto releases on npm
+- releases on GH?
 
 
 - Start migration of .com to v3-alpha.
