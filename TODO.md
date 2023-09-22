@@ -11,6 +11,8 @@ v3 go live ---
 
     - write tests and cleanup new code that was added today
 
+- the admin url should not be accessable in a prod env if gh auth in not configured
+
 
 -- not required to go live --
 
