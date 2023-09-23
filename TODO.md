@@ -1,5 +1,14 @@
 v3 go live ---
 
+- Finish initial migration of .com to v3-alpha.
+    - add the rehype code to .com to parse html properly
+    - add the youtube video to the install doc
+    - add the div code to existing blog images
+    - finish blogs posts
+    - start the top to bottom sweep of rewriting the docs and images starting at install
+        - document hiccups, bugs, and todo's of elegant along the way
+
+
 - finish youtube integration
     - finish Youtube menu under editor.
         - connect buttons
@@ -11,7 +20,7 @@ v3 go live ---
 
     - write tests and cleanup new code that was added today
 
-- the admin url should not be accessable in a prod env if gh auth in not configured
+- the admin url should not be accessible in a prod env if gh auth in not configured
 
 
 -- not required to go live --
@@ -33,18 +42,10 @@ v3 go live ---
 - releases on GH?
 
 
-- Start migration of .com to v3-alpha.
-
-    - Start setting up the admin cms panel
-    - Document setting up the cms panel from scratch
-    - Start making notes and docs of below.
-
-- Code examples in docs and posts needs to be setup. Migration blogs to new route, and the second post does not have the code editor looking block
 
 
-- migrate .com docs to live under the cli package, create an elegant-docs npm package.
-- create simple starter docs and starter blog post that come included in a cli install.
-    - similar to downloading a new next app.. They should provide a simple getting started guide.
+
+
 
 - add any other cool remark features?
 
@@ -63,7 +64,11 @@ v3 go live ---
 - add dark mode support to editor
 
 
-~~~~~~~~~> v2.4
+~~~~~~~~~> v3.1
+
+- migrate .com docs to live under the cli package, create an elegant-docs npm package.
+- create simple starter docs and starter blog post that come included in a cli install.
+    - similar to downloading a new next app.. They should provide a simple getting started guide.
 
 
 
@@ -73,24 +78,20 @@ v3 go live ---
 
 - Follow their lead for building a yc open source product: https://github.com/twentyhq/twenty
 
-- validate video rich snippets
-
 
 - announce on all channels that we have a discord chat. ---> https://discord.gg/PwY38x4uvV
 
 
 
-    - look at Vercels blogging structure.. Update anything we need to know
-        - figure out why tw used the method they used
+   
 
     - Write better auth using Next-Auth
-    - admin pages should be under robots txt and not in the sitemap?
 
     - Add common components like the elegant logo and theme toggle to the elegant ui package.
         - delete the common components from the admin in favor of elegant ui.
 
 
-~~~~~~~~> v2.4 road map
+~~~~~~~~> v3.1 road map
 
 - I need to get better about documenting features as we create them.
     - We have a bunch of tech debt currently in the form of undocumented features.
@@ -197,16 +198,6 @@ The repository will be just called "Elegant", instead of elegant-cli... elegant-
 
 - need to write docs and guides that shows a clueless non tech user how to set up a site from end to end.. Including Search Console, GA, Facebook Pixel, and more.
 
-- cleanup dir structure
-    - rename utilis to core
-    - move build-rss into core
-    - delete scripts folder
-    - move layout code under components
-    - delete layout dir
-    - move theme code into config dir
-    - move authors.js into config dir
-    - move hooks into core dir
-    - delete hooks dir
 
 - figure out how to create a npx command.. ex: `npx create-next-app`
     - follow next.js lead
@@ -264,10 +255,6 @@ The repository will be just called "Elegant", instead of elegant-cli... elegant-
 - add e2e test that verify's the index, docs, and blog pages load
 
 - Upgrade eslint and all other packages to their latest
-
-- move components to a proper nextjs format. Do need a layout and header folder?
-
-- Upgrade components to tsx, write tests
 
 
 

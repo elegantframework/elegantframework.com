@@ -18,15 +18,13 @@ const useTipTap = ({ ...rhfMethods }) => {
       Image.extend({
         renderHTML({ HTMLAttributes }) {
           return [
-            'div',
+             'div',
             {class: "my-8 shadow-xl"},
             [
               'img',
               {
                 class: "rounded-xl",
-                ...HTMLAttributes,
-                onError:
-                  'this.classList.add("image-error");this.alt="Couldn\'t load image.";'
+                ...HTMLAttributes
               }
             ]
           ]
