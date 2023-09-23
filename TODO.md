@@ -1,10 +1,6 @@
 v3 go live ---
 
 - Finish initial migration of .com to v3-alpha.
-    - add the rehype code to .com to parse html properly
-    - add the youtube video to the install doc
-    - add the div code to existing blog images
-    - finish blogs posts
     - start the top to bottom sweep of rewriting the docs and images starting at install
         - document hiccups, bugs, and todo's of elegant along the way
 
