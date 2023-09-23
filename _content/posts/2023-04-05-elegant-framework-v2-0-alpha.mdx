@@ -46,7 +46,7 @@ MDX Loader is a frontend build utility that lets Elegant seamlessly convert Mark
 
 You can write your content pages like this:
 
-\`\`\`diff-html welcome.mdx
+```diff-html welcome.mdx
 
 ## Markdown is super simple and elegant to write.
 
@@ -56,7 +56,8 @@ Is there anybody in there? <br>
 
 Just nod if you can hear me. <br>
 
-Is there anyone at home? \`\`\`
+Is there anyone at home?
+```
 
 ## Tailwind CSS
 
@@ -70,7 +71,7 @@ Jest is a JavaScript testing framework created by Meta (Formerly Facebook). It w
 
 Make a code change within Elegant and have 100% confidence that everything works as you expect, every time.
 
-```javascript
+```diff-javascript button.test.tsx
 describe("Button component", () => {
   it('renders a button', () => {
       const button = renderer
@@ -85,7 +86,7 @@ describe("Button component", () => {
 
 GitHub Actions is a continuous integration and continuous delivery (CI/CD) platform that allows you to automate your Elegant deployments. You can create workflows that build and test every pull request to your Elegant repository.
 
-```yaml
+```diff-yaml .github/deploy.yml
 name: Build Status
 on: push
 jobs:
