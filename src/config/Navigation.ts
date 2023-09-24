@@ -33,10 +33,6 @@ export const documentationNav: NavigationSection[] = [
         href: "/docs/configuration"
       },
       {
-        title: "New Documents",
-        href: "/docs/new-documents"
-      },
-      {
         title: "Deployment",
         href: "/docs/deployment"
       }
