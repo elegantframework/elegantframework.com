@@ -28,8 +28,6 @@ v3 go live ---
 
 
 
-- figure out a solution of the list component.
-
 - add components to elegant ui
 - release v1 of elegant-ui
 
