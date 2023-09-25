@@ -3,10 +3,9 @@ v3 go live ---
 - review current progress on .com vercel preview domain
     - if good; Start pushing out to .com production.
 
-- delete steps components
-    - there is one for custom domain, and one for deployment
-- remove unused beams
+    - use new cms to write .com blog post announcing the upcoming breaking changes
 
+    
 - Finish initial migration of .com to v3-alpha.
     - start the top to bottom sweep of rewriting the docs and images starting at install
         - document hiccups, bugs, and todo's of elegant along the way
