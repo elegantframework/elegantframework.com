@@ -1,8 +1,17 @@
 v3 go live ---
 
+- review current progress on .com vercel preview domain
+    - if good; Start pushing out to .com production.
+
+- delete steps components
+    - there is one for custom domain, and one for deployment
+- remove unused beams
+
 - Finish initial migration of .com to v3-alpha.
     - start the top to bottom sweep of rewriting the docs and images starting at install
         - document hiccups, bugs, and todo's of elegant along the way
+        - 1. frontend lowlight not working
+        - 2. editor code block dropdown does not display on white background
 
 
 - finish youtube integration
