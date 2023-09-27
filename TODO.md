@@ -3,9 +3,12 @@ v3 go live ---
 - review current progress on .com vercel preview domain
     - if good; Start pushing out to .com production.
 
+    - Devs says dont rush out a new release just because i'm excited.. In reference to Next 13.5
+
     - use new cms to write .com blog post announcing the upcoming breaking changes
 
-    
+- remove v2 components marked as deprecated
+
 - Finish initial migration of .com to v3-alpha.
     - start the top to bottom sweep of rewriting the docs and images starting at install
         - document hiccups, bugs, and todo's of elegant along the way
@@ -42,8 +45,6 @@ v3 go live ---
 - configure dependabot to open automatic pr's
 - set up actions to auto releases on npm
 - releases on GH?
-
-
 
 
 

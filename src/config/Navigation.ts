@@ -14,10 +14,6 @@ export const documentationNav: NavigationSection[] = [
       {
         title: "Upgrade Guide",
         href: "/docs/upgrade"
-      },
-      {
-        title: "Contribution Guide",
-        href: "/docs/contribution-guide"
       }
     ]
   },
@@ -39,6 +35,15 @@ export const documentationNav: NavigationSection[] = [
     ]
   },
   {
+    title: "Elegant CMS",
+    links: [
+      {
+        title: "Getting Started",
+        href: "/docs/getting-started-with-elegant-cms"
+      }
+    ]
+  },
+  {
     title: "Customization",
     links: [{
       title: "Theme",
@@ -55,6 +60,28 @@ export const documentationNav: NavigationSection[] = [
       {
         title: "Google Analytics",
         href: "/docs/google-analytics"
+      }
+    ]
+  },
+  {
+    title: "Contributing",
+    links: [
+      {
+        title: "Contribute to Elegant",
+        href: "/docs/contribution-guide"
+      },
+      {
+        title: "Development Tools",
+        href: "/docs/development-tools"
+      },
+    ]
+  },
+  {
+    title: "Resources",
+    links: [
+      {
+        title: "Elegant Community",
+        href: "/docs/elegant-community"
       }
     ]
   }
