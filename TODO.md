@@ -1,5 +1,21 @@
 v3 go live ---
 
+- merge final pr.
+- create innovators push
+- pull into .com
+- verify if good.
+- Write announcement post
+
+- add video/image fix remark/rehype code to cli without completing the youtube feature.
+    - Release a v3 prerelease?
+
+    
+
+- delete useless docs from the cli project?
+
+
+- verify that google analytics still works as expected
+
 - review current progress on .com vercel preview domain
     - if good; Start pushing out to .com production.
 
@@ -29,10 +45,9 @@ v3 go live ---
 
 - the admin url should not be accessible in a prod env if gh auth in not configured
 
+- delete old v2 junk docs in the cli project... replace with a starter doc 
 
 -- not required to go live --
-
-- use zustand in the header to fix title hiccup?
 
 - migrate sidebar layout.js into code .ts file.
 - delete sidebarlayout.js file.
