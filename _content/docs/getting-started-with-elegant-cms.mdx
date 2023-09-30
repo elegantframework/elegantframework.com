@@ -34,7 +34,9 @@ When you navigate to your local CMS admin panel for the first time, you will be 
 
 
 
-> Note: GitHub OAuth only allows for a single URL per client secret.
+> Note:
+> 
+> GitHub OAuth only allows for a single URL per client secret.
 > 
 > This guide only covers accessing the admin for `http://localhost:3000/`, and we will cover accessing the admin panel in production in a later step.
 
@@ -88,7 +90,29 @@ Keep this page open in GitHub, as we will need these values for the next steps d
 
 ## Environment Configuration
 
-<br>
+Elegant CMS safely stores your GitHub OAuth App client secret, and auth configuration details in your `.env` environment configuration file.
 
-<br>
+### GitHub OAuth Configuration
+
+Add your GitHub OAuth configuration details to your application's `.env` file. You can retrieve your configuration details from step 3 above:
+
+```ini
+NEXT_PUBLIC_CMS_GITHUB_ID="your-github-client-id"
+NEXT_PUBLIC_CMS_GITHUB_SECRET="your-github-client-secret"
+NEXT_PUBLIC_CMS_TOKEN_SECRET="random-32-digit-string"
+```
+
+To generate a random 32-digit string, click here: [random.org](https://www.random.org/strings/?num=1&len=32&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new)
+
+
+
+### GitHub Repository Configuration
+
+Next, configure your GitHub repository in your application's `.env` file:
+
+```ini
+NEXT_PUBLIC_CMS_REPOSITORY_BRANCH="your-github-branch"
+NEXT_PUBLIC_CMS_REPOSITORY_OWNER="your-repository-owner"
+NEXT_PUBLIC_CMS_REPOSITORY_SLUG="your-repository-slug"
+```
 
