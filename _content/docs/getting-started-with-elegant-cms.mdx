@@ -26,13 +26,17 @@ npm run dev
 
 Once you have started the Elegant development server, your CMS admin panel will be accessible in your web browser at [http://localhost:3000/admin](http://localhost:3000/admin).
 
-\When you navigate to your local CMS admin panel for the first time, you will be prompted to configure authentication before continuing to the content editor.
+When you navigate to your local CMS admin panel for the first time, you will be prompted to configure authentication before continuing to the content editor.
 
 
 
 <div class="my-8 shadow-xl"><img class="rounded-xl" src="/images/270824164-df66a8e1-c8a8-4eed-a8e9-1b5fb554d24c-Y5MT.png" alt=""></div>
 
 
+
+> Note: GitHub OAuth only allows for a single URL per client secret.
+> 
+> This guide only covers accessing the admin for `http://localhost:3000/`, and we will cover accessing the admin panel in production in a later step.
 
 ## Configuring Authentication
 
@@ -68,8 +72,6 @@ Once you have filled out the details of your Oauth application, click on **Regis
 
 You'll be redirected to your GitHub Oauth App settings page.
 
-
-
 3. Next, click on Generate a new client secret.
 
     **Make sure to copy your new client secret now. You will not be able to see it again.**
@@ -81,6 +83,10 @@ You'll be redirected to your GitHub Oauth App settings page.
 
 
 Keep this page open in GitHub, as we will need these values for the next steps during our environment configuration.
+
+
+
+## Environment Configuration
 
 <br>
 
