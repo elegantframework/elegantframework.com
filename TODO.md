@@ -1,11 +1,14 @@
 v3 go live ---
 
 - pull into .com
-- verify if good.
-- Write announcement post
+- verify if good.-
+    - check mobile experience
 
-- add video/image fix remark/rehype code to cli without completing the youtube feature.
-    - Release a v3 prerelease?
+- set up .com GH access token
+
+- Write announcement post of breaking changes
+
+- Release a v3 prerelease?
 
 
 

@@ -35,15 +35,6 @@ export const documentationNav: NavigationSection[] = [
     ]
   },
   {
-    title: "Elegant CMS",
-    links: [
-      {
-        title: "Getting Started",
-        href: "/docs/getting-started-with-elegant-cms"
-      }
-    ]
-  },
-  {
     title: "Customization",
     links: [{
       title: "Theme",
