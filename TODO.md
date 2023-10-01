@@ -1,7 +1,5 @@
 v3 go live ---
 
-- merge final pr.
-- create innovators push
 - pull into .com
 - verify if good.
 - Write announcement post
@@ -9,7 +7,7 @@ v3 go live ---
 - add video/image fix remark/rehype code to cli without completing the youtube feature.
     - Release a v3 prerelease?
 
-    
+
 
 - delete useless docs from the cli project?
 
