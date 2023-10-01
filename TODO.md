@@ -1,10 +1,8 @@
 v3 go live ---
 
-- pull into .com
-- verify if good.-
-    - check mobile experience
 
 - set up .com GH access token
+    - verify what happens if a GH account who didn't set up the auth tries to log in
 
 - Write announcement post of breaking changes
 
@@ -15,14 +13,6 @@ v3 go live ---
 - delete useless docs from the cli project?
 
 
-- verify that google analytics still works as expected
-
-- review current progress on .com vercel preview domain
-    - if good; Start pushing out to .com production.
-
-    - Devs says dont rush out a new release just because i'm excited.. In reference to Next 13.5
-
-    - use new cms to write .com blog post announcing the upcoming breaking changes
 
 - remove v2 components marked as deprecated
 
