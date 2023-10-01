@@ -51,6 +51,17 @@ exports[`Navigation for the sidebar renders the navigation section as expected 1
             Upgrade Guide
           </a>
         </li>
+        <li>
+          <a
+            className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
+            href="/docs/contribution-guide"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Contribution Guide
+          </a>
+        </li>
       </ul>
     </li>
     <li
@@ -89,36 +100,12 @@ exports[`Navigation for the sidebar renders the navigation section as expected 1
         <li>
           <a
             className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
-            href="/docs/deployment"
+            href="/docs/new-documents"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
           >
-            Deployment
-          </a>
-        </li>
-      </ul>
-    </li>
-    <li
-      className="mt-12 lg:mt-8"
-    >
-      <h5
-        className="mb-8 lg:mb-3 font-semibold text-slate-900 dark:text-slate-200"
-      >
-        Elegant CMS
-      </h5>
-      <ul
-        className="space-y-6 lg:space-y-2 border-l border-slate-100 dark:border-slate-800"
-      >
-        <li>
-          <a
-            className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
-            href="/docs/getting-started-with-elegant-cms"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
-          >
-            Getting Started
+            New Documents
           </a>
         </li>
       </ul>
@@ -161,82 +148,12 @@ exports[`Navigation for the sidebar renders the navigation section as expected 1
         <li>
           <a
             className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
-            href="/docs/convertkit"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
-          >
-            ConvertKit
-          </a>
-        </li>
-        <li>
-          <a
-            className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
             href="/docs/google-analytics"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
           >
             Google Analytics
-          </a>
-        </li>
-      </ul>
-    </li>
-    <li
-      className="mt-12 lg:mt-8"
-    >
-      <h5
-        className="mb-8 lg:mb-3 font-semibold text-slate-900 dark:text-slate-200"
-      >
-        Contributing
-      </h5>
-      <ul
-        className="space-y-6 lg:space-y-2 border-l border-slate-100 dark:border-slate-800"
-      >
-        <li>
-          <a
-            className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
-            href="/docs/contribution-guide"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
-          >
-            Contribute to Elegant
-          </a>
-        </li>
-        <li>
-          <a
-            className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
-            href="/docs/development-tools"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
-          >
-            Development Tools
-          </a>
-        </li>
-      </ul>
-    </li>
-    <li
-      className="mt-12 lg:mt-8"
-    >
-      <h5
-        className="mb-8 lg:mb-3 font-semibold text-slate-900 dark:text-slate-200"
-      >
-        Resources
-      </h5>
-      <ul
-        className="space-y-6 lg:space-y-2 border-l border-slate-100 dark:border-slate-800"
-      >
-        <li>
-          <a
-            className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
-            href="/docs/elegant-community"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
-          >
-            Elegant Community
           </a>
         </li>
       </ul>

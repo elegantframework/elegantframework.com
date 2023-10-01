@@ -4,6 +4,10 @@ type Props = {
      */
     title: string;
     /**
+     * The description of the element.
+     */
+    description: string;
+    /**
      * The navigation section that this element is located in.
      */
     section?: string;
@@ -15,6 +19,7 @@ type Props = {
  */
 export function DocumentationHeading({
     title,
+    description,
     section = ""
 }: Props){
     return(
@@ -31,6 +36,11 @@ export function DocumentationHeading({
                 </h1>
             </div>
         </div>
+        {description && (
+            <p className="mt-2 text-lg text-slate-700 dark:text-slate-400">
+                {description}
+            </p>
+        )}
     </div>
     );
 }

@@ -8,6 +8,7 @@ describe("Documentation Heading component", () => {
         .create(
             <DocumentationHeading 
                 title="Unit Test"
+                description="This is a unit test."
                 section="Hello world"  
             />
         )
