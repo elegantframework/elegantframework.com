@@ -86,8 +86,6 @@ You'll be redirected to your GitHub Oauth App settings page.
 
 Keep this page open in GitHub, as we will need these values for the next steps during our environment configuration.
 
-
-
 ## Environment Configuration
 
 Elegant CMS safely stores your GitHub OAuth App client secret, and auth configuration details in your `.env` environment configuration file.
@@ -104,8 +102,6 @@ NEXT_PUBLIC_CMS_TOKEN_SECRET="random-32-digit-string"
 
 To generate a random 32-digit string, click here: [random.org](https://www.random.org/strings/?num=1&len=32&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new)
 
-
-
 ### GitHub Repository Configuration
 
 Next, configure your GitHub repository in your application's `.env` file:
@@ -115,4 +111,14 @@ NEXT_PUBLIC_CMS_REPOSITORY_BRANCH="your-github-branch"
 NEXT_PUBLIC_CMS_REPOSITORY_OWNER="your-repository-owner"
 NEXT_PUBLIC_CMS_REPOSITORY_SLUG="your-repository-slug"
 ```
+
+
+
+Once you have set your environment's configuration variables, restart your development server and navigate to your [CMS admin panel](http://localhost:3000/admin) to sign in.
+
+
+
+<div class="my-8 shadow-xl"><img class="rounded-xl" src="/images/269804560-a04b2d39-59fd-4a66-a752-23d3d4f37ba9-M3MD.png" alt=""></div>
+
+
 
