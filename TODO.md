@@ -1,5 +1,13 @@
 v3 go live ---
 
+- announce breaking changes
+    facebook
+    reddit
+    github
+    youtube
+    discord
+    - create youtube vid summarizing announcement if I have time and energy
+
 
 - The current gh config is dangerous in production I believe.
     - add a cms_admin_user email in .env? This email will have to match the auth token, or else 401
@@ -9,21 +17,16 @@ v3 go live ---
 
 - update cms guide; add quick notes on how to find repo owner and slug
 
-- Write announcement post of breaking changes
-
-    - we have moved all markdown content to _content/
-    - _content/blog
-    - _content/docs
-
-    - Markdown will no longer load statically.
-        - Instead, it will load dynamically at build time from the _content directory, or other data source.
-
-    - We have delete mdx-loader in favor of using unified directly.
-    - Drastically reduced the amount of javascript files, in favor of typescript.
 
 
 
-- Release a v3 prerelease?
+
+
+
+
+- Release a v3 prerelease about 1 week or so after announcement post.
+    - create post announcing prerelease
+    - add butterbar with announcement
 
 
 
@@ -415,3 +418,17 @@ Principals
     - Create 10x more value than we take.
     - Use our own code to build our products.
     - The users owns the content, not the product or the platform
+
+
+Announcement Flow
+    hashnode
+    medium
+    linkedin
+    indiehackers
+    facebook
+    twitter
+    reddit
+    github
+    youtube
+    discord
+    newsletter
