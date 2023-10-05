@@ -1,10 +1,27 @@
 v3 go live ---
 
 
-- set up .com GH access token
-    - verify what happens if a GH account who didn't set up the auth tries to log in
+- The current gh config is dangerous in production I believe.
+    - add a cms_admin_user email in .env? This email will have to match the auth token, or else 401
+        - use this --> https://stackoverflow.com/questions/31552125/defining-an-array-as-an-environment-variable-in-node-js
+
+- update cms guide on how to setup production
+
+- update cms guide; add quick notes on how to find repo owner and slug
 
 - Write announcement post of breaking changes
+
+    - we have moved all markdown content to _content/
+    - _content/blog
+    - _content/docs
+
+    - Markdown will no longer load statically.
+        - Instead, it will load dynamically at build time from the _content directory, or other data source.
+
+    - We have delete mdx-loader in favor of using unified directly.
+    - Drastically reduced the amount of javascript files, in favor of typescript.
+
+
 
 - Release a v3 prerelease?
 
@@ -12,6 +29,14 @@ v3 go live ---
 
 - delete useless docs from the cli project?
 
+- add next image to the images
+
+- save images locally in localstorage in editor.. Will fix when you save in production, and vercel has to rebuild
+
+- add external links to remark/rehype.. The current docs are not fun to follow when you click GH and it takes you away from Elegant.
+
+
+------- > Here is the GH 2.3 to v3 comparison: https://github.com/elegantframework/elegant-cli/compare/v2.3...v3.0-alpha
 
 
 - remove v2 components marked as deprecated
