@@ -18,6 +18,8 @@ Elegant v3.0 is nearly complete and will give developers and creators the power 
 
 
 
+## Introduction
+
 We have spent the last few months polling developers and reiterating Elegant based on their feedback. <br>
 
 As a result of our progress, we are excited to announce some upcoming changes and features of **Elegant version 3.0**:
@@ -60,7 +62,26 @@ To counter this, we have introduced an NPM package of core functional components
 
 ## Breaking Changes
 
-### Markdown Loading
+
 
 ### Content Directory
+
+In previous versions of Elegant, user-generated content was saved to a \`.mdx\` markdown file, and stored alongside the page components in the \`pages\` directory.
+
+Beginning in Elegant version 3.0, user-generated content will be saved to a \`\_content\` directory, separate from the applications pages directory.
+
+```ini
+_content/
+public/
+src/
+...
+```
+
+
+
+We have migrated to this updated content directory for a number of reasons, including ease of future upgrades to Next.js version 13.5 and greater.
+
+### Markdown Loading
+
+
 
