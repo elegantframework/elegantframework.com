@@ -60,9 +60,19 @@ To counter this, we have introduced an NPM package of core functional components
 
 
 
+## Simple Markdown Loading
+
+We have migrated away from a strategy of statically loading markdown during build time using MDX-Loader, in favor of dynamically loading markdown on the server side using Unified.
+
+
+
+---
+
+
+
 ## Breaking Changes
 
-
+With every major version upgrade comes a few breaking changes. We wanted to take the time to announce the major upcoming breaking changes in Elegant version 3.0.
 
 ### Content Directory
 
@@ -77,11 +87,11 @@ src/
 ...
 ```
 
-
-
 We have migrated to this updated content directory for a number of reasons, including ease of future upgrades to Next.js version 13.5 and greater.
 
 ### Markdown Loading
 
+We have deleted the mdx-loader code used by Next.js during build time; in favor of loading markdown dynamically on the server side during page load.
 
+As a result, we have removed a large number of lines of code in the \`next.config.mjs\` file.
 
