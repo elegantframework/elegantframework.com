@@ -35,6 +35,13 @@ export const documentationNav: NavigationSection[] = [
     ]
   },
   {
+    title: "Features",
+    links: [{
+      title: "Robots.txt",
+      href: "/docs/robots-txt"
+    }]
+  },
+  {
     title: "Customization",
     links: [{
       title: "Theme",

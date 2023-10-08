@@ -1,13 +1,12 @@
 v3 go live ---
 
 - announce breaking changes
-    facebook
     reddit
-    github
     youtube
     discord
     - create youtube vid summarizing announcement if I have time and energy
 
+- tedco, stripe atlas, patron, connect paetron to gh, ask fabz to tip me
 
 - The current gh config is dangerous in production I believe.
     - add a cms_admin_user email in .env? This email will have to match the auth token, or else 401
@@ -30,7 +29,6 @@ v3 go live ---
 
 
 
-- delete useless docs from the cli project?
 
 - add next image to the images
 
@@ -38,8 +36,6 @@ v3 go live ---
 
 - add external links to remark/rehype.. The current docs are not fun to follow when you click GH and it takes you away from Elegant.
 
-
-------- > Here is the GH 2.3 to v3 comparison: https://github.com/elegantframework/elegant-cli/compare/v2.3...v3.0-alpha
 
 
 - remove v2 components marked as deprecated
@@ -64,7 +60,6 @@ v3 go live ---
 
 - the admin url should not be accessible in a prod env if gh auth in not configured
 
-- delete old v2 junk docs in the cli project... replace with a starter doc 
 
 -- not required to go live --
 
