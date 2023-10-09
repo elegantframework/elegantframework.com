@@ -5,9 +5,9 @@ author:
   name: 'Brandon Owens'
   picture: 'https://avatars.githubusercontent.com/u/10189130?v=4'
 slug: 'rich-snippets'
-description: ''
+description: 'Rich snippets are a way to provide additional information about a webpage to search engines, like Google, so that they can better understand the content and context of the page. This guide covers in detail the rich snippets included on with your Elegant application.'
 coverImage: ''
-publishedAt: '2023-10-08T18:19:02.897Z'
+publishedAt: '2023-10-09T18:19:02.000Z'
 ---
 
 ## Introduction
@@ -17,4 +17,34 @@ Rich snippets are a way to provide additional information about a webpage to sea
 Think of rich snippets as a special kind of metadata that gives search engines a sneak peek at what's on your webpage.
 
 For example, if you have a recipe website, you could use rich snippets to provide information about the ingredients, cooking time, and nutritional value of each recipe. This way, when someone searches for a specific recipe, the search engine can display all this extra information in the search results, making it easier for the user to decide if your recipe is the one they're looking for.
+
+
+
+We have built Elegant to automatically add the most essential rich snippets to your web pages.
+
+
+
+## Logo
+
+We have included the logo of your Elegant application in the rich snippets markup.<br>
+
+<br>
+
+We have specified the image Google Search uses for your organization's logo in Search results and in the Google Knowledge panel using rich snippets.
+
+Google Search uses the [schema.org](http://schema.org) markup to recognize the image to use as the organization's logo. This ensures that, when possible, the image appears in search results about the company. Markup like this is a strong signal to Google Search algorithms to show this image in knowledge panels.
+
+
+
+## Organization
+
+We have set the default page schema to `Organization` to signal to search engines that your website is for a company. <br>
+
+<br>
+
+You can change it to personal by simply updating the `NEXT_PUBLIC_APP_TYPE` environment variable to `Personal` in your .env file.
+
+
+
+## Social Channels
 
