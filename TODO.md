@@ -399,6 +399,7 @@ HN Analytics survey: Mixpanel, Amplitude, PostHog
         - How to create watermarks using Figma.
         - Someone stole my images, what should I do? Use Figma to include your domain in the images.
         - How to write clean code.. Sample of bad triple ternary, vs cleanly written function.
+        - How to write a blog post for new creators. Take from the convo with fabz; Explain seo, and how you should write articles to drive organic search traffic
 
 https://www.lennysnewsletter.com/p/how-the-biggest-consumer-apps-got
 
