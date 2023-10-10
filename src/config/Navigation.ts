@@ -42,6 +42,10 @@ export const documentationNav: NavigationSection[] = [
         href: "/docs/rich-snippets"
       },
       {
+        title: "Sitemaps",
+        href: "/docs/sitemaps"
+      },
+      {
         title: "Robots.txt",
         href: "/docs/robots-txt"
       }
