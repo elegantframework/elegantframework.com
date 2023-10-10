@@ -18,41 +18,29 @@ Think of rich snippets as a special kind of metadata that gives search engines a
 
 For example, if you have a recipe website, you could use rich snippets to provide information about the ingredients, cooking time, and nutritional value of each recipe. This way, when someone searches for a specific recipe, the search engine can display all this extra information in the search results, making it easier for the user to decide if your recipe is the one they're looking for.
 
-
-
 We have built Elegant to automatically add the most essential rich snippets to your web pages.
-
-
 
 ## Logo
 
-We have included the logo of your Elegant application in the rich snippets markup.<br>
-
-<br>
-
-We have specified the image Google Search uses for your organization's logo in Search results and in the Google Knowledge panel using rich snippets.
+We have included the logo of your Elegant application in the rich snippets markup to specify the image Google Search uses for your organization's logo in Search results and in the Google Knowledge panel using rich snippets.
 
 Google Search uses the [schema.org](http://schema.org) markup to recognize the image to use as the organization's logo. This ensures that, when possible, the image appears in search results about the company. Markup like this is a strong signal to Google Search algorithms to show this image in knowledge panels.
-
-
 
 ## Organization
 
 We have set the default page schema to `Organization` to signal to search engines that your website is for a company. <br>
 
-<br>
+You can change it to a personal website by simply updating the `NEXT_PUBLIC_APP_TYPE` environment variable to `Person` in your .env file.
 
-You can change it to personal by simply updating the `NEXT_PUBLIC_APP_TYPE` environment variable to `Personal` in your .env file.
-
-
+```ini
+NEXT_PUBLIC_APP_TYPE="Person"
+```
 
 ## Social Channels
 
 We will automatically add your social profile URLs to the rich snippet data included on all pages of your web application.
 
 URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.
-
-
 
 Simply include your social handles in their corresponding .env environment variables.
 
@@ -64,21 +52,15 @@ NEXT_PUBLIC_APP_FACEBOOK_URL="https://www.facebook.com/profile.php?id=1000932619
 NEXT_PUBLIC_APP_INSTAGRAM_URL="http://instagram.com/yourProfile"
 ```
 
-
-
 ## Videos
 
 Google Search is an entry point for people to discover and watch videos.
 
 While Google tries to automatically understand details about your video, Elegant automatically provides information, such as the description, thumbnail URL, upload date, and duration, by marking up your video with `VideoObject`. Videos can appear in Google Search results, video search results, Google Images, and [Google Discover](https://developers.google.com/search/docs/advanced/mobile/google-discover).
 
-
-
 ## Articles
 
 Elegant automatically includes the `Article` rich snippet tag in all of your blog posts.
 
 By adding `Article` structured data to your news, blog, and sports article pages can help Google understand more about the web page and show better title text, images, and date information for the article in search results on Google Search and other properties (for example, Google News and the [Google Assistant](https://developers.google.com/assistant/content/overview)).
-
-
 
