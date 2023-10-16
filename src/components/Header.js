@@ -120,6 +120,18 @@ export function NavItems() {
           Blog
       </Link>
     </li>
+    <li>
+      <Link
+        href="/pricing"
+        className={
+            clsx(
+              'hover:text-primary-500 dark:hover:text-primary-400', 
+              (router.asPath.indexOf('/pricing') > -1 ? 'text-primary-500 dark:text-primary-400' : '')
+            )
+          }>
+          Pricing
+      </Link>
+    </li>
   </>;
 }
 

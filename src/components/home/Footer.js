@@ -24,6 +24,7 @@ const footerNav = [
       { title: 'Vercel', href: '/docs/deployment/' },
     ],
     Resources: [
+      { title: 'Pricing', href: '/pricing' },
       { title: 'Website Design Services', href: '/experts' },
     ]
   },
