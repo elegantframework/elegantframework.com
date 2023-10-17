@@ -7,6 +7,7 @@ v3 go live ---
     youtube
     - create youtube vid summarizing announcement if I have time and energy
 
+- finish breaking changes Youtube video
 
 - finish pricing page
     - dark mode
@@ -14,13 +15,14 @@ v3 go live ---
     - create a hosting sign up block on the bottom
     - set up convertkit integration
     - scroll to that signup on hosted button click
-    - add more FAQ's
+    - add more FAQ's.. shopify has good ones
 
 
 - Release a v3 prerelease about 1 week or so after announcement post.
     - create post announcing prerelease
     - add butterbar with announcement
 
+- Create a new blog post announcing Elegant CMS
 
 - The current gh config is dangerous in production I believe.
     - add a cms_admin_user email in .env? This email will have to match the auth token, or else 401
