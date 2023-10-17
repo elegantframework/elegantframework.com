@@ -1,7 +1,8 @@
 import { SplashPageLayout } from "@/components/core/Layouts/SplashPageLayout";
 import techSplash from '@/img/splash/hire-us-splash-tech-picture.jpg';
 import { Disclosure } from "@headlessui/react";
-import { CheckIcon, MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/20/solid";
+import { CheckCircleIcon, CheckIcon, MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/20/solid";
+import clsx from "clsx";
 
 Pricing.layoutProps = {
   Layout: SplashPageLayout,
@@ -15,30 +16,52 @@ Pricing.layoutProps = {
 let tiers:Tier[] = [
     {
         id: "self-hosted",
-        href: "",
+        href: "/docs/installation",
         featured: true,
         name: "Self-Hosted",
         priceMonthly: "Free",
-        description: "Start your next side project or blog, and deploy to your favorite host.",
-        features: ["", "Deploy to AWS, Vercel, or Netlify", "Content Management System (CMS)", "Perfectly Optimized for SEO", "Included Starter Theme", "Fully Customizable", "Community & Email Support"],
-        action: "Get Started Today"
+        description: "Start your next side project or blog, and deploy to your favorite serverless host.",
+        features: ["Hosted by you", "Easy deployments to Vercel, AWS, & Netlify", "Free content management system (CMS)", "Included starter theme", "Perfectly optimized for SEO", "Fully customizable", "Get started in less than 5 minutes", "Community & email support"],
+        action: "Get Started Today",
+        preText: "It's always"
     },
     {
-        id: "managed",
+        id: "hosted",
         href: "",
         featured: false,
-        name: "Managed",
-        priceMonthly: "$1.99",
-        description: "Lightening fast hosting on the edge, with next-level publishing features and more.",
-        features: ["99.99% Uptime", "High-Performance Edge Network", "Custom Domain Names", "Priority Support"],
-        action: "Learn More"
+        name: "Elegant Pro",
+        strikeThroughPrice: "$9.99",
+        priceMonthly: "$4.99",
+        description: "Lightning fast hosting on the edge, with next-level publishing features and more. Limited time introductory pricing.",
+        features: ["Hosted by Elegant", "100% uptime", "High-performance edge network", "Premium themes, or build your own", "Custom domain names", "Advanced features for creators", "Try Elegant free for 7 days, cancel anytime", "Priority support"],
+        action: "Join Waitlist",
+        preText: "Starting at"
+    },
+    {
+        id: "custom",
+        href: "/experts",
+        featured: false,
+        name: "Custom",
+        priceMonthly: "$500",
+        description: "Let us design, build, and launch your perfect website, guiding you along the way from A to Z.",
+        features: ["Custom theme built by Elegant", "Hosted by Elegant", "Dedicated launch specialist", "Migrate from WordPress, Medium, & more", "Everything included in Hosted", "Advanced features for enterprises", "24/7 dedicated support"],
+        action: "Learn More",
+        preText: "Starting at"
     }
 ];
 
 let faqs:FAQ[] = [
     {
-        question: "Hello",
+        question: "How much does Elegant Pro cost?",
         answer: "World"
+    },
+    {
+      question: "How long are your contracts?",
+      answer: "All Elegant Hosted and Custom plans are month to month, and you can cancel at anytime."
+    },
+    {
+      question: "Can I cancel my Elegant account at anytime?",
+      answer: "Yes, if you ever decide that Elegant isn't the best content platform for your, simply cancel your account."
     }
 ];
 
@@ -52,219 +75,90 @@ export default function Pricing() {
             </p>
         </div>
         <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
-            Create a place for your business, your interests, or anything else—with the open source platform that powers the web.
+            Perfect for blogging, writing documentation, showing off your portfolio, or anything else—with the easiest open source content creation platform.
         </p>
-        <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
-            {tiers.map((tier, tierIdx) => (
-                <div
-                key={tier.id}
-                className={classNames(
-                    tier.featured ? 'relative bg-white shadow-2xl' : 'bg-white/60 sm:mx-8 lg:mx-0',
-                    tier.featured
-                    ? ''
-                    : tierIdx === 0
-                    ? 'rounded-t-3xl sm:rounded-b-none lg:rounded-tr-none lg:rounded-bl-3xl'
-                    : 'sm:rounded-t-none lg:rounded-tr-3xl lg:rounded-bl-none',
-                    'rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10'
-                )}
-                >
-                <h3 id={tier.id} className="text-base font-semibold leading-7 text-indigo-600">
-                    {tier.name}
-                </h3>
-                <p className="mt-4 flex items-baseline gap-x-2">
-                    {tier.id === "managed" && (
-                        <span className="text-base text-gray-500">Starting at </span>
-                    )}
-                    <span className="text-5xl font-bold tracking-tight text-gray-900">{tier.priceMonthly}</span>
-                    {tier.id !== "self-hosted" && (
-                        <span className="text-base text-gray-500">/month</span>
-                    )}
-                </p>
-                <p className="mt-6 text-base leading-7 text-gray-600">{tier.description}</p>
-                <ul role="list" className="mt-8 space-y-3 text-sm leading-6 text-gray-600 sm:mt-10">
-                    {tier.features.map((feature: string) => (
-                    <li key={feature} className="flex gap-x-3">
-                        <CheckIcon className="h-6 w-5 flex-none text-indigo-600" aria-hidden="true" />
-                        {feature}
-                    </li>
-                    ))}
-                </ul>
-                <a
-                    href={tier.href}
-                    aria-describedby={tier.id}
-                    className={classNames(
-                    tier.featured
-                        ? 'bg-indigo-600 text-white shadow hover:bg-indigo-500'
-                        : 'text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300',
-                    'mt-8 block rounded-md py-2.5 px-3.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:mt-10'
-                    )}
-                >
-                    {tier.action}
-                </a>
-                </div>
-            ))}
-        </div>
 
-        {/* xs to lg */}
-        <div className="mx-auto mt-12 max-w-md space-y-8 sm:mt-16 lg:hidden">
+        <div className="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {tiers.map((tier) => (
-            <section
+            <div
               key={tier.id}
               className={classNames(
-                tier.featured ? 'rounded-xl bg-gray-400/5 ring-1 ring-inset ring-gray-200' : '',
-                'p-8'
+                tier.featured ? 'bg-gray-900 ring-gray-900' : 'bg-white ring-gray-200',
+                'rounded-3xl p-8 ring-1 xl:p-10'
               )}
             >
-              <h3 id={tier.id} className="text-sm font-semibold leading-6 text-gray-900">
+              <h3
+                id={tier.id}
+                className={classNames(
+                  tier.featured ? 'text-white' : 'text-gray-900',
+                  'text-lg font-semibold leading-8'
+                )}
+              >
                 {tier.name}
               </h3>
-              <p className="mt-2 flex items-baseline gap-x-1 text-gray-900">
-                <span className="text-4xl font-bold">{tier.priceMonthly}</span>
-                <span className="text-sm font-semibold">/month</span>
+              <p className={classNames(tier.featured ? 'text-gray-300' : 'text-gray-600', 'mt-4 text-sm leading-6')}>
+                {tier.description}
+              </p>
+              <p className="mt-6 flex items-baseline gap-x-1">
+                <span className="text-base text-gray-500 text-sm">{tier.preText} </span> 
+              </p>
+              <p className="mt-1 flex items-baseline gap-x-1">
+                {tier.strikeThroughPrice && (
+                   <span
+                   className={classNames(
+                     tier.featured ? 'text-white' : 'text-gray-900',
+                     'text-4xl font-bold tracking-tight line-through pr-2'
+                   )}
+                 >
+                   {tier.strikeThroughPrice}
+                 </span>
+                )}
+                <span
+                  className={classNames(
+                    tier.featured ? 'text-white' : 'text-gray-900',
+                    'text-4xl font-bold tracking-tight'
+                  )}
+                >
+                  {tier.priceMonthly}
+                </span>
+                {tier.id !== "self-hosted" && tier.id !== "custom" && (
+                    <span className="text-base text-gray-500">/ month</span>
+                )}
+                {tier.id !== "self-hosted" && tier.id !== "hosted" && (
+                    <span className="text-base text-gray-500">plus hosting</span>
+                )}
               </p>
               <a
                 href={tier.href}
                 aria-describedby={tier.id}
                 className={classNames(
                   tier.featured
-                    ? 'bg-indigo-600 text-white hover:bg-indigo-500'
-                    : 'text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300',
-                  'mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+                    ? 'bg-white/10 text-white hover:bg-white/20 focus-visible:outline-white'
+                    : 'bg-indigo-600 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-indigo-600',
+                  'mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2'
                 )}
               >
-                Buy plan
+                {tier.action}
               </a>
-              {/* <ul role="list" className="mt-10 space-y-4 text-sm leading-6 text-gray-900">
-                {sections.map((section) => (
-                  <li key={section.name}>
-                    <ul role="list" className="space-y-4">
-                      {section.features.map((feature) =>
-                        feature.tiers[tier.name] ? (
-                          <li key={feature.name} className="flex gap-x-3">
-                            <CheckIcon className="h-6 w-5 flex-none text-indigo-600" aria-hidden="true" />
-                            <span>
-                              {feature.name}{' '}
-                              {typeof feature.tiers[tier.name] === 'string' ? (
-                                <span className="text-sm leading-6 text-gray-500">({feature.tiers[tier.name]})</span>
-                              ) : null}
-                            </span>
-                          </li>
-                        ) : null
-                      )}
-                    </ul>
+              <ul
+                role="list"
+                className={classNames(
+                  tier.featured ? 'text-gray-300' : 'text-gray-600',
+                  'mt-8 space-y-3 text-sm leading-6 xl:mt-10'
+                )}
+              >
+                {tier.features.map((feature) => (
+                  <li key={feature} className="flex gap-x-3">
+                    <CheckCircleIcon 
+                      className={clsx("h-6 w-5 flex-none", tier.featured ? 'text-primary-400' : 'text-primary-600')} 
+                      aria-hidden="true" 
+                    />
+                    {feature}
                   </li>
                 ))}
-              </ul> */}
-            </section>
+              </ul>
+            </div>
           ))}
-        </div>
-
-        {/* lg+ */}
-        <div className="isolate mt-20 hidden lg:block">
-          <div className="relative -mx-8">
-            {tiers.some((tier) => tier.featured) ? (
-              <div className="absolute inset-x-4 inset-y-0 -z-10 flex">
-                <div
-                  className="flex w-1/4 px-4"
-                  aria-hidden="true"
-                  style={{ marginLeft: `${(tiers.findIndex((tier) => tier.featured) + 1) * 25}%` }}
-                >
-                  <div className="w-full rounded-t-xl border-x border-t border-gray-900/10 bg-gray-400/5" />
-                </div>
-              </div>
-            ) : null}
-            <table className="w-full table-fixed border-separate border-spacing-x-8 text-left">
-              <caption className="sr-only">Pricing plan comparison</caption>
-              <colgroup>
-                <col className="w-1/4" />
-                <col className="w-1/4" />
-                <col className="w-1/4" />
-                <col className="w-1/4" />
-              </colgroup>
-              <thead>
-                <tr>
-                  <td />
-                  {tiers.map((tier) => (
-                    <th key={tier.id} scope="col" className="px-6 pt-6 xl:px-8 xl:pt-8">
-                      <div className="text-sm font-semibold leading-7 text-gray-900">{tier.name}</div>
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">
-                    <span className="sr-only">Price</span>
-                  </th>
-                  {tiers.map((tier) => (
-                    <td key={tier.id} className="px-6 pt-2 xl:px-8">
-                      <div className="flex items-baseline gap-x-1 text-gray-900">
-                        <span className="text-4xl font-bold">{tier.priceMonthly}</span>
-                        <span className="text-sm font-semibold leading-6">/month</span>
-                      </div>
-                      <a
-                        href={tier.href}
-                        className={classNames(
-                          tier.featured
-                            ? 'bg-indigo-600 text-white hover:bg-indigo-500'
-                            : 'text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300',
-                          'mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
-                        )}
-                      >
-                        Buy plan
-                      </a>
-                    </td>
-                  ))}
-                </tr>
-                {/* {sections.map((section, sectionIdx) => (
-                  <Fragment key={section.name}>
-                    <tr>
-                      <th
-                        scope="colgroup"
-                        colSpan={4}
-                        className={classNames(
-                          sectionIdx === 0 ? 'pt-8' : 'pt-16',
-                          'pb-4 text-sm font-semibold leading-6 text-gray-900'
-                        )}
-                      >
-                        {section.name}
-                        <div className="absolute inset-x-8 mt-4 h-px bg-gray-900/10" />
-                      </th>
-                    </tr>
-                    {section.features.map((feature) => (
-                      <tr key={feature.name}>
-                        <th scope="row" className="py-4 text-sm font-normal leading-6 text-gray-900">
-                          {feature.name}
-                          <div className="absolute inset-x-8 mt-4 h-px bg-gray-900/5" />
-                        </th>
-                        {tiers.map((tier) => (
-                          <td key={tier.id} className="px-6 py-4 xl:px-8">
-                            {typeof feature.tiers[tier.name] === 'string' ? (
-                              <div className="text-center text-sm leading-6 text-gray-500">
-                                {feature.tiers[tier.name]}
-                              </div>
-                            ) : (
-                              <>
-                                {feature.tiers[tier.name] === true ? (
-                                  <CheckIcon className="mx-auto h-5 w-5 text-indigo-600" aria-hidden="true" />
-                                ) : (
-                                  <MinusIcon className="mx-auto h-5 w-5 text-gray-400" aria-hidden="true" />
-                                )}
-
-                                <span className="sr-only">
-                                  {feature.tiers[tier.name] === true ? 'Included' : 'Not included'} in {tier.name}
-                                </span>
-                              </>
-                            )}
-                          </td>
-                        ))}
-                      </tr>
-                    ))}
-                  </Fragment>
-                ))} */}
-              </tbody>
-            </table>
-          </div>
         </div>
 
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
@@ -312,10 +206,12 @@ interface Tier {
     href: string;
     featured: boolean;
     name: string;
+    strikeThroughPrice?: string;
     priceMonthly: string;
     description: string;
     features: string[];
     action: string;
+    preText: string;
 };
 
 interface FAQ {

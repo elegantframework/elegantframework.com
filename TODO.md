@@ -1,12 +1,26 @@
 v3 go live ---
 
+-- start prerelease process?
+    - pull in innovators build into a fresh install.. see how it works.
+
 - announce breaking changes
-    reddit
     youtube
-    discord
     - create youtube vid summarizing announcement if I have time and energy
 
-- tedco, stripe atlas, patron, connect paetron to gh, ask fabz to tip me
+
+- finish pricing page
+    - dark mode
+    - test on mobile and tablet
+    - create a hosting sign up block on the bottom
+    - set up convertkit integration
+    - scroll to that signup on hosted button click
+    - add more FAQ's
+
+
+- Release a v3 prerelease about 1 week or so after announcement post.
+    - create post announcing prerelease
+    - add butterbar with announcement
+
 
 - The current gh config is dangerous in production I believe.
     - add a cms_admin_user email in .env? This email will have to match the auth token, or else 401
@@ -16,17 +30,13 @@ v3 go live ---
 
 - update cms guide; add quick notes on how to find repo owner and slug
 
+- write up a guide on the privacy policy.. Stripe atlas has a really good article of what and why you should have one.
 
 
 
 
-
-
-
-- Release a v3 prerelease about 1 week or so after announcement post.
-    - create post announcing prerelease
-    - add butterbar with announcement
-
+- stripe atlas, patron, connect paetron to gh, ask fabz to tip me
+- research the terms to make sure stripe is the right processor for this project
 
 
 
@@ -97,6 +107,8 @@ v3 go live ---
 
 
 ~~~~~~~~~> v3.1
+
+- remove the beams in favor of background gradients
 
 - migrate .com docs to live under the cli package, create an elegant-docs npm package.
 - create simple starter docs and starter blog post that come included in a cli install.
