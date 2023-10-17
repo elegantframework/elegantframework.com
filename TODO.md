@@ -3,11 +3,6 @@ v3 go live ---
 -- start prerelease process?
     - pull in innovators build into a fresh install.. see how it works.
 
-- announce breaking changes
-    youtube
-    - create youtube vid summarizing announcement if I have time and energy
-
-- finish breaking changes Youtube video
 
 - finish pricing page
     - dark mode
