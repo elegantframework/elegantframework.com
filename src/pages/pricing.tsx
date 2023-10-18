@@ -52,8 +52,12 @@ let tiers:Tier[] = [
 
 let faqs:FAQ[] = [
     {
-        question: "How much does Elegant Pro cost?",
-        answer: "World"
+      question: "What is Elegant and how does it work?",
+      answer: "Elegant is an all-in-one content platform built for developers and independent content creators to start, run, and grow their content, web application, and everything in between."
+    },
+    {
+      question: "How much does Elegant Pro cost?",
+      answer: "You can try Elegant free for 7 days, no credit card required. After your trial expires, choose a plan that suits the size and stage of your web application."
     },
     {
       question: "How long are your contracts?",
@@ -62,20 +66,23 @@ let faqs:FAQ[] = [
     {
       question: "Can I cancel my Elegant account at anytime?",
       answer: "Yes, if you ever decide that Elegant isn't the best content platform for your, simply cancel your account."
+    },
+    {
+      question: "Can I use my own domain with Elegant?",
+      answer: "Yes, you can purchase a domain name, or use an existing one that you own with your Elegant website. We also provide a forever free myelegant.app domain name to all websites when they sign up for Elegant Pro."
     }
 ];
 
 export default function Pricing() {
   return(
-    <div className="relative isolate px-6 pt-0 py-24 sm:py-32 sm:pt-0 lg:px-8">
+    <div className="relative isolate px-0 md:px-6 pt-0 py-24 sm:py-32 sm:pt-0 lg:px-8">
         <div className="mx-auto max-w-2xl text-center lg:max-w-4xl">
-            <h2 className="text-base font-semibold leading-7 text-indigo-600">Pricing</h2>
-            <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+            <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
                 Level up your creativity with Elegant
             </p>
         </div>
-        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
-            Perfect for blogging, writing documentation, showing off your portfolio, or anything else—with the easiest open source content creation platform.
+        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600 dark:text-gray-300">
+            Perfect for blogging, writing documentation, showing off your portfolio, or anything else—with the easiest content creation platform.
         </p>
 
         <div className="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -83,7 +90,7 @@ export default function Pricing() {
             <div
               key={tier.id}
               className={classNames(
-                tier.featured ? 'bg-gray-900 ring-gray-900' : 'bg-white ring-gray-200',
+                tier.featured ? 'bg-gray-900 ring-1 ring-white/10' : 'bg-white ring-gray-200',
                 'rounded-3xl p-8 ring-1 xl:p-10'
               )}
             >
@@ -162,17 +169,17 @@ export default function Pricing() {
         </div>
 
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
-            <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
-                <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">
+            <div className="mx-auto max-w-4xl divide-y divide-gray-900/10 dark:divide-white/10">
+                <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900 dark:text-white">
                     Frequently asked questions
                 </h2>
-                <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
+                <dl className="mt-10 space-y-6 divide-y divide-gray-900/10 dark:divide-white/10">
                     {faqs.map((faq) => (
                     <Disclosure as="div" key={faq.question} className="pt-6">
                         {({ open }) => (
                         <>
                             <dt>
-                            <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900">
+                            <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900 dark:text-white">
                                 <span className="text-base font-semibold leading-7">{faq.question}</span>
                                 <span className="ml-6 flex h-7 items-center">
                                 {open ? (
@@ -184,7 +191,7 @@ export default function Pricing() {
                             </Disclosure.Button>
                             </dt>
                             <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                            <p className="text-base leading-7 text-gray-600">{faq.answer}</p>
+                            <p className="text-base leading-7 text-gray-600 dark:text-gray-300">{faq.answer}</p>
                             </Disclosure.Panel>
                         </>
                         )}
