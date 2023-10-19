@@ -7,9 +7,7 @@ v3 go live ---
 - finish pricing page
     - dark mode
     - test on mobile and tablet
-    - create a hosting sign up block on the bottom
     - set up convertkit integration
-    - scroll to that signup on hosted button click
     - add more FAQ's.. shopify has good ones
 
 
@@ -18,6 +16,8 @@ v3 go live ---
     - add butterbar with announcement
 
 - Create a new blog post announcing Elegant CMS
+
+- maybe create a subscription signup success page? with google analytics conversion tracking?
 
 - The current gh config is dangerous in production I believe.
     - add a cms_admin_user email in .env? This email will have to match the auth token, or else 401

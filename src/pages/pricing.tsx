@@ -1,7 +1,7 @@
 import { SplashPageLayout } from "@/components/core/Layouts/SplashPageLayout";
 import techSplash from '@/img/splash/hire-us-splash-tech-picture.jpg';
 import { Disclosure } from "@headlessui/react";
-import { CheckCircleIcon, CheckIcon, MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/20/solid";
+import { ArrowUpOnSquareStackIcon, CalendarDaysIcon, CheckCircleIcon, CheckIcon, CloudArrowUpIcon, HandRaisedIcon, MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/20/solid";
 import clsx from "clsx";
 
 Pricing.layoutProps = {
@@ -27,7 +27,7 @@ let tiers:Tier[] = [
     },
     {
         id: "hosted",
-        href: "",
+        href: "#elegant-pro",
         featured: false,
         name: "Elegant Pro",
         strikeThroughPrice: "$9.99",
@@ -51,26 +51,26 @@ let tiers:Tier[] = [
 ];
 
 let faqs:FAQ[] = [
-    {
-      question: "What is Elegant and how does it work?",
-      answer: "Elegant is an all-in-one content platform built for developers and independent content creators to start, run, and grow their content, web application, and everything in between."
-    },
-    {
-      question: "How much does Elegant Pro cost?",
-      answer: "You can try Elegant free for 7 days, no credit card required. After your trial expires, choose a plan that suits the size and stage of your web application."
-    },
-    {
-      question: "How long are your contracts?",
-      answer: "All Elegant Hosted and Custom plans are month to month, and you can cancel at anytime."
-    },
-    {
-      question: "Can I cancel my Elegant account at anytime?",
-      answer: "Yes, if you ever decide that Elegant isn't the best content platform for your, simply cancel your account."
-    },
-    {
-      question: "Can I use my own domain with Elegant?",
-      answer: "Yes, you can purchase a domain name, or use an existing one that you own with your Elegant website. We also provide a forever free myelegant.app domain name to all websites when they sign up for Elegant Pro."
-    }
+  {
+    question: "What is Elegant and how does it work?",
+    answer: "Elegant is an all-in-one content platform built for developers and independent content creators to start, run, and grow their content, web application, and everything in between."
+  },
+  {
+    question: "How much does Elegant Pro cost?",
+    answer: "You can try Elegant free for 7 days, no credit card required. After your trial expires, choose a plan that suits the size and stage of your web application."
+  },
+  {
+    question: "How long are your contracts?",
+    answer: "All Elegant Hosted and Custom plans are month to month, and you can cancel at anytime."
+  },
+  {
+    question: "Can I cancel my Elegant account at anytime?",
+    answer: "Yes, if you ever decide that Elegant isn't the best content platform for your, simply cancel your account."
+  },
+  {
+    question: "Can I use my own domain with Elegant?",
+    answer: "Yes, you can purchase a domain name, or use an existing one that you own with your Elegant website. We also provide a forever free myelegant.app domain name to all websites when they sign up for Elegant Pro."
+  }
 ];
 
 export default function Pricing() {
@@ -166,6 +166,66 @@ export default function Pricing() {
               </ul>
             </div>
           ))}
+        </div>
+
+        <div id="elegant-pro" className="relative isolate overflow-hidden bg-gray-900 ring-1 ring-white/10 mt-40 py-16 sm:py-24 lg:py-32 rounded-lg">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+              <div className="max-w-xl lg:max-w-lg">
+                <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Everything you need to be amazing, all in one place.</h2>
+                <p className="mt-4 text-lg leading-8 text-gray-300">
+                  Lightning fast hosting on the edge, with next-level publishing features and more. Launching soon! 🚀
+                </p>
+                <div>
+                  <form 
+                    action="https://app.convertkit.com/forms/5738356/subscriptions" 
+                    method="post" 
+                    target="_blank"
+                    className="mt-6 flex max-w-md gap-x-4"
+                  >
+                    <label htmlFor="email-address" className="sr-only">
+                      Email address
+                    </label>
+                    <input
+                      id="email-address"
+                      name="email"
+                      type="email"
+                      autoComplete="email"
+                      required
+                      className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+                      placeholder="Enter your email"
+                    />
+                    <button
+                      type="submit"
+                      className="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                    >
+                      Join Waitlist
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
+                <div className="flex flex-col items-start">
+                  <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+                    <CloudArrowUpIcon className="h-6 w-6 text-white" aria-hidden="true" />
+                  </div>
+                  <dt className="mt-4 font-semibold text-white">Cutting Edge Hosting</dt>
+                  <dd className="mt-2 leading-7 text-gray-400">
+                    Always fast, always online. Our Edge Network is able to intelligently run your app as close to your users as possible.
+                  </dd>
+                </div>
+                <div className="flex flex-col items-start">
+                  <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+                    <ArrowUpOnSquareStackIcon className="h-6 w-6 text-white" aria-hidden="true" />
+                  </div>
+                  <dt className="mt-4 font-semibold text-white">Push To Deploy</dt>
+                  <dd className="mt-2 leading-7 text-gray-400">
+                    Deployments couldn't be any easier. Just push your code to GitHub, and we'll handle it from there.
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </div>
         </div>
 
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
