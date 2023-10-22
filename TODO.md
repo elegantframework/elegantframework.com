@@ -1,21 +1,37 @@
 v3 go live ---
 
--- start prerelease process?
-    - pull in innovators build into a fresh install.. see how it works.
+- write v3.0 upgrade guide.
 
+- pull in innovators build into a fresh install.. see how it works.
+    - verify it seems good before doing the v3 npm prerelease.
 
-- finish pricing page
-    - dark mode
-    - test on mobile and tablet
-    - set up convertkit integration
-    - add more FAQ's.. shopify has good ones
-
+- update the main readme for npm, for version 3.0
+- update the .com main readme with more info.. Use it to market more about elegant.
+- update the main gh readme for the whole elegant project. use it to market.
 
 - Release a v3 prerelease about 1 week or so after announcement post.
     - create post announcing prerelease
     - add butterbar with announcement
 
+- actually upgrade .com to the prerelease version when released.
+
 - Create a new blog post announcing Elegant CMS
+
+- Add a prerelease note to getting started with the cms doc, and how people can download it from npm.
+
+
+- create a sidebar guide.. How to set it and update it in the config file
+
+- watch the editor watcher. Change the public image url to the github one if the public one doesn't exist?
+
+
+
+- finish pricing page
+    - add more FAQ's.. shopify has good ones
+    - why is the price so cheap? What's the catch?
+    - 100% uptime? How is that possible?
+
+
 
 - maybe create a subscription signup success page? with google analytics conversion tracking?
 
@@ -29,23 +45,25 @@ v3 go live ---
 
 - write up a guide on the privacy policy.. Stripe atlas has a really good article of what and why you should have one.
 
+- write a guide for chris and others like him.. Non tech people.. So you have launched? What next? Connect google search console; connect GA; create content; how to post content on reddit successfully.
 
+- add that we use grammarly.. That is huge for content creators
 
 
 - stripe atlas, patron, connect paetron to gh, ask fabz to tip me
 - research the terms to make sure stripe is the right processor for this project
 
 
+- if you dont have any heading in a doc; The sidebar code will break the dom on page load
+
+- add margin to docs footer top.. The toc can't activate the lower page items because they can't be scrolled to
+
 
 - add next image to the images
-
-- save images locally in localstorage in editor.. Will fix when you save in production, and vercel has to rebuild
 
 - add external links to remark/rehype.. The current docs are not fun to follow when you click GH and it takes you away from Elegant.
 
 
-
-- remove v2 components marked as deprecated
 
 - Finish initial migration of .com to v3-alpha.
     - start the top to bottom sweep of rewriting the docs and images starting at install
@@ -75,9 +93,6 @@ v3 go live ---
 
 
 
-- add components to elegant ui
-- release v1 of elegant-ui
-
 - configure dependabot to open automatic pr's
 - set up actions to auto releases on npm
 - releases on GH?
@@ -94,6 +109,7 @@ v3 go live ---
 
 
 - verify the images api works
+    - it doesn't work.. Delete it after using for local image save fix
 
 - Write a getting started guide for the CMS panel. Document the env vars covered on the Welcome page.
     - Add a link to the doc mentioned above to the welcome page.
