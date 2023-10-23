@@ -1,3 +1,5 @@
+import moment from "moment";
+
 type Props = {
     /**
      * The title of the heading element.
@@ -7,6 +9,10 @@ type Props = {
      * The navigation section that this element is located in.
      */
     section?: string;
+    /**
+     * The date time that this item was last updated
+     */
+    lastUpdated?: string;
 };
 
 /**
@@ -15,7 +21,8 @@ type Props = {
  */
 export function DocumentationHeading({
     title,
-    section = ""
+    section = "",
+    lastUpdated = ""
 }: Props){
     return(
     <div className="relative z-20">
@@ -25,10 +32,15 @@ export function DocumentationHeading({
                     {section}
                 </p>
             )}
-            <div className="flex items-center">
+            <div className="items-center">
                 <h1 className="inline-block text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight dark:text-slate-200">
                     {title}
                 </h1>
+                {lastUpdated && (
+                    <p className="text-slate-700 dark:text-slate-400 mt-2">
+                        Last updated on {moment.utc(lastUpdated).format('MMMM Do YYYY').toString()}
+                    </p>
+                )}
             </div>
         </div>
     </div>

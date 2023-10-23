@@ -104,6 +104,7 @@ export default function Index({
                 <DocumentationHeading 
                     title={post.title}
                     section={section}
+                    lastUpdated={post.publishedAt}
                 />
                 <ContentsContext.Provider value={{}}>
                     <div

@@ -11,7 +11,7 @@ exports[`Documentation Heading component renders the documentation heading prope
       Hello world
     </p>
     <div
-      className="flex items-center"
+      className="items-center"
     >
       <h1
         className="inline-block text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight dark:text-slate-200"
