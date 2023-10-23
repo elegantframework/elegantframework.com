@@ -38,7 +38,7 @@ export function DocumentationHeading({
                 </h1>
                 {lastUpdated && (
                     <p className="text-slate-700 dark:text-slate-400 mt-2">
-                        Last updated on {moment.utc(lastUpdated).format('MMMM Do YYYY').toString()}
+                        Last updated on {moment.utc(lastUpdated).format('LL').toString()}
                     </p>
                 )}
             </div>
