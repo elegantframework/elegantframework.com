@@ -148,6 +148,17 @@ v3 go live ---
         - delete the common components from the admin in favor of elegant ui.
 
 
+- Upgrader ---
+
+- Upgrader should not be atomic to critical files like .env or redirects.
+    - first creates an encrypted compressed copy for backup in another directory
+    - Runs a script that adds removes and updates packages.
+
+    - After steps complete, run tests to ensure 100% confidence that nothing broke.
+    - If broke, revert changes by copying back encrypted backup
+    - if not broke, delete backup
+
+
 ~~~~~~~~> v3.1 road map
 
 - I need to get better about documenting features as we create them.
