@@ -1,23 +1,26 @@
 v3 go live ---
 
-- write v3.0 upgrade guide.
+- actually upgrade .com to v3.
+    - take picture of Gh desktop changes for doc
 
-- pull in innovators build into a fresh install.. see how it works.
-    - verify it seems good before doing the v3 npm prerelease.
+- finish v3.0 upgrade guide.
+    - record a yt video demonstrating the upgrade
+
+- Create a new blog post announcing Elegant CMS
+    - add butterbar with announcement link
+
 
 - update the main readme for npm, for version 3.0
 - update the .com main readme with more info.. Use it to market more about elegant.
 - update the main gh readme for the whole elegant project. use it to market.
 
-- Release a v3 prerelease about 1 week or so after announcement post.
-    - create post announcing prerelease
-    - add butterbar with announcement
+- write a doc from the discord chat that I had with sky guy
 
-- actually upgrade .com to the prerelease version when released.
+- record an updated getting started YT video for v3.0
 
-- Create a new blog post announcing Elegant CMS
 
-- Add a prerelease note to getting started with the cms doc, and how people can download it from npm.
+
+
 
 
 - create a sidebar guide.. How to set it and update it in the config file
