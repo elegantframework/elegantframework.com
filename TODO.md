@@ -73,6 +73,7 @@ v3 go live ---
         - document hiccups, bugs, and todo's of elegant along the way
         - 1. frontend lowlight not working
         - 2. editor code block dropdown does not display on white background
+        - 3. CMS should have preview links to make it easier to view content
 
 
 - finish youtube integration
