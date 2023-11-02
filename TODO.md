@@ -1,13 +1,14 @@
 v3 go live ---
 
-- actually upgrade .com to v3.
-    - take picture of Gh desktop changes for doc
+- review and commit upgraded changes to GH.
 
 - finish v3.0 upgrade guide.
     - record a yt video demonstrating the upgrade
 
 - Create a new blog post announcing Elegant CMS
     - add butterbar with announcement link
+
+config namespace looks broke.. Update to be able to just call Config
 
 
 - update the main readme for npm, for version 3.0

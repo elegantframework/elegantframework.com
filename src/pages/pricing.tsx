@@ -1,4 +1,4 @@
-import { SplashPageLayout } from "@/components/core/Layouts/SplashPageLayout";
+import { SplashPageLayout } from "@/components/Layouts/SplashPageLayout";
 import techSplash from '@/img/splash/hire-us-splash-tech-picture.jpg';
 import { Disclosure } from "@headlessui/react";
 import { ArrowUpOnSquareStackIcon, CalendarDaysIcon, CheckCircleIcon, CheckIcon, CloudArrowUpIcon, HandRaisedIcon, MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/20/solid";
