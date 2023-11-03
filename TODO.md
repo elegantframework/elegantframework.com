@@ -1,6 +1,5 @@
 v3 go live ---
 
-- review and commit upgraded changes to GH.
 
 - finish v3.0 upgrade guide.
     - record a yt video demonstrating the upgrade
