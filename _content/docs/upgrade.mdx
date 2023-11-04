@@ -31,9 +31,7 @@ The first step to upgrading to Elegant version 3 is to copy your existing projec
 
 <div class="my-8 shadow-xl"><img class="rounded-xl" src="/images/screenshot-2023-11-01-150328-cyMD.png" alt=""></div>
 
-
-
-For example, we used \`[elegantframework.com](http://elegantframework.com) \-- BACKUP COPY\` as the name of our backup copy folder while we upgraded this website to version 3.0.
+For example, we used `elegantframework.com -- BACKUP COPY` as the name of our backup copy folder while we upgraded this website to version 3.0.
 
 
 
@@ -53,12 +51,14 @@ After you have created a backup copy of your current Elegant project, go back to
 
 ### 3\. Install Latest Version
 
-Once you have deleted your existing project and your project directory is empty, open a terminal in the root of your project, and run the Elegant-CLI installer commands.
+Once you have deleted your existing project and your project directory is empty, open a terminal in the root of your project, and run the following Elegant-CLI installer commands.
 
 ```null
 npm install elegant-cli
 npx elegant-init
 ```
+
+
 
 ### 4\. Copy Environment Config
 
@@ -72,15 +72,27 @@ After you have the steps above and installed the latest version of Elegant, the 
 
 ### 5\. Copy Configuration
 
+Any changes that have been made to your existing core configuration files should also be copied into your updated project.
+
+
+
+<div class="my-8 shadow-xl"><img class="rounded-xl" src="/api/images/screenshot-2023-11-04-135938-A4NT.png" alt=""></div>
+
 
 
 ### 6\. Copy URL Redirects
 
 If you have configured any URL redirects in your `redirects.json` file, make sure to also copy over your existing redirects.json configuration file from your backup copy into the root directory of your updated project.
 
-### 7\. Compare Changes in GitHub Desktop
 
 
+### 7\. Compare Changes with GitHub Desktop
+
+We encourage you to verify the updates and changes that have been made to your Elegant application using the GitHub Desktop client.<br>
+
+<br>
+
+Not all of the changes are required for the upgrade, and you can discard any changes to your code that may have been overwritten during the upgrade steps.
 
 
 
@@ -90,17 +102,17 @@ If you have configured any URL redirects in your `redirects.json` file, make sur
 
 ### 8\. Run Tests
 
+After completing all of the steps above, you should run the included unit tests package to verify that you have successfully migrated to Elegant version 3.0 without any issues.
+
 ```javascript
 npm run test
 ```
 
-### 9\. Commit Changes
 
 
+### 9\. Commit Changes and Cleanup
 
-### 10\. Delete Backup
-
-
+You can now commit the updated code changes to Git, and safely delete the backup copy of your project that you created at the beginning of this guide.
 
 ## Elegant CMS
 
