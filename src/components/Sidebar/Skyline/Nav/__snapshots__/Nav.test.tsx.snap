@@ -121,6 +121,17 @@ exports[`Navigation for the sidebar renders the navigation section as expected 1
             Getting Started
           </a>
         </li>
+        <li>
+          <a
+            className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
+            href="/docs/creating-content"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Creating Content
+          </a>
+        </li>
       </ul>
     </li>
     <li
