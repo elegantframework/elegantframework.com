@@ -1,8 +1,14 @@
-v3 go live ---
 
+- pull in the latest outstatic changes and compare
+    - move api to app router and fix api calls?
 
-- finish v3.0 upgrade guide.
-    - record a yt video demonstrating the upgrade
+- social graph image on the docs page looks broke on .com
+
+- update the main readme for npm, for version 3.0
+- update the .com main readme with more info.. Use it to market more about elegant.
+- update the main gh readme for the whole elegant project. use it to market.
+
+- record a yt video demonstrating the upgrade guide of v3
 
 - Create a new blog post announcing Elegant CMS
     - add butterbar with announcement link
@@ -10,9 +16,7 @@ v3 go live ---
 config namespace looks broke.. Update to be able to just call Config
 
 
-- update the main readme for npm, for version 3.0
-- update the .com main readme with more info.. Use it to market more about elegant.
-- update the main gh readme for the whole elegant project. use it to market.
+
 
 - write a doc from the discord chat that I had with sky guy
 
