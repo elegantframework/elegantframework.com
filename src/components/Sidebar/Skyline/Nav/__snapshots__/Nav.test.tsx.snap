@@ -143,6 +143,28 @@ exports[`Navigation for the sidebar renders the navigation section as expected 1
             Adding Links
           </a>
         </li>
+        <li>
+          <a
+            className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
+            href="/docs/how-to-add-images"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Adding Images
+          </a>
+        </li>
+        <li>
+          <a
+            className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
+            href="/docs/adding-headings"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Adding Headings
+          </a>
+        </li>
       </ul>
     </li>
     <li

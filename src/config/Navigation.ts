@@ -49,6 +49,14 @@ export const documentationNav: NavigationSection[] = [
         title: "Adding Links",
         href: "/docs/add-links-to-text"
       },
+      {
+        title: "Adding Images",
+        href: "/docs/how-to-add-images"
+      },
+      {
+        title: "Adding Headings",
+        href: "/docs/adding-headings"
+      },
     ]
   },
   {
