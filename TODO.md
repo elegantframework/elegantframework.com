@@ -1,6 +1,10 @@
 
+- continue writing more docs on setting the title, url slug, description, and others... Look at WP guides for reference - https://wordpress.com/support/
+
+- create a thank you page.. Give credits
+
 - pull in the latest outstatic changes and compare
-    - move api to app router and fix api calls?
+   
 
 - social graph image on the docs page looks broke on .com
 
