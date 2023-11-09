@@ -4,9 +4,16 @@
 - create a thank you page.. Give credits
 
 - pull in the latest outstatic changes and compare
+- pull in the latest cli changes into .com for testing and verification
+
+- the auto gh publish action is still broke... Configure and verify what to do... Says something about npm auth
+
+
+- I found friction when loading the docs site.. The gh images lag on initial load
+    - should probably look at the example nextjs repos to find a better way of loading remote images
    
 
-- social graph image on the docs page looks broke on .com
+- social graph image on the docs page looks broke on .com -- Will be fixed with 3.0.4
 
 - update the main readme for npm, for version 3.0
 - update the .com main readme with more info.. Use it to market more about elegant.
@@ -27,7 +34,7 @@ config namespace looks broke.. Update to be able to just call Config
 - record an updated getting started YT video for v3.0
 
 
-
+- document the rss feed?
 
 
 

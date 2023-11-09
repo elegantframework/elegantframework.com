@@ -57,6 +57,10 @@ export const documentationNav: NavigationSection[] = [
         title: "Adding Headings",
         href: "/docs/adding-headings"
       },
+      {
+        title: "Styling Text",
+        href: "/docs/how-to-style-text"
+      },
     ]
   },
   {
