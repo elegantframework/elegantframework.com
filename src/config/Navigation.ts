@@ -119,6 +119,10 @@ export const documentationNav: NavigationSection[] = [
       {
         title: "Elegant Community",
         href: "/docs/elegant-community"
+      },
+      {
+        title: "Credits",
+        href: "/docs/credits"
       }
     ]
   }
