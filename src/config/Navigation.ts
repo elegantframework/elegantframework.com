@@ -42,7 +42,7 @@ export const documentationNav: NavigationSection[] = [
         href: "/docs/getting-started-with-elegant-cms"
       },
       {
-        title: "Creating Content",
+        title: "Creating Posts",
         href: "/docs/creating-content"
       },
       {
@@ -61,6 +61,10 @@ export const documentationNav: NavigationSection[] = [
         title: "Styling Text",
         href: "/docs/how-to-style-text"
       },
+      {
+        title: "Post Visibility",
+        href: "/docs/post-visibility"
+      },
     ]
   },
   {
@@ -71,12 +75,12 @@ export const documentationNav: NavigationSection[] = [
         href: "/docs/rich-snippets"
       },
       {
-        title: "Sitemaps",
-        href: "/docs/sitemaps"
-      },
-      {
         title: "Robots.txt",
         href: "/docs/robots-txt"
+      },
+      {
+        title: "Sitemaps",
+        href: "/docs/sitemaps"
       }
     ]
   },

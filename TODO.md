@@ -1,25 +1,28 @@
+
 - finish any cms docs efforts. Make sure everything is connected well 
-    - Visibility is important
-    - Description, url slug, and others might be important now
+    - Finish visibility
+    - Description
+    - author
+    - url slug
+    - cover image
 
 
-- create a thank you page.. Give credits
 
-- do fabz ga and google search stuff
-
-- continue writing more docs on setting the title, url slug, description, and others... Look at WP guides for reference - https://wordpress.com/support/
 
 - update the creating content page to be more of an end to end guide for creating a post. Link to the other pages, and guide users on making pretty content. Use the following for reference: https://wordpress.com/support/posts/
 
 - pull in the latest outstatic changes and compare
 - pull in the latest cli changes into .com for testing and verification
  
+- finish setting up release pipeline
+
 - the auto gh publish action is still broke... Configure and verify what to do... Says something about npm auth
 
-- look at the tiptap docs.. Do exactly the oppisite of them with calls.. Can people call? Yes.. Please schedule a teams call.... Can we do custom work? Of course; That's a revenue source, and we have pro tools like tw
-- add about doc, add creator and sponsor info; why people should sponser, etc.. Look at https://tiptap.dev/about#i-want-consulting-whats-your-rate
+- look at the tiptap docs.. Do exactly the opposite of them with calls.. Can people call? Yes.. Please schedule a teams call.... Can we do custom work? Of course; That's a revenue source, and we have pro tools like tw
+- add about doc, add creator and sponsor info; why people should sponsor, etc.. Look at https://tiptap.dev/about#i-want-consulting-whats-your-rate
 
 
+-- friction - I was writing a doc in the editor while at R. House and lost wifi.. Chrome wiped out my work, and I believe I have to restart the doc... Offline support with graceful reconnection would be 100% A+ for users.
 
 
 - I found friction when loading the docs site.. The gh images lag on initial load

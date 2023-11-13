@@ -129,7 +129,7 @@ exports[`Navigation for the sidebar renders the navigation section as expected 1
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
           >
-            Creating Content
+            Creating Posts
           </a>
         </li>
         <li>
@@ -176,6 +176,17 @@ exports[`Navigation for the sidebar renders the navigation section as expected 1
             Styling Text
           </a>
         </li>
+        <li>
+          <a
+            className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
+            href="/docs/post-visibility"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Post Visibility
+          </a>
+        </li>
       </ul>
     </li>
     <li
@@ -203,23 +214,23 @@ exports[`Navigation for the sidebar renders the navigation section as expected 1
         <li>
           <a
             className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
-            href="/docs/sitemaps"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
-          >
-            Sitemaps
-          </a>
-        </li>
-        <li>
-          <a
-            className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
             href="/docs/robots-txt"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
           >
             Robots.txt
+          </a>
+        </li>
+        <li>
+          <a
+            className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
+            href="/docs/sitemaps"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Sitemaps
           </a>
         </li>
       </ul>
