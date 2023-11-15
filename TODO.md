@@ -6,7 +6,15 @@
     - url slug
     - cover image
 
+    - add code blocks, and any other little items like that
+    - creating collections
 
+
+- create ryans demo site -- Combine chris' site format with elegant v3
+
+- finish splash page for the flyer -- use spotlight --> https://salient.tailwindui.com/#testimonials
+
+- finish anything for chris?
 
 
 - update the creating content page to be more of an end to end guide for creating a post. Link to the other pages, and guide users on making pretty content. Use the following for reference: https://wordpress.com/support/posts/
