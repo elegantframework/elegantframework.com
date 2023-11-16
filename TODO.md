@@ -1,3 +1,10 @@
+- finish for chris
+    - finish home page blogs posts... Mobile, tablet, and dark mode
+    - add news link to navigation
+    - add news page
+    - add 2 pr's
+    - add news block to homepage
+    - post the vended jam to numetal as a test
 
 - finish any cms docs efforts. Make sure everything is connected well 
     - Finish visibility
@@ -13,8 +20,8 @@
 - create ryans demo site -- Combine chris' site format with elegant v3
 
 - finish splash page for the flyer -- use spotlight --> https://salient.tailwindui.com/#testimonials
+    - https://www.wix.com/
 
-- finish anything for chris?
 
 
 - update the creating content page to be more of an end to end guide for creating a post. Link to the other pages, and guide users on making pretty content. Use the following for reference: https://wordpress.com/support/posts/
