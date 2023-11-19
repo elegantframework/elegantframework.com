@@ -1,10 +1,5 @@
-- finish for chris
-    - finish home page blogs posts... Mobile, tablet, and dark mode
-    - add news link to navigation
-    - add news page
-    - add 2 pr's
-    - add news block to homepage
-    - post the vended jam to numetal as a test
+- finish setting up release pipeline
+    - the auto gh publish action is still broke... Configure and verify what to do... Says something about npm auth
 
 - finish any cms docs efforts. Make sure everything is connected well 
     - Finish visibility
@@ -30,8 +25,7 @@
 - pull in the latest cli changes into .com for testing and verification
  
 - finish setting up release pipeline
-
-- the auto gh publish action is still broke... Configure and verify what to do... Says something about npm auth
+    - the auto gh publish action is still broke... Configure and verify what to do... Says something about npm auth
 
 - look at the tiptap docs.. Do exactly the opposite of them with calls.. Can people call? Yes.. Please schedule a teams call.... Can we do custom work? Of course; That's a revenue source, and we have pro tools like tw
 - add about doc, add creator and sponsor info; why people should sponsor, etc.. Look at https://tiptap.dev/about#i-want-consulting-whats-your-rate

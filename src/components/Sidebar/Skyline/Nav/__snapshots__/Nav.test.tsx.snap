@@ -187,6 +187,17 @@ exports[`Navigation for the sidebar renders the navigation section as expected 1
             Post Visibility
           </a>
         </li>
+        <li>
+          <a
+            className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
+            href="/docs/content-description"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Meta Description
+          </a>
+        </li>
       </ul>
     </li>
     <li

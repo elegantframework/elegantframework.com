@@ -65,6 +65,10 @@ export const documentationNav: NavigationSection[] = [
         title: "Post Visibility",
         href: "/docs/post-visibility"
       },
+      {
+        title: "Meta Description",
+        href: "/docs/content-description"
+      },
     ]
   },
   {
