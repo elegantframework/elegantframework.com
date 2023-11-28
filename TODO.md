@@ -1,9 +1,11 @@
 - finish setting up release pipeline
-    - the auto gh publish action is still broke... Configure and verify what to do... Says something about npm auth
+    - the auto gh publish action is still broke... Configure and verify what to do... Says something about npm auth ---- Verify if this is fixed yet
 
-- finish any cms docs efforts. Make sure everything is connected well 
+- fix cms code selector that is broke in dark mode
+
+- finish any cms docs efforts.
+ Make sure everything is connected well 
     - Finish visibility
-    - Description
     - author
     - url slug
     - cover image
@@ -11,8 +13,19 @@
     - add code blocks, and any other little items like that
     - creating collections
 
+    USE Voice to text to write more authentic docs.. faster
+
+
+- update readmes and landing pages with v3 content
+- update .com with new footer
+
+- create v2 website
+
+- add version selector
 
 - create ryans demo site -- Combine chris' site format with elegant v3
+
+- merge v3 into chris' site
 
 - finish splash page for the flyer -- use spotlight --> https://salient.tailwindui.com/#testimonials
     - https://www.wix.com/
@@ -24,8 +37,7 @@
 - pull in the latest outstatic changes and compare
 - pull in the latest cli changes into .com for testing and verification
  
-- finish setting up release pipeline
-    - the auto gh publish action is still broke... Configure and verify what to do... Says something about npm auth
+
 
 - look at the tiptap docs.. Do exactly the opposite of them with calls.. Can people call? Yes.. Please schedule a teams call.... Can we do custom work? Of course; That's a revenue source, and we have pro tools like tw
 - add about doc, add creator and sponsor info; why people should sponsor, etc.. Look at https://tiptap.dev/about#i-want-consulting-whats-your-rate
@@ -64,8 +76,6 @@ config namespace looks broke.. Update to be able to just call Config
 
 
 - create a sidebar guide.. How to set it and update it in the config file
-
-- watch the editor watcher. Change the public image url to the github one if the public one doesn't exist?
 
 
 

@@ -1,6 +1,6 @@
 import SplashHeader from "@/components/Headers/SplashHeader";
-import SplashFooter from '@/components/Footer/SplashFooter/SplashFooter';
 import Config from '@/utils/Config/Config';
+import { SplashFooter } from "@brandonowens/elegant-ui";
 
 interface Props {
     /**
@@ -40,36 +40,39 @@ export function SplashPageLayout({
                 {children}
             </main>
             <SplashFooter navigation={[
-              {
-                title: "Community",
-                links: [
-                    { title: 'GitHub', href: Config('app.repository'), external: true },
-                    { title: 'Indie Hackers', href: 'https://www.indiehackers.com/product/elegant-framework', external: true },
-                    { title: 'Twitter', href: 'https://twitter.com/thebrandonowens', external: true },
-                    { title: 'Reddit', href: 'https://www.reddit.com/r/elegantframework/', external: true },
-                    { title: 'Discord', href: 'https://discord.gg/PwY38x4uvV', external: true }
-                ]
-              },
-              {
-                  title: "Features",
-                  links: [
-                      { title: 'Theme Customization', href: 'https://elegantframework.com/docs/theme/' },
-                      { title: 'Easy Configuration', href: 'https://elegantframework.com/docs/configuration/' },
-                      { title: 'Affordable Hosting', href: 'https://elegantframework.com/docs/deployment/' },
-                      { title: 'Safe & Fast', href: 'https://elegantframework.com/blog/2023-04-20-the-future-is-markdown'}
-                  ]
-              },
-              {
-                  title: "Services",
-                  links: [
-                      { title: 'Google Analytics', href: 'https://elegantframework.com/docs/google-analytics/' },
-                  ]
-              },
-              {
-                title: "Resources",
-                links: [
-                    { title: 'Website Design Services', href: 'https://elegantframework.com/experts' },
-                ]
+                {
+                    title: "Community",
+                    links: [
+                        { title: 'GitHub', href: Config('app.repository'), external: true },
+                        { title: 'Indie Hackers', href: 'https://www.indiehackers.com/product/elegant-framework', external: true },
+                        { title: 'Twitter', href: 'https://twitter.com/thebrandonowens', external: true },
+                        { title: 'Reddit', href: 'https://www.reddit.com/r/elegantframework/', external: true },
+                        { title: 'Discord', href: 'https://discord.gg/PwY38x4uvV', external: true }
+                    ]
+                },
+                {
+                    title: "Features",
+                    links: [
+                        { title: 'Theme Customization', href: '/docs/theme/' },
+                        { title: 'Easy Configuration', href: '/docs/configuration/' },
+                        { title: 'Affordable Hosting', href: '/docs/deployment/' },
+                        { title: 'Safe & Fast', href: '/blog/2023-04-20-the-future-is-markdown'}
+                    ]
+                },
+                {
+                    title: "Services",
+                    links: [
+                        { title: 'Google Analytics', href: '/docs/google-analytics/' },
+                        { title: 'ConvertKit', href: '/docs/convertkit/' },
+                        { title: 'Vercel', href: '/docs/deployment/' },
+                    ]
+                },
+                {
+                    title: "Resources",
+                    links: [
+                        { title: 'Pricing', href: '/pricing' },
+                        { title: 'Website Design Services', href: '/experts' },
+                    ]
                 }   
             ]}/>
         </>
