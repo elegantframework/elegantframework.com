@@ -14,7 +14,8 @@ import { Post } from '@/types/Post';
 import moment from 'moment';
 import Link from 'next/link';
 import Config from '@/utils/Config/Config';
-import { SplashFooter, ThreeColumnFooter, VersionSelector } from '@brandonowens/elegant-ui';
+import VersionSelector from '@/components/Selectors/VersionSelector';
+import SplashFooter from '@/components/Footer/SplashFooter';
 
 Home.layoutProps = {
   meta: {
@@ -130,15 +131,17 @@ const Header = ({
             />
           </div>
           <div className="relative pt-6 lg:pt-8 flex items-center justify-between text-slate-700 font-semibold text-sm leading-6 dark:text-slate-200">
-            <Logo className="w-auto h-7" />
-            <div className="flex items-center">
-              {/* <VersionSelector 
+            <div className='flex'>
+              <Logo className="w-auto h-7 mr-4" />
+              <VersionSelector
                 version='3.0.5'
                 pastVersions={[
                   {label: "2.3.1", href: "https://www.elegantframework.com/"},
                   {label: "1.1.4", href: "https://www.v1.elegantframework.com/"}
                 ]}
-              /> */}
+              />
+            </div>
+            <div className="flex items-center">
               <NavPopover className="-my-1 ml-2 -mr-1" display="md:hidden" />
               <div className="hidden md:flex items-center">
                 <nav>

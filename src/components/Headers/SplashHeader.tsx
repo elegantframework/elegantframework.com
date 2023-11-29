@@ -7,6 +7,7 @@ import NavItems from "../Navigation/NavItems/NavItems";
 import { NavigationItem } from "@/types/NavigationItem";
 import NavPopover from "../Navigation/NavPopover/NavPopover";
 import { GitHubIcon } from "@brandonowens/elegant-ui";
+import VersionSelector from '@/components/Selectors/VersionSelector';
 
 interface Props {
     /**
@@ -55,9 +56,18 @@ const SplashHeader = ({
                     </div>
                 }
                 <div className="relative pt-6 lg:pt-8 flex items-center justify-between text-slate-700 font-semibold text-sm leading-6 dark:text-slate-200">
-                    <Link href="/">
-                        <Logo className="w-auto h-7 cursor-pointer" />
-                    </Link>
+                    <div className="flex">
+                        <Link href="/">
+                            <Logo className="w-auto h-7 cursor-pointer mr-4" />
+                        </Link>
+                        <VersionSelector
+                            version='3.0.5'
+                            pastVersions={[
+                            {label: "2.3.1", href: "https://www.elegantframework.com/"},
+                            {label: "1.1.4", href: "https://www.v1.elegantframework.com/"}
+                            ]}
+                        />
+                    </div>
                     <div className="flex items-center">
                         <NavPopover 
                             className="-my-1 ml-2 -mr-1" 

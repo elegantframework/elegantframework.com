@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import VersionSwitcher from '@/components/Headers/VersionSwitcher';
 import Router from 'next/router';
 import Logo from '@/components/Logos/Logo/Logo';
 import { Dialog } from '@headlessui/react';
@@ -9,6 +8,7 @@ import clsx from 'clsx';
 import ThemeToggle, {ThemeSelect} from '@/components/Toggles/ThemeToggle/ThemeToggle';
 import useHeaderStore from '@/utils/Hooks/useHeaderStore';
 import Config from '@/utils/Config/Config';
+import VersionSelector from '@/components/Selectors/VersionSelector';
 
 /**
  * @deprecated -To be removed in version 3
@@ -207,7 +207,13 @@ export function Header({ hasNav = false, navIsOpen, onNavToggle }) {
             }}>
               <Logo className="w-auto h-7" />
             </Link>
-            {/* <VersionSwitcher /> */}
+            <VersionSelector
+              version='3.0.5'
+              pastVersions={[
+                {label: "2.3.1", href: "https://www.elegantframework.com/"},
+                {label: "1.1.4", href: "https://www.v1.elegantframework.com/"}
+              ]}
+            />
             <div className="relative hidden lg:flex items-center ml-auto">
               <nav className="text-sm leading-6 font-semibold text-slate-700 dark:text-slate-200">
                 <ul className="flex space-x-8">

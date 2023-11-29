@@ -1,6 +1,6 @@
 import SplashHeader from "@/components/Headers/SplashHeader";
 import Config from '@/utils/Config/Config';
-import { SplashFooter } from "@brandonowens/elegant-ui";
+import SplashFooter from "../Footer/SplashFooter";
 
 interface Props {
     /**

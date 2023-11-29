@@ -1,3 +1,10 @@
+- copy fixed and updated selector and footers from .com into -ui
+
+- finish setting up v2.com
+
+- make some cms ui changes and updates to not look like we are ripping outstatic
+- update any docs screenshots
+
 - finish setting up release pipeline
     - the auto gh publish action is still broke... Configure and verify what to do... Says something about npm auth ---- Verify if this is fixed yet
 
