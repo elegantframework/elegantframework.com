@@ -52,4 +52,4 @@ If you're interested in contributing to the Elegant CMS Framework, please read o
 
 ## License
 
-The Elegrant framework is open-sourced software licensed under the [MIT license](https://opensource.org/license/mit/).
+The Elegant framework is open-sourced software licensed under the [MIT license](https://opensource.org/license/mit/).
