@@ -210,7 +210,7 @@ export function Header({ hasNav = false, navIsOpen, onNavToggle }) {
             <VersionSelector
               version='3.0.5'
               pastVersions={[
-                {label: "2.3.1", href: "https://www.elegantframework.com/"},
+                {label: "2.3.1", href: "https://www.v2.elegantframework.com/"},
                 {label: "1.1.4", href: "https://www.v1.elegantframework.com/"}
               ]}
             />
