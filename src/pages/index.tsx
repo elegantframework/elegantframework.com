@@ -16,6 +16,7 @@ import Link from 'next/link';
 import Config from '@/utils/Config/Config';
 import VersionSelector from '@/components/Selectors/VersionSelector';
 import SplashFooter from '@/components/Footer/SplashFooter';
+import ThreeColumnFooter from '@/components/Footer/ThreeColumnFooter';
 
 Home.layoutProps = {
   meta: {
@@ -42,42 +43,49 @@ export default function Home({
           posts={posts}
         />
       </div>
-      <SplashFooter navigation={[
+      <ThreeColumnFooter 
+        column1={[
           {
             title: "Community",
             links: [
-                { title: 'GitHub', href: Config('app.repository'), external: true },
-                { title: 'Indie Hackers', href: 'https://www.indiehackers.com/product/elegant-framework', external: true },
-                { title: 'Twitter', href: 'https://twitter.com/thebrandonowens', external: true },
-                { title: 'Reddit', href: 'https://www.reddit.com/r/elegantframework/', external: true },
-                { title: 'Discord', href: 'https://discord.gg/PwY38x4uvV', external: true }
+              { title: 'GitHub', href: Config('app.repository'), external: true },
+              { title: 'Indie Hackers', href: 'https://www.indiehackers.com/product/elegant-framework', external: true },
+              { title: 'Twitter', href: 'https://twitter.com/thebrandonowens', external: true },
+              { title: 'Reddit', href: 'https://www.reddit.com/r/elegantframework/', external: true },
+              { title: 'Discord', href: 'https://discord.gg/PwY38x4uvV', external: true }
             ]
           },
           {
-              title: "Features",
-              links: [
-                  { title: 'Theme Customization', href: '/docs/theme/' },
-                  { title: 'Easy Configuration', href: '/docs/configuration/' },
-                  { title: 'Affordable Hosting', href: '/docs/deployment/' },
-                  { title: 'Safe & Fast', href: '/blog/2023-04-20-the-future-is-markdown'}
-              ]
+            title: "Features",
+            links: [
+                { title: 'Theme Customization', href: '/docs/theme/' },
+                { title: 'Easy Configuration', href: '/docs/configuration/' },
+                { title: 'Affordable Hosting', href: '/docs/deployment/' },
+                { title: 'Safe & Fast', href: '/blog/2023-04-20-the-future-is-markdown'}
+            ]
           },
+        ]}
+        column2={[
           {
-              title: "Services",
-              links: [
-                  { title: 'Google Analytics', href: '/docs/google-analytics/' },
-                  { title: 'ConvertKit', href: '/docs/convertkit/' },
-                  { title: 'Vercel', href: '/docs/deployment/' },
-              ]
+            title: "Services",
+            links: [
+                { title: 'Google Analytics', href: '/docs/google-analytics/' },
+                { title: 'ConvertKit', href: '/docs/convertkit/' },
+                { title: 'Vercel', href: '/docs/deployment/' },
+            ]
           },
+        ]}
+        column3={[
           {
             title: "Resources",
             links: [
                 { title: 'Pricing', href: '/pricing' },
                 { title: 'Website Design Services', href: '/experts' },
             ]
-          }   
-        ]}/>
+          } 
+        ]}
+        copyright='Elegant, Inc.'
+      />
     </>
   )
 };
