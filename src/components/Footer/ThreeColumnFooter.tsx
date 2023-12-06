@@ -51,7 +51,7 @@ export default function ThreeColumnFooter({
     background="bg-gray-900 dark:bg-white",
     headings="text-white dark:text-slate-900",
     links="text-slate-300 dark:text-slate-500 hover:text-white dark:hover:text-slate-700",
-    logo=<Logo className="w-auto h-6 text-white dark:text-slate-900"/>,
+    logo=<Logo className="w-auto h-6" color="text-white dark:text-slate-900"/>,
     copyright=""
 }: Props) {
     return(
@@ -60,7 +60,7 @@ export default function ThreeColumnFooter({
                 <div className="lg:grid lg:grid-cols-3 lg:gap-8">
                     <div className="ml-0 md:ml-16 space-y-8 relative">
                         {logo}
-                        <div className="flex space-x-6">
+                        <div className="md:flex md:space-x-6">
                             {/* {navigation.social.map((item) => (
                                 <a key={item.name} href={item.href} className="text-gray-500 hover:text-gray-400">
                                 <span className="sr-only">{item.name}</span>
@@ -70,7 +70,7 @@ export default function ThreeColumnFooter({
                         </div>
                         {copyright.length > 0 && (
                             <div className={clsx(
-                                "absolute -bottom-4 lg:bottom-2 left-0 xs:pt-4",
+                                "md:absolute md:-bottom-4 lg:bottom-2 left-0",
                                 headings
                             )}>
                                 &copy; {new Date().getFullYear()} {copyright}
@@ -158,7 +158,7 @@ export default function ThreeColumnFooter({
                                 </section>
                             ))}
                         </div>
-                         <div className="mt-0">
+                         <div className="mt-4 md:mt-0">
                             {column3.map((item, index) => (
                                 <section 
                                     key={item.title}
