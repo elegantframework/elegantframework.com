@@ -15,7 +15,6 @@ import moment from 'moment';
 import Link from 'next/link';
 import Config from '@/utils/Config/Config';
 import VersionSelector from '@/components/Selectors/VersionSelector';
-import SplashFooter from '@/components/Footer/SplashFooter';
 import ThreeColumnFooter from '@/components/Footer/ThreeColumnFooter';
 
 Home.layoutProps = {
@@ -142,7 +141,7 @@ const Header = ({
             <div className='flex'>
               <Logo className="w-auto h-7 mr-4" />
               <VersionSelector
-                version='3.0.5'
+                version='3.0.6'
                 pastVersions={[
                   {label: "2.3.1", href: "https://www.v2.elegantframework.com/"},
                   {label: "1.1.4", href: "https://www.v1.elegantframework.com/"}

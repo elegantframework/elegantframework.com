@@ -1,12 +1,40 @@
-- copy fixed and updated selector and footers from .com into -ui
+- Share rfc posts and ask for feedback on reddit opensource
 
-- finish setting up v2.com
+- create a demo website that is built from GH deployments on the cli repo
+    - uses the included theme
+    - injects some sample docs?
+- Add a demo section to the readme -- https://demo.myelegant.app/
+    - Include that demo -- https://demo.myelegant.app/
+    - Include a link to the admin too -- https://demo.myelegant.app/admin/
+    
+        - use the admin to collect email signups when people use their GH
 
-- make some cms ui changes and updates to not look like we are ripping outstatic
-- update any docs screenshots
+- create a newsletter success sign up page GH ticket.
+    - create success page
 
-- finish setting up release pipeline
-    - the auto gh publish action is still broke... Configure and verify what to do... Says something about npm auth ---- Verify if this is fixed yet
+- create newsletter success GA analytics conversion event GH ticket
+    - create the event
+
+- test combine chris website with v3
+    - add chris' new post -- Use CMS if possible
+
+
+- research adding admin users to .env and login.
+- research how to get chris using v3
+    - can he just create a GitHub account for now?
+
+- make docs updates to not look like we are ripping outstatic
+    - the cms into page looks to similar.. Update this
+
+
+- POST some RFCS..
+    - Config file like liquid -- https://shopify.dev/docs/themes/architecture/config/settings-data-json
+    - Next 14
+
+
+- bump patch version.. Create release on Github
+        - finish setting up release pipeline --- COMPLETE
+            - the auto gh publish action is still broke... Configure and verify what to do... Says something about npm auth ---- Verify if this is fixed yet
 
 - fix cms code selector that is broke in dark mode
 
@@ -16,19 +44,15 @@
     - author
     - url slug
     - cover image
-
     - add code blocks, and any other little items like that
     - creating collections
 
     USE Voice to text to write more authentic docs.. faster
 
 
-- update readmes and landing pages with v3 content
-- update .com with new footer
+- update landing page with v3 content
 
-- create v2 website
-
-- add version selector
+- add more links to .com's new 3 column footer.
 
 - create ryans demo site -- Combine chris' site format with elegant v3
 
@@ -59,10 +83,6 @@
 
 - social graph image on the docs page looks broke on .com -- Will be fixed with 3.0.4
 
-- update the main readme for npm, for version 3.0
-- update the .com main readme with more info.. Use it to market more about elegant.
-- update the main gh readme for the whole elegant project. use it to market.
-
 - record a yt video demonstrating the upgrade guide of v3
 
 - Create a new blog post announcing Elegant CMS
@@ -75,12 +95,12 @@ config namespace looks broke.. Update to be able to just call Config
 
 - write a doc from the discord chat that I had with sky guy
 
+- write a how to guide on setting up versions using the ui kit selector and elegant like we did on our .com website.
+
 - record an updated getting started YT video for v3.0
 
 
 - document the rss feed?
-
-
 
 - create a sidebar guide.. How to set it and update it in the config file
 
@@ -147,19 +167,8 @@ config namespace looks broke.. Update to be able to just call Config
 - the admin url should not be accessible in a prod env if gh auth in not configured
 
 
--- not required to go live --
-
-- migrate sidebar layout.js into code .ts file.
-- delete sidebarlayout.js file.
-
-
 
 - configure dependabot to open automatic pr's
-- set up actions to auto releases on npm
-- releases on GH?
-
-
-
 
 
 - add any other cool remark features?
@@ -168,9 +177,6 @@ config namespace looks broke.. Update to be able to just call Config
     - create new collection.. Refresh page.. Will be broke.. Doesn't fetch from the github api
         - Also when you do fetch, it requires a whole rebuild to see the updated collection on the sidebar
 
-
-- verify the images api works
-    - it doesn't work.. Delete it after using for local image save fix
 
 - Write a getting started guide for the CMS panel. Document the env vars covered on the Welcome page.
     - Add a link to the doc mentioned above to the welcome page.
@@ -222,12 +228,9 @@ config namespace looks broke.. Update to be able to just call Config
 
 ~~~~~~~~> v3.1 road map
 
-- I need to get better about documenting features as we create them.
-    - We have a bunch of tech debt currently in the form of undocumented features.
-    - A blog post is a good general start to announcing features, but supporting docs should be written as well.
 
+- need a storybook feature doc page  -- UPDATE 12/4/2023 -- Probably can delete this since storybook will only run in the ui package and not in the core app.. Useless to general users.
 
-- need a storybook feature doc page
 - need a jest feature doc page
 
 - Start writing internal docs like Gitlab.. About us, our story, roadmap
@@ -359,10 +362,6 @@ The repository will be just called "Elegant", instead of elegant-cli... elegant-
 - write further detailed documentation on how to create new pages, docs, and blog posts.
 
 - clean up the tailwind config.. Make it use just default like a user would expect
-
-
-
-- Re enable versioning.. Write a doc on how to use versioning
 
 
 - Re add cypress and e2e testing back

@@ -1,22 +1,30 @@
+import clsx from "clsx";
 
 interface Props {
     /**
      * CSS class names to be applied to the logo
      */
     className?: string;
+    /**
+     * The css color classes for the logo.
+     */
+    color?: string;
 };
 
 /**
  * @returns An SVG logo
  */
 const Logo = ({
-    className = "w-auto h-8 text-slate-900 dark:text-white",
+    className="w-auto h-8",
+    color="text-slate-900 dark:text-white",
     ...props
 }: Props) => {
     return(
         <svg 
             viewBox="0 0 980 185" 
-            className={className}
+            className={
+                clsx(className, color)
+            }
             {...props}
             fill="none"
         >

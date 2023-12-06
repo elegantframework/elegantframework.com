@@ -1,6 +1,6 @@
 import SplashHeader from "@/components/Headers/SplashHeader";
 import Config from '@/utils/Config/Config';
-import SplashFooter from "../Footer/SplashFooter";
+import ThreeColumnFooter from "../Footer/ThreeColumnFooter";
 
 interface Props {
     /**
@@ -39,15 +39,16 @@ export function SplashPageLayout({
             <main className="pt-10 mb-6 mx-auto px-4 pb-28 sm:px-6 md:px-8 xl:px-12">
                 {children}
             </main>
-            <SplashFooter navigation={[
+            <ThreeColumnFooter 
+                column1={[
                 {
                     title: "Community",
                     links: [
-                        { title: 'GitHub', href: Config('app.repository'), external: true },
-                        { title: 'Indie Hackers', href: 'https://www.indiehackers.com/product/elegant-framework', external: true },
-                        { title: 'Twitter', href: 'https://twitter.com/thebrandonowens', external: true },
-                        { title: 'Reddit', href: 'https://www.reddit.com/r/elegantframework/', external: true },
-                        { title: 'Discord', href: 'https://discord.gg/PwY38x4uvV', external: true }
+                    { title: 'GitHub', href: Config('app.repository'), external: true },
+                    { title: 'Indie Hackers', href: 'https://www.indiehackers.com/product/elegant-framework', external: true },
+                    { title: 'Twitter', href: 'https://twitter.com/thebrandonowens', external: true },
+                    { title: 'Reddit', href: 'https://www.reddit.com/r/elegantframework/', external: true },
+                    { title: 'Discord', href: 'https://discord.gg/PwY38x4uvV', external: true }
                     ]
                 },
                 {
@@ -59,6 +60,8 @@ export function SplashPageLayout({
                         { title: 'Safe & Fast', href: '/blog/2023-04-20-the-future-is-markdown'}
                     ]
                 },
+                ]}
+                column2={[
                 {
                     title: "Services",
                     links: [
@@ -67,14 +70,18 @@ export function SplashPageLayout({
                         { title: 'Vercel', href: '/docs/deployment/' },
                     ]
                 },
+                ]}
+                column3={[
                 {
                     title: "Resources",
                     links: [
                         { title: 'Pricing', href: '/pricing' },
                         { title: 'Website Design Services', href: '/experts' },
                     ]
-                }   
-            ]}/>
+                } 
+                ]}
+                copyright='Elegant, Inc.'
+            />
         </>
     );
 };
