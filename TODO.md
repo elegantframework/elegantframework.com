@@ -1,13 +1,6 @@
-- Share rfc posts and ask for feedback on reddit opensource
+-- AA
 
-- create a demo website that is built from GH deployments on the cli repo
-    - uses the included theme
-    - injects some sample docs?
-- Add a demo section to the readme -- https://demo.myelegant.app/
-    - Include that demo -- https://demo.myelegant.app/
-    - Include a link to the admin too -- https://demo.myelegant.app/admin/
-    
-        - use the admin to collect email signups when people use their GH
+- Share rfc posts and ask for feedback on reddit opensource
 
 - create a newsletter success sign up page GH ticket.
     - create success page
@@ -31,10 +24,6 @@
     - Config file like liquid -- https://shopify.dev/docs/themes/architecture/config/settings-data-json
     - Next 14
 
-
-- bump patch version.. Create release on Github
-        - finish setting up release pipeline --- COMPLETE
-            - the auto gh publish action is still broke... Configure and verify what to do... Says something about npm auth ---- Verify if this is fixed yet
 
 - fix cms code selector that is broke in dark mode
 
@@ -313,13 +302,10 @@ config namespace looks broke.. Update to be able to just call Config
 
 - Improve install script -- Follow vercels lead  https://github.com/vercel/next.js/blob/canary/packages/create-next-app/index.ts
 
-~~~~~~~~~> v3 file structure
-The repository will be just called "Elegant", instead of elegant-cli... elegant-cli will live under Elegant in sub folder now
 
-- elegant-ui  --> The core Elegant UI component library.
-- elegant-cli --> The cli package for creating new Elegant apps
-- elegantframework_com --> The location of the elegantframework.com code.
-- elegant-themes --> The location of the planned free elegant themes.
+- the demo site repo should self update on a new release
+    - use the admin to collect email signups when people use their GH
+
 
 ~~~~~~~~> v3 road map
 
