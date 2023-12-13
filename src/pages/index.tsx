@@ -141,10 +141,10 @@ const Header = ({
             <div className='flex'>
               <Logo className="w-auto h-7 mr-4" />
               <VersionSelector
-                version='3.0.6'
+                version='3.x'
                 pastVersions={[
-                  {label: "2.3.1", href: "https://www.v2.elegantframework.com/"},
-                  {label: "1.1.4", href: "https://www.v1.elegantframework.com/"}
+                  {label: "2.x", href: "https://www.v2.elegantframework.com/"},
+                  {label: "1.x", href: "https://www.v1.elegantframework.com/"}
                 ]}
               />
             </div>

@@ -133,7 +133,7 @@ exports[`Splash Header component renders a splash header component properly 1`] 
             type="button"
           >
             v
-            3.0.5
+            3.x
             <svg
               aria-hidden="true"
               className="ml-2 overflow-visible"

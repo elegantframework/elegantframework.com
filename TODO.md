@@ -1,43 +1,44 @@
 -- AA
 
-- Share rfc posts and ask for feedback on reddit opensource
 
-- create a newsletter success sign up page GH ticket.
-    - create success page
+- add a newsletter success page in cli, and .com
 
-- create newsletter success GA analytics conversion event GH ticket
-    - create the event
 
-- test combine chris website with v3
-    - add chris' new post -- Use CMS if possible
+- Verify Chris' newsletter works
 
 
 - research adding admin users to .env and login.
+
+
 - research how to get chris using v3
+    - 12/7/23 -- CMS needs YT button to be finished for him to use.
     - can he just create a GitHub account for now?
 
-- make docs updates to not look like we are ripping outstatic
-    - the cms into page looks to similar.. Update this
+- Add a "Creating Collections" page doc
+    - It should go before the creating pages in the sidebar
 
 
 - POST some RFCS..
     - Config file like liquid -- https://shopify.dev/docs/themes/architecture/config/settings-data-json
     - Next 14
+    - Auto Upgrader Script
 
 
 - fix cms code selector that is broke in dark mode
 
 - finish any cms docs efforts.
- Make sure everything is connected well 
+- Make sure everything is connected well 
+    - creating collections
+    - update creating pages to be more flowing like the other pages
     - Finish visibility
     - author
     - url slug
     - cover image
     - add code blocks, and any other little items like that
-    - creating collections
 
     USE Voice to text to write more authentic docs.. faster
 
+- write a guide showing how to set up a Google analytics tracking event for the newsletter
 
 - update landing page with v3 content
 
@@ -101,9 +102,6 @@ config namespace looks broke.. Update to be able to just call Config
     - 100% uptime? How is that possible?
 
 
-
-- maybe create a subscription signup success page? with google analytics conversion tracking?
-
 - The current gh config is dangerous in production I believe.
     - add a cms_admin_user email in .env? This email will have to match the auth token, or else 401
         - use this --> https://stackoverflow.com/questions/31552125/defining-an-array-as-an-environment-variable-in-node-js
@@ -120,10 +118,7 @@ config namespace looks broke.. Update to be able to just call Config
 
 
 - stripe atlas, patron, connect paetron to gh, ask fabz to tip me
-- research the terms to make sure stripe is the right processor for this project
 
-
-- if you dont have any heading in a doc; The sidebar code will break the dom on page load
 
 - add margin to docs footer top.. The toc can't activate the lower page items because they can't be scrolled to
 
@@ -167,10 +162,6 @@ config namespace looks broke.. Update to be able to just call Config
         - Also when you do fetch, it requires a whole rebuild to see the updated collection on the sidebar
 
 
-- Write a getting started guide for the CMS panel. Document the env vars covered on the Welcome page.
-    - Add a link to the doc mentioned above to the welcome page.
-
-
 - make editor mobile friendly
 - add dark mode support to editor
 
@@ -178,11 +169,6 @@ config namespace looks broke.. Update to be able to just call Config
 ~~~~~~~~~> v3.1
 
 - remove the beams in favor of background gradients
-
-- migrate .com docs to live under the cli package, create an elegant-docs npm package.
-- create simple starter docs and starter blog post that come included in a cli install.
-    - similar to downloading a new next app.. They should provide a simple getting started guide.
-
 
 
 - https://news.ycombinator.com/item?id=36791434
@@ -193,10 +179,6 @@ config namespace looks broke.. Update to be able to just call Config
 
 
 - announce on all channels that we have a discord chat. ---> https://discord.gg/PwY38x4uvV
-
-
-
-   
 
     - Write better auth using Next-Auth
 
@@ -278,8 +260,6 @@ config namespace looks broke.. Update to be able to just call Config
     - start with base skyline template
     - create a base launch template with email signup.. Start with v1 as blank white.
 
-- Move docs to separate folder in the cli project, that builds into its own elegant-docs npm package.
-
 
 - create simple turtle mania launch page.. Push to the demo site and get the environment to turn green and passing on Github.
 
@@ -325,13 +305,6 @@ config namespace looks broke.. Update to be able to just call Config
 
 ~~~~~~> Road map
 
-
-- Create a separate NPM package called Elegant Starter Content
-        - Create v1.0.0
-        - Add starter content for users.. Should be less about Elegant, and more of starter boilerplate content.. Slim down our production content
-        - Include a release notes with sample v0.1.0 release notes.. Say something like project was created using Elegant with a link back to us in the first release note
-        - Include a starter blog post
-
 - Themes
     - Skyline - Base Elegant theme
     - Launch - Basic single announcement page of an upcoming service.. With email sign up
@@ -351,8 +324,6 @@ config namespace looks broke.. Update to be able to just call Config
 
 
 - Re add cypress and e2e testing back
-
-- Remove elegant-cli from inside package.json of the elegant source code
 
 - add back "npm run format" to the elegant source package...     "format": "prettier '{src,remark}/**/*.{css,js,mdx}' --write",
 
