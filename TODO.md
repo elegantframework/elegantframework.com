@@ -1,5 +1,7 @@
 -- AA
-
+    - post twitter about latest release
+    - create an elegant hq twitter
+    - grab eleganthq npm space
 
 - add a newsletter success page in cli, and .com
 
@@ -16,6 +18,8 @@
 
 - Add a "Creating Collections" page doc
     - It should go before the creating pages in the sidebar
+
+- Write a guide on url redirects.
 
 
 - POST some RFCS..
