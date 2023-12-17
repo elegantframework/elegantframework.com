@@ -1,15 +1,23 @@
 -- AA
-    - post twitter about latest release
-    - create an elegant hq twitter
-    - grab eleganthq npm space
+
+
+-- ONGOING
+
+- contact 8vish... Get a user survey from him
+    - or talk to him on the GH issue
+
+
+-- NEXT RELEASE
 
 - add a newsletter success page in cli, and .com
-
-
-- Verify Chris' newsletter works
-
-
 - research adding admin users to .env and login.
+- fix cms code selector that is broke in dark mode
+- config namespace looks broke.. Update to be able to just call Config
+- add margin to docs footer top.. The toc can't activate the lower page items because they can't be scrolled to
+- add youtube video button in cms
+- add table component button in cms
+- add a config for being able to set what cms buttons are used
+
 
 
 - research how to get chris using v3
@@ -19,6 +27,8 @@
 - Add a "Creating Collections" page doc
     - It should go before the creating pages in the sidebar
 
+- Explore flowbite more.. buy license? Contact for a partnership
+
 - Write a guide on url redirects.
 
 
@@ -27,8 +37,6 @@
     - Next 14
     - Auto Upgrader Script
 
-
-- fix cms code selector that is broke in dark mode
 
 - finish any cms docs efforts.
 - Make sure everything is connected well 
@@ -82,7 +90,6 @@
 - Create a new blog post announcing Elegant CMS
     - add butterbar with announcement link
 
-config namespace looks broke.. Update to be able to just call Config
 
 
 
@@ -124,7 +131,7 @@ config namespace looks broke.. Update to be able to just call Config
 - stripe atlas, patron, connect paetron to gh, ask fabz to tip me
 
 
-- add margin to docs footer top.. The toc can't activate the lower page items because they can't be scrolled to
+
 
 
 - add next image to the images
