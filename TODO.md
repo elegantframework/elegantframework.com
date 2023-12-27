@@ -6,14 +6,20 @@
 - contact 8vish... Get a user survey from him
     - or talk to him on the GH issue
 
+- Get tiptap react template.. Check sn email
+- Schedule call with david at tiptap --> https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1cXC_qUDNY9b2R3RmguksTja46LqBMVLia1tB0Oi40VtMCWejBJzCcIYiqnHzRZs2kqP5HRG8f?pli=1
+
+
+
 
 -- NEXT RELEASE
 
+- add margin to docs footer top.. The toc can't activate the lower page items because they can't be scrolled to
+
 - add a newsletter success page in cli, and .com
 - research adding admin users to .env and login.
+
 - fix cms code selector that is broke in dark mode
-- config namespace looks broke.. Update to be able to just call Config
-- add margin to docs footer top.. The toc can't activate the lower page items because they can't be scrolled to
 - add youtube video button in cms
 - add table component button in cms
 - add a config for being able to set what cms buttons are used
