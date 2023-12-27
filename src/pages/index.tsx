@@ -14,7 +14,8 @@ import { Post } from '@/types/Post';
 import moment from 'moment';
 import Link from 'next/link';
 import Config from '@/utils/Config/Config';
-import { ThreeColumnFooter, VersionSelector } from '@brandonowens/elegant-ui';
+import ThreeColumnFooter from '@/components/Footer/ThreeColumnFooter';
+import VersionSelector from '@/components/Selectors/VersionSelector';
 
 Home.layoutProps = {
   meta: {
