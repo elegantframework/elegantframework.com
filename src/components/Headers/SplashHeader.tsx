@@ -6,8 +6,7 @@ import styles from '@/pages/index.module.css';
 import NavItems from "../Navigation/NavItems/NavItems";
 import { NavigationItem } from "@/types/NavigationItem";
 import NavPopover from "../Navigation/NavPopover/NavPopover";
-import { GitHubIcon } from "@brandonowens/elegant-ui";
-import VersionSelector from '@/components/Selectors/VersionSelector';
+import { GitHubIcon, VersionSelector } from "@brandonowens/elegant-ui";
 
 interface Props {
     /**
@@ -63,8 +62,8 @@ const SplashHeader = ({
                         <VersionSelector
                             version='3.x'
                             pastVersions={[
-                            {label: "2.x", href: "https://www.v2.elegantframework.com/"},
-                            {label: "1.x", href: "https://www.v1.elegantframework.com/"}
+                                {label: "2.x", href: "https://www.v2.elegantframework.com/"},
+                                {label: "1.x", href: "https://www.v1.elegantframework.com/"}
                             ]}
                         />
                     </div>

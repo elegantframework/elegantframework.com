@@ -10,7 +10,7 @@ import AnalyticsHead from '@/components/Analytics/AnalyticsHead';
 import AnalyticsBody from '@/components/Analytics/AnalyticsBody';
 import * as gtag from '@/utils/Analytics/gtag';
 import socialCardLarge from '@/img/social-card-large.jpg';
-import Config from '@/utils/Config/Config';
+import Config from 'Config';
 import SocialSchema from '@/utils/Meta/SocialSchema';
 import '../css/fonts.css';
 import '../css/main.css';
@@ -144,7 +144,7 @@ export default function App({ Component, pageProps, router }) {
       />
       <WebPageJsonLd 
         description={meta.metaDescription || meta.description}
-        id={`${Config('app.url')}${router.pathname}`}
+        id={`${Config('app.url')}${router.asPath.split('#')[0]}`}
       />
       {socialSchema.length > 0 && (
         <SocialProfileJsonLd 
