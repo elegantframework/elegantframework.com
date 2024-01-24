@@ -12,6 +12,49 @@
 
 
 
+--- IN PROGRESS
+
+-- Editor
+
+    ------ Editor Docs --------------
+    - Getting Started
+    - Creating Collections *
+    - Creating Posts
+
+    - Editor Menus *
+    - Slash Commands *
+    - Headings
+    - Links
+    - Images
+    - Lists * {Bullet, Numbers, Task}
+    - Blockquote *
+    - Code Block *
+    - Tables *
+    - Columns *
+    - Horizontal Rule *
+    - YouTube Videos *
+
+    - Styling Text
+    - Post Visibility
+    - Author *
+    - URL Permalink *
+    - Meta Description
+    - Cover Image *
+
+    ------ Post Release ------
+
+    - add drag handle back
+    - add Action Menu back
+    - talk with TipTap, and see how I can use the pro extensions
+    - add image drag and drop
+    - add copy paste feature back
+    - add image storage using Vercel blob
+    - add ai stuff
+
+
+--------------------------------
+
+
 -- NEXT RELEASE
 
 - add margin to docs footer top.. The toc can't activate the lower page items because they can't be scrolled to
@@ -19,16 +62,6 @@
 - add a newsletter success page in cli, and .com
 - research adding admin users to .env and login.
 
-- fix cms code selector that is broke in dark mode
-- add youtube video button in cms
-- add table component button in cms
-- add a config for being able to set what cms buttons are used
-
-
-
-- research how to get chris using v3
-    - 12/7/23 -- CMS needs YT button to be finished for him to use.
-    - can he just create a GitHub account for now?
 
 - Add a "Creating Collections" page doc
     - It should go before the creating pages in the sidebar
@@ -64,17 +97,12 @@
 
 - create ryans demo site -- Combine chris' site format with elegant v3
 
-- merge v3 into chris' site
-
 - finish splash page for the flyer -- use spotlight --> https://salient.tailwindui.com/#testimonials
     - https://www.wix.com/
 
 
 
 - update the creating content page to be more of an end to end guide for creating a post. Link to the other pages, and guide users on making pretty content. Use the following for reference: https://wordpress.com/support/posts/
-
-- pull in the latest outstatic changes and compare
-- pull in the latest cli changes into .com for testing and verification
  
 
 
@@ -91,16 +119,9 @@
 
 - social graph image on the docs page looks broke on .com -- Will be fixed with 3.0.4
 
-- record a yt video demonstrating the upgrade guide of v3
-
 - Create a new blog post announcing Elegant CMS
     - add butterbar with announcement link
 
-
-
-
-
-- write a doc from the discord chat that I had with sky guy
 
 - write a how to guide on setting up versions using the ui kit selector and elegant like we did on our .com website.
 
@@ -145,32 +166,9 @@
 - add external links to remark/rehype.. The current docs are not fun to follow when you click GH and it takes you away from Elegant.
 
 
-
-- Finish initial migration of .com to v3-alpha.
-    - start the top to bottom sweep of rewriting the docs and images starting at install
-        - document hiccups, bugs, and todo's of elegant along the way
-        - 1. frontend lowlight not working
-        - 2. editor code block dropdown does not display on white background
-        - 3. CMS should have preview links to make it easier to view content
-
-
-- finish youtube integration
-    - finish Youtube menu under editor.
-        - connect buttons
-        - write error handling
-
-    - finish the seo data... Prompt for description, set the time vars and stuff
-        - create a data dialog to capture the url, name, and description
-        - write method to get the video id from the existing methods
-
-    - write tests and cleanup new code that was added today
+- The content editor should have quick preview links to make it easier to view the content you are working on.
 
 - the admin url should not be accessible in a prod env if gh auth in not configured
-
-
-
-- configure dependabot to open automatic pr's
-
 
 - add any other cool remark features?
 
@@ -183,14 +181,9 @@
 - add dark mode support to editor
 
 
-~~~~~~~~~> v3.1
+~~~~~~~~~> v3.2
 
 - remove the beams in favor of background gradients
-
-
-- https://news.ycombinator.com/item?id=36791434
-- https://novel.sh/
-- https://novel.sh/
 
 - Follow their lead for building a yc open source product: https://github.com/twentyhq/twenty
 
@@ -214,7 +207,7 @@
     - if not broke, delete backup
 
 
-~~~~~~~~> v3.1 road map
+~~~~~~~~> v3.2 road map
 
 
 - need a storybook feature doc page  -- UPDATE 12/4/2023 -- Probably can delete this since storybook will only run in the ui package and not in the core app.. Useless to general users.
@@ -263,8 +256,6 @@
 
 - find that old list of places to submit the project to.. Submit to those
 
-
-- create a contact spreadsheet, or use convert kit to email blogger people about trying out elegant for feedback
 
 - commit the launch theme, then run the latest innovators release on top of it
     - set the goal of 2.5 to be able to create a single launch page theme using core components
