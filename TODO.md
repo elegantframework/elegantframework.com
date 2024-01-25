@@ -3,13 +3,7 @@
 
 -- ONGOING
 
-- contact 8vish... Get a user survey from him
-    - or talk to him on the GH issue
-
-- Get tiptap react template.. Check sn email
 - Schedule call with david at tiptap --> https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1cXC_qUDNY9b2R3RmguksTja46LqBMVLia1tB0Oi40VtMCWejBJzCcIYiqnHzRZs2kqP5HRG8f?pli=1
-
-
 
 
 --- IN PROGRESS
