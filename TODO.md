@@ -10,6 +10,10 @@
 
 -- Editor
 
+    - OPEN GH ISSUE for image sizing not saving in the editor.
+    - The task list looks funky after it is saved an reloaded
+    - YouTube video is broke on mobile
+
     ------ Editor Docs --------------
     - Getting Started
     - Creating Collections *
@@ -17,18 +21,14 @@
 
     - Editor Menus *
     - Slash Commands *
+    - Styling Text
     - Headings
     - Links
-    - Images
-    - Lists * {Bullet, Numbers, Task}
     - Blockquote *
     - Code Block *
     - Tables *
     - Columns *
-    - Horizontal Rule *
-    - YouTube Videos *
 
-    - Styling Text
     - Post Visibility
     - Author *
     - URL Permalink *

@@ -135,34 +135,23 @@ exports[`Navigation for the sidebar renders the navigation section as expected 1
         <li>
           <a
             className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
-            href="/docs/add-links-to-text"
+            href="/docs/editor-menus"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
           >
-            Adding Links
+            Editor Menus
           </a>
         </li>
         <li>
           <a
             className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
-            href="/docs/how-to-add-images"
+            href="/docs/slash-commands"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
           >
-            Adding Images
-          </a>
-        </li>
-        <li>
-          <a
-            className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
-            href="/docs/adding-headings"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
-          >
-            Adding Headings
+            Slash Commands
           </a>
         </li>
         <li>
@@ -174,6 +163,116 @@ exports[`Navigation for the sidebar renders the navigation section as expected 1
             onTouchStart={[Function]}
           >
             Styling Text
+          </a>
+        </li>
+        <li>
+          <a
+            className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
+            href="/docs/adding-headings"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Headings
+          </a>
+        </li>
+        <li>
+          <a
+            className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
+            href="/docs/add-links-to-text"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Links
+          </a>
+        </li>
+        <li>
+          <a
+            className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
+            href="/docs/how-to-add-images"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Images
+          </a>
+        </li>
+        <li>
+          <a
+            className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
+            href="/docs/adding-lists"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Lists
+          </a>
+        </li>
+        <li>
+          <a
+            className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
+            href="/docs/adding-block-quotes"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Block Quotes
+          </a>
+        </li>
+        <li>
+          <a
+            className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
+            href="/docs/adding-code-blocks"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Code Blocks
+          </a>
+        </li>
+        <li>
+          <a
+            className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
+            href="/docs/adding-tables"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Tables
+          </a>
+        </li>
+        <li>
+          <a
+            className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
+            href="/docs/adding-columns"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Columns
+          </a>
+        </li>
+        <li>
+          <a
+            className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
+            href="/docs/horizontal-rules"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            Horizontal Rules
+          </a>
+        </li>
+        <li>
+          <a
+            className="block border-l pl-4 -ml-px border-transparent hover:border-slate-400 dark:hover:border-slate-500"
+            href="/docs/youtube-videos"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            YouTube Videos
           </a>
         </li>
         <li>

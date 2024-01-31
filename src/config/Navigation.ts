@@ -46,20 +46,56 @@ export const documentationNav: NavigationSection[] = [
         href: "/docs/creating-content"
       },
       {
-        title: "Adding Links",
-        href: "/docs/add-links-to-text"
+        title: "Editor Menus",
+        href: "/docs/editor-menus"
       },
       {
-        title: "Adding Images",
-        href: "/docs/how-to-add-images"
-      },
-      {
-        title: "Adding Headings",
-        href: "/docs/adding-headings"
+        title: "Slash Commands",
+        href: "/docs/slash-commands"
       },
       {
         title: "Styling Text",
         href: "/docs/how-to-style-text"
+      },
+      {
+        title: "Headings",
+        href: "/docs/adding-headings"
+      },
+      {
+        title: "Links",
+        href: "/docs/add-links-to-text"
+      },
+      {
+        title: "Images",
+        href: "/docs/how-to-add-images"
+      },
+      {
+        title: "Lists",
+        href: "/docs/adding-lists"
+      },
+      {
+        title: "Block Quotes",
+        href: "/docs/adding-block-quotes"
+      },
+      {
+        title: "Code Blocks",
+        href: "/docs/adding-code-blocks"
+      },
+      {
+        title: "Tables",
+        href: "/docs/adding-tables"
+      },
+      {
+        title: "Columns",
+        href: "/docs/adding-columns"
+      },
+      {
+        title: "Horizontal Rules",
+        href: "/docs/horizontal-rules"
+      },
+      {
+        title: "YouTube Videos",
+        href: "/docs/youtube-videos"
       },
       {
         title: "Post Visibility",
