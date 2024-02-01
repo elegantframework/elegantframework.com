@@ -42,7 +42,11 @@ export const documentationNav: NavigationSection[] = [
         href: "/docs/getting-started-with-elegant-cms"
       },
       {
-        title: "Creating Posts",
+        title: "Collections",
+        href: "/docs/creating-collections"
+      },
+      {
+        title: "Posts",
         href: "/docs/creating-content"
       },
       {
@@ -102,7 +106,7 @@ export const documentationNav: NavigationSection[] = [
         href: "/docs/post-visibility"
       },
       {
-        title: "Meta Description",
+        title: "Post Description",
         href: "/docs/content-description"
       },
     ]

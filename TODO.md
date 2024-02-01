@@ -10,29 +10,33 @@
 
 -- Editor
 
-    - OPEN GH ISSUE for image sizing not saving in the editor.
     - The task list looks funky after it is saved an reloaded
-    - YouTube video is broke on mobile
+    - Columns not displaying properly on the frontend... Probably just need to load the editor css
+    - The block quote author text looks not that good in the editor
+    - The table did not save correct
+        - fix the table docs as well
 
     ------ Editor Docs --------------
+
+    - remove description and visibility pages; create page redirects
+        - Move all post related content to be contained in the Posts page
+        - Remove affected pages from sidebar nav
+
     - Getting Started
     - Creating Collections *
     - Creating Posts
+        - Visibility
+        - Description
+        - Author
+        - URL Permalink
+        - Cover Image
 
     - Editor Menus *
     - Slash Commands *
     - Styling Text
     - Headings
     - Links
-    - Blockquote *
-    - Code Block *
-    - Tables *
-    - Columns *
 
-    - Post Visibility
-    - Author *
-    - URL Permalink *
-    - Meta Description
     - Cover Image *
 
     ------ Post Release ------
