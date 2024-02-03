@@ -305,7 +305,7 @@ exports[`Navigation for the sidebar renders the navigation section as expected 1
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
           >
-            Meta Description
+            Post Description
           </a>
         </li>
       </ul>
