@@ -1,6 +1,9 @@
 -- AA
 
 
+
+- Add newsletter landing page for cfabz
+
 -- ONGOING
 
 - Schedule call with david at tiptap --> https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1cXC_qUDNY9b2R3RmguksTja46LqBMVLia1tB0Oi40VtMCWejBJzCcIYiqnHzRZs2kqP5HRG8f?pli=1
@@ -34,10 +37,11 @@
     - Editor Menus *
     - Slash Commands *
     - Styling Text
-    - Headings
-    - Links
 
-    - Cover Image *
+
+
+    -- Update the main editors readme editor section with 3.1 content
+
 
     ------ Post Release ------
 
