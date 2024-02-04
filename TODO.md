@@ -35,8 +35,6 @@
         - URL Permalink
         - Cover Image
 
-    - Editor Menus *
-    - Slash Commands *
 
 
 
