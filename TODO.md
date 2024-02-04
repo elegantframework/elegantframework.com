@@ -19,6 +19,7 @@
     - The table did not save correct
         - fix the table docs as well
 
+
     ------ Editor Docs --------------
 
     - remove description and visibility pages; create page redirects
@@ -44,6 +45,7 @@
 
     ------ Post Release ------
 
+    - add undo/clear option
     - add drag handle back
     - add Action Menu back
     - talk with TipTap, and see how I can use the pro extensions
