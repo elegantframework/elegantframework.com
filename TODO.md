@@ -24,10 +24,6 @@
 
     - Getting Started
     - Creating Collections *
-    - Creating Posts
-        - Author
-        - URL Permalink
-        - Cover Image
 
 
 
