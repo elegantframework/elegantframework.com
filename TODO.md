@@ -22,10 +22,6 @@
 
     ------ Editor Docs --------------
 
-    - remove description and visibility pages; create page redirects
-        - Move all post related content to be contained in the Posts page
-        - Remove affected pages from sidebar nav
-
     - Getting Started
     - Creating Collections *
     - Creating Posts
