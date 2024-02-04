@@ -36,7 +36,6 @@
 
     - Editor Menus *
     - Slash Commands *
-    - Styling Text
 
 
 
