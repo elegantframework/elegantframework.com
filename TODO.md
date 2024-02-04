@@ -29,8 +29,6 @@
     - Getting Started
     - Creating Collections *
     - Creating Posts
-        - Visibility
-        - Description
         - Author
         - URL Permalink
         - Cover Image

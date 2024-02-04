@@ -1,5 +1,7 @@
 [
   { "source": "/docs", "destination": "/docs/installation", "permanent": true },
   { "source": "/docs/new-documents", "destination": "/", "permanent": true },
+  { "source": "/docs/post-visibility", "destination": "/docs/creating-content", "permanent": true },
+  { "source": "/docs/content-description", "destination": "/docs/creating-content", "permanent": true },
   { "source": "/launch24", "destination": "/splash/launch", "permanent": false }
 ]

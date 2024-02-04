@@ -101,14 +101,6 @@ export const documentationNav: NavigationSection[] = [
         title: "YouTube Videos",
         href: "/docs/youtube-videos"
       },
-      {
-        title: "Post Visibility",
-        href: "/docs/post-visibility"
-      },
-      {
-        title: "Post Description",
-        href: "/docs/content-description"
-      },
     ]
   },
   {
