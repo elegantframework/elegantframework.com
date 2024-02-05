@@ -23,9 +23,7 @@
     ------ Editor Docs --------------
 
     - Getting Started
-    - Creating Collections *
-
-
+        - update the getting started page to show the blank dashboard upon first login.
 
 
     -- Update the main editors readme editor section with 3.1 content
