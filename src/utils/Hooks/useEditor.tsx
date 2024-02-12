@@ -32,6 +32,7 @@ import { ImageBlock } from '@/components/Editor/Extensions/ImageBlock';
 import { Youtube } from '@tiptap/extension-youtube';
 import { ImageUpload } from '@/components/Editor/Extensions/ImageUpload';
 import Image from '@tiptap/extension-image';
+import { Markdown } from 'tiptap-markdown';
 
 export const useEditor = ({ ...rhfMethods }) => {
   const { setValue, trigger } = rhfMethods
@@ -114,6 +115,7 @@ export const useEditor = ({ ...rhfMethods }) => {
       //     })
       //   },
       // }),
+      Markdown,
       TextAlign.extend({
         addKeyboardShortcuts() {
           return {}
@@ -140,7 +142,11 @@ export const useEditor = ({ ...rhfMethods }) => {
         width: 2,
         class: 'ProseMirror-dropcursor border-black',
       }),
-      Youtube
+      Youtube.configure({
+        HTMLAttributes: {
+          class: 'w-full',
+        },
+      })
     ],
     editorProps: {
       attributes: {
