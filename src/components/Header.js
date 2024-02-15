@@ -8,7 +8,7 @@ import clsx from 'clsx';
 import ThemeToggle, {ThemeSelect} from '@/components/Toggles/ThemeToggle/ThemeToggle';
 import useHeaderStore from '@/utils/Hooks/useHeaderStore';
 import Config from '@/utils/Config/Config';
-import VersionSelector from '@/components/Selectors/VersionSelector';
+import { VersionSelector } from '@brandonowens/elegant-ui';
 
 /**
  * @deprecated -To be removed in version 3
