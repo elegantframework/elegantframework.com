@@ -1,9 +1,5 @@
 -- AA
 
-
-
-- Add newsletter landing page for cfabz
-
 -- ONGOING
 
 - Schedule call with david at tiptap --> https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1cXC_qUDNY9b2R3RmguksTja46LqBMVLia1tB0Oi40VtMCWejBJzCcIYiqnHzRZs2kqP5HRG8f?pli=1
@@ -11,13 +7,27 @@
 
 --- IN PROGRESS
 
+    -- merge pr's.. release 3.1.1
+    - Merge cfabz with 3.1
+    - merge brandon.me with 3.1
+    - complete docs and launch them
+    - update release notes and upgrade guide
+    - finish the yt series
+    - flow back into item below
+
 -- Editor
 
-    - The task list looks funky after it is saved an reloaded
-    - Columns not displaying properly on the frontend... Probably just need to load the editor css
-    - The block quote author text looks not that good in the editor
-    - The table did not save correct
-        - fix the table docs as well
+    - The answer too all the image issues probably is because of the image configure/extending: src\components\Editor\Extensions\ImageBlock\ImageBlock.ts
+
+    - Verify docs on mobile before launching
+        - update yt vids by re adding them
+        - remove font size and stuff from docs
+
+    - VERIFY stuff below is fixed now :)
+        - The task list looks funky after it is saved an reloaded
+        - The block quote author text looks not that good in the editor
+        - The table did not save correct
+            - fix the table docs as well
 
 
     ------ Editor Docs --------------
