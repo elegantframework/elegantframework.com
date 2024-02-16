@@ -10,7 +10,6 @@
     -- merge pr's.. release 3.1.1
     - Merge cfabz with 3.1
     - merge brandon.me with 3.1
-    - complete docs and launch them
     - update release notes and upgrade guide
     - finish the yt series
     - flow back into item below
@@ -18,16 +17,6 @@
 -- Editor
 
     - The answer too all the image issues probably is because of the image configure/extending: src\components\Editor\Extensions\ImageBlock\ImageBlock.ts
-
-    - Verify docs on mobile before launching
-        - update yt vids by re adding them
-        - remove font size and stuff from docs
-
-    - VERIFY stuff below is fixed now :)
-        - The task list looks funky after it is saved an reloaded
-        - The block quote author text looks not that good in the editor
-        - The table did not save correct
-            - fix the table docs as well
 
 
     ------ Editor Docs --------------
