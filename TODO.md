@@ -10,7 +10,11 @@
     -- merge pr's.. release 3.1.1
     - Merge cfabz with 3.1
     - merge brandon.me with 3.1
-    - update release notes and upgrade guide
+
+    - finish release notes - use editor to copy items and links from GH faster
+    - update upgrade guide
+    - 3.1 blog post
+    
     - finish the yt series
     - flow back into item below
 
