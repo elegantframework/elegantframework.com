@@ -7,13 +7,16 @@
 
 --- IN PROGRESS
 
-    -- merge pr's.. release 3.1.1
-    - Merge cfabz with 3.1
-    - merge brandon.me with 3.1
+    - sysadmin /admin page is broke in production... Not 100% sure why... I believe it might be because it uses the old next routes, but I'm not sure
+
 
     - finish release notes - use editor to copy items and links from GH faster
     - update upgrade guide
-    - 3.1 blog post
+    - 3.2 blog post
+
+    - update cfabz to 3.2.0
+
+    - merge brandon.me with 3.1
     
     - finish the yt series
     - flow back into item below
@@ -34,12 +37,9 @@
 
     ------ Post Release ------
 
-    - add undo/clear option
     - add drag handle back
     - add Action Menu back
     - talk with TipTap, and see how I can use the pro extensions
-    - add image drag and drop
-    - add copy paste feature back
     - add image storage using Vercel blob
     - add ai stuff
 
