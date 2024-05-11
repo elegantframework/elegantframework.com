@@ -1,6 +1,3 @@
--- AA
-
--- ONGOING
 
 - Schedule call with david at tiptap --> https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1cXC_qUDNY9b2R3RmguksTja46LqBMVLia1tB0Oi40VtMCWejBJzCcIYiqnHzRZs2kqP5HRG8f?pli=1
 
@@ -10,9 +7,10 @@
     - sysadmin /admin page is broke in production... Not 100% sure why... I believe it might be because it uses the old next routes, but I'm not sure
 
 
-    - finish release notes - use editor to copy items and links from GH faster
-    - update upgrade guide
     - 3.2 blog post
+        - add taggings
+
+    - add tags to docs
 
     - update cfabz to 3.2.0
 
@@ -23,7 +21,6 @@
 
 -- Editor
 
-    - The answer too all the image issues probably is because of the image configure/extending: src\components\Editor\Extensions\ImageBlock\ImageBlock.ts
 
 
     ------ Editor Docs --------------
