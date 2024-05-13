@@ -7,10 +7,6 @@
     - sysadmin /admin page is broke in production... Not 100% sure why... I believe it might be because it uses the old next routes, but I'm not sure
 
 
-    - 3.2 blog post
-        - add taggings
-
-    - add tags to docs
 
     - update cfabz to 3.2.0
 
