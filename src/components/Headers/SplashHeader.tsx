@@ -6,7 +6,8 @@ import styles from '@/pages/index.module.css';
 import NavItems from "../Navigation/NavItems/NavItems";
 import { NavigationItem } from "@/types/NavigationItem";
 import NavPopover from "../Navigation/NavPopover/NavPopover";
-import { GitHubIcon, VersionSelector } from "@brandonowens/elegant-ui";
+import { GitHubIcon } from "@brandonowens/elegant-ui";
+import VersionSelector from "../VersionSelector";
 
 interface Props {
     /**
@@ -60,6 +61,7 @@ const SplashHeader = ({
                             <Logo className="w-auto h-7 cursor-pointer mr-4" />
                         </Link>
                         <VersionSelector
+                            next_version={{label: "4.x", href: "https://elegantframework-com-v4.vercel.app/"}}
                             version='3.x'
                             pastVersions={[
                                 {label: "2.x", href: "https://www.v2.elegantframework.com/"},

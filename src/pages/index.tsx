@@ -15,7 +15,7 @@ import moment from 'moment';
 import Link from 'next/link';
 import Config from '@/utils/Config/Config';
 import ThreeColumnFooter from '@/components/Footer/ThreeColumnFooter';
-import { VersionSelector } from '@brandonowens/elegant-ui';
+import VersionSelector from '@/components/VersionSelector';
 
 Home.layoutProps = {
   meta: {
@@ -141,10 +141,11 @@ const Header = ({
             <div className='flex'>
               <Logo className="w-auto h-7 mr-4" />
               <VersionSelector
+                next_version={{label: "4.x", href: "https://elegantframework-com-v4.vercel.app/"}}
                 version='3.x'
                 pastVersions={[
-                  {label: "2.x", href: "https://www.v2.elegantframework.com/"},
-                  {label: "1.x", href: "https://www.v1.elegantframework.com/"}
+                    {label: "2.x", href: "https://www.v2.elegantframework.com/"},
+                    {label: "1.x", href: "https://www.v1.elegantframework.com/"}
                 ]}
               />
             </div>

@@ -8,7 +8,7 @@ import clsx from 'clsx';
 import ThemeToggle, {ThemeSelect} from '@/components/Toggles/ThemeToggle/ThemeToggle';
 import useHeaderStore from '@/utils/Hooks/useHeaderStore';
 import Config from '@/utils/Config/Config';
-import { VersionSelector } from '@brandonowens/elegant-ui';
+import VersionSelector from '@/components/VersionSelector';
 
 /**
  * @deprecated -To be removed in version 3
@@ -208,6 +208,7 @@ export function Header({ hasNav = false, navIsOpen, onNavToggle }) {
               <Logo className="w-auto h-7" />
             </Link>
             <VersionSelector
+              next_version={{label: "4.x", href: "https://elegantframework-com-v4.vercel.app/"}}
               version='3.x'
               pastVersions={[
                 {label: "2.x", href: "https://www.v2.elegantframework.com/"},
