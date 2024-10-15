@@ -83,9 +83,9 @@ Elegant CMS safely stores your GitHub OAuth App client secret, and auth configur
 Add your GitHub OAuth configuration details to your application's `.env` file. You can retrieve your configuration details from step 3 above:
 
 ```ini
-NEXT_PUBLIC_CMS_GITHUB_ID="your-github-client-id"
-NEXT_PUBLIC_CMS_GITHUB_SECRET="your-github-client-secret"
-NEXT_PUBLIC_CMS_TOKEN_SECRET="random-32-digit-string"
+CMS_GITHUB_ID="your-github-client-id"
+CMS_GITHUB_SECRET="your-github-client-secret"
+CMS_TOKEN_SECRET="random-32-digit-string"
 ```
 
 To generate a random 32-digit string, click here: [random.org](https://www.random.org/strings/?num=1&len=32&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new)
@@ -95,9 +95,9 @@ To generate a random 32-digit string, click here: [random.org](https://www.rando
 Next, configure your GitHub repository in your application's `.env` file:
 
 ```ini
-NEXT_PUBLIC_CMS_REPOSITORY_BRANCH="your-github-branch"
-NEXT_PUBLIC_CMS_REPOSITORY_OWNER="your-repository-owner"
-NEXT_PUBLIC_CMS_REPOSITORY_SLUG="your-repository-slug"
+CMS_REPOSITORY_BRANCH="your-github-branch"
+CMS_REPOSITORY_OWNER="your-repository-owner"
+CMS_REPOSITORY_SLUG="your-repository-slug"
 ```
 
 Once you have set your environment's configuration variables, restart your development server and navigate to your [CMS admin panel](http://localhost:3000/admin) to sign in.
