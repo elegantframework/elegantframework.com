@@ -5,10 +5,9 @@
 
  - make announcement about it and new changes
 
- - set v4 as the default branch
-
 - migrate and update any homepage and other static page content from .com such as pricing page
     - migrate any header footer content
+- there is no version selector on the v4.com new site
 
 - update release notes and upgrade guide.
 
@@ -23,6 +22,10 @@
 
 
 - add a .env secret check to the admin panel; show welcome if it doesn't exist
+
+
+- figure out how to move the demo to v4
+    - update the readme with the v4 demo url like v3 has.
 
 
 
